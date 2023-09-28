@@ -1,4 +1,4 @@
-# PROG1210 - Project Planning & Design
+# PROG1180 - Project Planning & Design
 ## TechLink
 
 TechLink Software is a small but diverse team comprising of five students from different backgrounds studying at Niagara College, all sharing a passion for creativity and innovation and parlaying that passion into creating impactful products and services
