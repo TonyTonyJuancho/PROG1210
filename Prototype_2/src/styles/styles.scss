@@ -1,0 +1,24 @@
+$color-slate: #2A3232;
+$color-red: #8B0000;
+$color-white: #F4EBEB;
+$color-gold: #D5B606;
+$color-green: #4F772D;
+
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body, html
+{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    background-color: $color-slate;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
