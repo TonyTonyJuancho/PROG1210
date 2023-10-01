@@ -7,7 +7,7 @@ As a student led company, we at TechLink aim to create simple but impactful soft
 
 #### Our Team
 - Jorge Fuentes - Lead Designer 
-- Subit Paudiyal - Communications & Paperwork 
+- Subit Paudyal - Communications & Paperwork 
 - Rishi Pancholi - Backup Manager
 - Juan Jacobo - Lead Designer & Paperwork Manager
 - Philip Soriano - Lead programmer & Github Manager
