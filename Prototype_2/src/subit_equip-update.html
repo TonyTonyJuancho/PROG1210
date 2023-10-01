@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESE-Customer</title>
+    <style>
+        /*This needs to go in CSS file*/
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 50px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: gray;
+            color: pink;
+        }
+
+        .navbar img{
+            float: left;
+            height: 45px;
+            padding-right: 50px;
+        }
+
+        .user-profile{
+            float: right;
+            color: white;
+        }
+        
+        .user-profile a{
+            padding-left:10px;
+            padding-right:10px;
+        }
+
+        .container{
+            max-width:600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .form-group{
+            margin-bottom: 20px;
+        }
+
+        label{
+            display:block;
+            font-weight:bold;
+        }
+        input[type="number"],
+        input[type="text"]{
+            width: 50%;
+            padding:10px;
+        }
+        .btn-group{
+            text-align:left;
+            margin-top:20px;
+        }
+        .btnUpdate, .btnCancel{
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        .btnCancel{
+            background-color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.jpeg" alt="Company logo">
+        <a href="index.html">Dashboard</a>
+        <a href="Customer.html">Customer</a>
+        <a href="Equipment.html">Equipment</a>
+        <div class="user-profile">
+            <a href="#" id="username">Welcome Emma! </a>
+        </div>
+    </div>
+    
+
+    <h1>This is a Equipmen-Update page.</h1>
+    <p>Change code as needed.</p>
+    <p>Designer will make changes as required for layout.</p>
+
+    <div class="container">
+        <h2>Update Equipment</h2>
+        <!--Enable this once buttons is linked to the database or once it is fully functional.-->
+        <form action="#" /*method="post" enctype="multipart/form-data"-->
+            <div class="form-group">
+                <label for="equipmentID">Equipment ID:</label>
+                <input type="number" id="equipmentID" name="equipmentID" min="1" max="10000000" required>
+            </div>
+            <div class="form-group">
+                <label for="equipmentName">Equipment Name:</label>
+                <input type="text" id="equipmentName" name="equipmentName" required>
+            </div>
+            <div class="form-group">
+                <label for="equipmentModel">Equipment Model:</label>
+                <input type="text" id="equipmentModel" name="equipmentModel" required>
+            </div>
+            <div class="form-group">
+                <label for="equipmentSerial">Serial Number:</label>
+                <input type="text" id="equipmentSerial" name="equipmentSerial" required>
+            </div>
+            <div class="form-group">
+                <label for="equipmentSerial">Serial Number:</label>
+                <input type="text" id="equipmentSerial" name="equipmentSerial" required>
+            </div>
+            <div class="form-group">
+                <label for="equipmentManufacture">Manufacture:</label>
+                <input type="text" id="equipmentManufacture" name="equipmentManufacture" required>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btnUpdate">Update</button>
+                <button type="button" class="btnCancel">Cancel</button>
+            </div>
+        </form>
+ 
+    </div>
+<!--Enable this once buttons is linked to the database or once it is fully functional.-->
+</body>
+<footer>
+    <hr>
+    <p>Footer of the page starts here.</p>
+    &copy;2023 TechLink Software
+</footer>
+</html>
