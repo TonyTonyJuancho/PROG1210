@@ -6,13 +6,58 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./styles/styles.css">
         <script src="./main.js" async defer></script>
     </head>
     <body>
-        <div class = "body">
-            <p>can we change this file?</p>
-
-        </div>
+        <header class = "head-section">
+    
+            <nav class = "head-nav-section">
+                <img src ="./assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+                <a href = "">Dashboard</a>
+                <a href = "">Customers</a>
+                <a href = "">Employees</a>
+                <a href = "">Repairs</a>
+            </nav>
+            <div class = "head-profile-section">
+                <img class = "head-profile-img" src = "assets/profile_pic.jpg" alt = "Profile Picture">
+                <div class = "head-profile-text"> Hello Emma! </div>
+            <div/>
+        </header>
+        <main class = "main-section">
+            <section class = "main-heading">
+                <h1 class = "main-heading-title">Equipment</h1>
+                <div class = "main-heading-input">
+                    <div class = "main-heading-input-section">
+                        <div class = "input-group">
+                            <input id = "main-search-input" name = "search" class = "form-input" type="text" placeholder="Search">
+                            <label for = "main-search-input" class = "form-label">Search</label>
+                        </div>
+                        <button class = "search-btn"><img class ="search-btn-img" src="./assets/search-icon.png"></button>
+                    </div>
+                    <div class = "main-heading-input-section" style="    padding-right:5rem;">
+                        <div class ="select-wrapper">
+                            <select class = "main-select">
+                                <option value="" disabled selected>Sort By</option>
+                                <option>Name</option>
+                                <option>Type</option>
+                                <option>Modified Date</option>
+                            </select>
+                        </div>
+                        <div class ="select-wrapper">
+                            <select class = "main-select">
+                                <option value="" disabled selected>Group By</option>
+                                <option>Name</option>
+                                <option>Type</option>
+                                <option>Modified Date</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <content class = "main-body">
+                asd
+            </conten>
+        </main>
     </body>
 </html>
