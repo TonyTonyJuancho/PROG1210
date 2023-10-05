@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>ESE-Equipment</title>
-    <style>
+    <!-- <style>
         /*This needs to go in CSS file*/
         .navbar {
             background-color: #333;
@@ -43,33 +44,38 @@
         p{
             margin:auto;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <div class="navbar">
-        <img src="logo.jpeg" alt="Company logo">
-        <a href="index.html">Dashboard</a>
-        <a href="Customer.html">Customer</a>
-        <a href="Equipment.html">Equipment</a>
-        <div class="user-profile">
-            <a href="#" id="username">Welcome Emma! </a>
+    <header class = "head-section">
+    
+        <nav class = "head-nav-section">
+            <img src ="./assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+            <a href = "">Dashboard</a>
+            <a href = "">Customers</a>
+            <a href = "">Employees</a>
+            <a href = "">Repairs</a>
+        </nav>
+        <div class = "head-profile-section">
+            <img class = "head-profile-img" src = "assets/profile_pic.jpg" alt = "Profile Picture">
+            <div class = "head-profile-text"> Hello Emma! </div>
         </div>
-    </div>
+    </header>
 
+    <div class="text-content">
     <h1>This is a Equipment page.</h1>
     <p>Change code as needed.</p><br>
     <p>This page will show snapshot of all equipment available/ sold to the client.</p><br>
     <p>Once staff click on a a icon/item on listboard, details page will open up.</p><br><hr>
     <p>The following link should integrate within the details page.</p>
-    <div class="updateequipment">
-        <a href="Equip-update.html">Update Equipment</a>
+        <a href="subit_equip-update.html">Update Equipment</a>
     </div>
     
 
 </body>
 <footer>
-    <hr>
-    <p>Footer of the page starts here.</p>
-    &copy;2023 TechLink Software
+    <p>Footer of the page starts here.<br>
+        &copy;2023 TechLink Software</p>
+    <img src="logo.jpeg" alt="TechLink logo Picture">
 </footer>
 </html>

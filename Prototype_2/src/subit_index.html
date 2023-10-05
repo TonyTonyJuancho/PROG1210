@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>ESE-Dashboard</title>
-    <style>
+    <!-- <style>
         /*This needs to go in CSS file*/
         .navbar {
             background-color: #333;
@@ -40,26 +41,35 @@
             padding-left:10px;
             padding-right:10px;
         }
-    </style>
+    </style> -->
 </head>
-<body>
-    <div class="navbar">
-        <img src="logo.jpeg" alt="Company logo">
-        <a href="index.html">Dashboard</a>
-        <a href="Customer.html">Customer</a>
-        <a href="Equipment.html">Equipment</a>
-        <div class="user-profile">
-            <a href="#" id="username">Welcome Emma! </a>
-        </div>
-    </div>
+<body class="dashboard">    
 
-    <h1>This is a Dashboard page.</h1>
-    <p>Change code as needed.</p>
+    <div class="left-column">
+        <img src ="./assets/logo-sample.png" alt ="Emma Small Engines Logo">
+    </div>
+    <div class="right-column">
+        <div class="dashboard-profile-section">
+        <img class = "head-profile-img" src = "assets/profile_pic.jpg" alt = "Profile Picture">
+        <h1> Hello Emma! </h1>
+        </div>
+            <nav>
+                <a href = "">Customers</a>
+                <a href = "">Employees</a>
+                <a href = "">Equipment</a>
+                <a href = "">Inventory</a>
+                <a href = "">Repairs</a>
+                <a href = "">Sells</a>
+            </nav>
+        </div>
+
+    <!-- <h1>This is a Dashboard page.</h1>
+    <p>Change code as needed.</p> -->
 
 </body>
 <footer>
-    <hr>
-    <p>Footer of the page starts here.</p>
-    &copy;2023 TechLink Software
+    <p>Footer of the page starts here.<br>
+        &copy;2023 TechLink Software</p>
+    <img src="logo.jpeg" alt="TechLink logo Picture">
 </footer>
 </html>

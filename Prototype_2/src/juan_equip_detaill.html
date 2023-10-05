@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESE-Customer-Details</title>
-    <style>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>ESE-Equipment-Details</title>
+    <!-- <style>
         /*Need to add css, just some default to have an idea and make testing*/
         /*Starts subit css for nav bar*/
-        
         .navbar {
             background-color: #333;
             overflow: hidden;
-            margin-top: -8px;
-            margin-left:auto;
         }
 
         .navbar a {
@@ -51,7 +49,6 @@
         }
         .idbar h1{
             padding: 14px 60px;
-            
         }
         .details-show{
             padding-left: 100px;
@@ -66,7 +63,6 @@
         .info-display{
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            font-size: 35px;
         }
         .info-display label{
             font-size: 30px;
@@ -78,43 +74,48 @@
         }
         .detail-img img{
             padding: 40px;
-            width: 500px;
+            width: 350px;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <div class="navbar">
-        <img src="logo.jpeg" alt="Company logo">
-        <a href="index.html">Dashboard</a>
-        <a href="Customer.html">Customer</a>
-        <a href="Equipment.html">Equipment</a>
-        <div class="user-profile">
-            <a href="#" id="username">Welcome Emma! </a>
+    <header class = "head-section">
+    
+        <nav class = "head-nav-section">
+            <img src ="./assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+            <a href = "">Dashboard</a>
+            <a href = "">Employees</a>
+            <a href = "">Equipment</a>
+            <a href = "">Repairs</a>
+        </nav>
+        <div class = "head-profile-section">
+            <img class = "head-profile-img" src = "assets/profile_pic.jpg" alt = "Profile Picture">
+            <div class = "head-profile-text"> Hello Emma! </div>
         </div>
-    </div>
-    <div class="idbar">
-        <h1>Customer ID# 235</h1>
+    </header>
+    <div class="details-title-section">
+        <h1 class="detail-h1">Equipment ID# 235</h1>
     </div>
     <div class="details-show">
         <div class="info-display">
-            <label>Customer Name:</label>
-            <p >Name.....</p>
-            <label>Customer Last Name:</label>
-            <p>Last Name.....</p>
-            <label>Customer Phone:</label>
-            <p>Phone.....</p>
-            <label>Customer Adress:</label>
-            <p>Adress.....</p>
+            <label>Equipment Name:</label>
+            <p>Name.....</p>
+            <label>Equipment Color:</label>
+            <p>Color.....</p>
+            <label>Equipment Type:</label>
+            <p>Type.....</p>
+            <label>Equipment Manufacter:</label>
+            <p>Manufacter.....</p>
         </div>
         <div class="detail-img">
-            <!--Deafult image for customer, in the future it will have the seelcted customer image-->
-            <img src="Customer.jpg" alt="Customer Picture"> 
+            <!--Default image for equipment--> 
+            <img src="equipment.jpg" alt="Default equipment">
         </div>
     </div>
 </body>
 <footer>
-    <hr>
-    <p>Footer of the page starts here.</p>
-    &copy;2023 TechLink Software
+    <p>Footer of the page starts here.<br>
+        &copy;2023 TechLink Software</p>
+    <img src="logo.jpeg" alt="TechLink logo Picture">
 </footer>
 </html>

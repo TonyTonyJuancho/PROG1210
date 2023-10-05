@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESE-Address-Details</title>
-    <style>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>ESE-Customer-Details</title>
+    <!-- <style>
         /*Need to add css, just some default to have an idea and make testing*/
         /*Starts subit css for nav bar*/
-        .navbar {
+        
+         .navbar {
             background-color: #333;
             overflow: hidden;
+            margin-top: -8px;
+            margin-left:auto;
         }
 
         .navbar a {
@@ -40,14 +44,15 @@
         .user-profile a{
             padding-left:10px;
             padding-right:10px;
-        }
+        } */
         /*end subit css for navbar*/
         /*my css*/
-        .idbar{
+         .idbar{
             background-color: #B0C4DE;
         }
         .idbar h1{
             padding: 14px 60px;
+            
         }
         .details-show{
             padding-left: 100px;
@@ -62,6 +67,7 @@
         .info-display{
             display: grid;
             grid-template-columns: repeat(2,1fr);
+            font-size: 35px;
         }
         .info-display label{
             font-size: 30px;
@@ -73,42 +79,48 @@
         }
         .detail-img img{
             padding: 40px;
-            width: 200px;
+            width: 500px;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <div class="navbar">
-        <img src="logo.jpeg" alt="Company logo">
-        <a href="index.html">Dashboard</a>
-        <a href="Customer.html">Customer</a>
-        <a href="Equipment.html">Equipment</a>
-        <a href="Manufacter.html">Manufacter</a>
-        <div class="user-profile">
-            <a href="#" id="username">Welcome Emma! </a>
+    <header class = "head-section">
+    
+        <nav class = "head-nav-section">
+            <img src ="./assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+            <a href = "">Dashboard</a>
+            <a href = "">Employees</a>
+            <a href = "">Equipment</a>
+            <a href = "">Repairs</a>
+        </nav>
+        <div class = "head-profile-section">
+            <img class = "head-profile-img" src = "assets/profile_pic.jpg" alt = "Profile Picture">
+            <div class = "head-profile-text"> Hello Emma! </div>
         </div>
-    </div>
-    <div class="idbar">
-        <h1>Adress ID# 235</h1>
+    </header>
+    <div class="details-title-section">
+        <h1 class="detail-h1">Customer ID# 235</h1>
     </div>
     <div class="details-show">
         <div class="info-display">
-            <label>Adress:</label>
-            <p>Adress.....</p>
-            <label>Adress City:</label>
-            <p >City.....</p>
-            <label>Adress Province:</label>
+            <label>Customer Name:</label>
+            <p >Name.....</p>
+            <label>Customer Last Name:</label>
+            <p>Last Name.....</p>
+            <label>Customer Phone:</label>
+            <p>Phone.....</p>
+            <label>Customer Adress:</label>
             <p>Adress.....</p>
         </div>
         <div class="detail-img">
-            <!--Address default image-->
-            <img src="address.png" alt="address">
+            <!--Deafult image for customer, in the future it will have the seelcted customer image-->
+            <img src="Customer.jpg" alt="Customer Picture"> 
         </div>
     </div>
 </body>
 <footer>
-    <hr>
-    <p>Footer of the page starts here.</p>
-    &copy;2023 TechLink Software
+    <p>Footer of the page starts here.<br>
+        &copy;2023 TechLink Software</p>
+    <img src="logo.jpeg" alt="TechLink logo Picture">
 </footer>
 </html>

@@ -3,16 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Product Insert</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff; 
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
+    <!-- <style>
+        .inset-container {
             max-width: 600px;
             margin: 20px auto;
             padding: 20px;
@@ -68,11 +62,27 @@
         .btn:hover {
             background-color: #0056b3;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <div class="container">
-        <h1>Add New Product</h1>
+    <header class = "head-section">
+    
+        <nav class = "head-nav-section">
+            <img src ="./assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+            <a href = "">Dashboard</a>
+            <a href = "">Employees</a>
+            <a href = "">Equipment</a>
+            <a href = "">Repairs</a>
+        </nav>
+        <div class = "head-profile-section">
+            <img class = "head-profile-img" src = "assets/profile_pic.jpg" alt = "Profile Picture">
+            <div class = "head-profile-text"> Hello Emma! </div>
+        </div>
+    </header>
+    <div class="h2">
+        <h2>Insert Something</h2>
+    </div>
+    <div class="inset-container">
         <form action="process_insert.php" method="POST">
             <div class="form-group">
                 <label for="product_name">Product Name:</label>
@@ -115,10 +125,15 @@
                 <label for="product_shipping_date">Shipping Date:</label>
                 <input type="date" id="product_shipping_date" name="product_shipping_date">
             </div>
-            <div class="form-group">
-                <button type="submit" class="btn">Insert Product</button>
+            <div class="btn-group">
+                <button type="submit" class="btnUpdate">Insert Product</button>
             </div>
         </form>
     </div>
 </body>
+<footer>
+    <p>Footer of the page starts here.<br>
+        &copy;2023 TechLink Software</p>
+    <img src="logo.jpeg" alt="TechLink logo Picture">
+</footer>
 </html>
