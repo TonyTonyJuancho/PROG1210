@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Prototype_2/src/styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+        <script src="/Prototype_2/src/main.js" async defer></script>
+    </head>
+    <body>
+        <header class = "head-section">
+            <nav class = "head-nav-section">
+                <img src ="/Prototype_2/src/assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+                <a href = "">Dashboard</a>
+                <a href = "/Prototype_2/src/components/customer/index.html">Customers</a>
+                <a href = "/Prototype_2/src/components/employees/index.html">Employees</a>
+                <a href = "/Prototype_2/src/components/equipment/index.html">Equipment</a>
+                <a href = "">Repairs</a>
+            </nav>
+            <div class = "head-profile-section">
+                <img class = "head-profile-img" src = "/Prototype_2/src/assets/profile_pic.jpg" alt = "Profile Picture">
+                <div class = "head-profile-text"> Hello Emma! </div>
+            </div>
+        </header>
+        <main class = "main-section">
+            <section class = "main-heading">
+                <div class = "main-heading-title">
+                    <h1 class = "main-heading-head">Editing Customer</h1>
+                    <h3 class = "main-heading-sub">Jane Doe - 123 Maple Street, Toronto</h3>
+                </div>
+            </section>
+            <section class = "main-body">
+                <div class = "main-info-item">
+                    <div class = "main-info-img">
+                        <img class = "img-info" src = "/Prototype_2/src/assets/customer-icon.png">
+                    </div>
+                    <div class = "main-info-display">
+                        <div class = "info-row">
+                            <label class ="info-label">Customer First Name:</label> 
+                            <div class = "info-field"><input class = "info-field-input" type = "text" value="Jane"/> </div>
+                              
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label">Customer Last Name:</label> 
+                            <div class = "info-field"><input class = "info-field-input" type = "text" value="Doe"/> </div>
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label">Customer Phone Number:</label> 
+                            <div class = "info-field"><input class = "info-field-input" type = "atel" value="1234567890"/> </div>
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label">Customer Street Address:</label> 
+                            <div class = "info-field"><input class = "info-field-input" type = "text" value="123 Maple Street"/> </div>
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label">Customer City Address:</label> 
+                            <div class = "info-field"><input class = "info-field-input" type = "text" value="Toronto"/> </div>
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label">Customer Province:</label> 
+                            <div class = "info-field"> 
+                                <select class = "info-select">
+                                    <option value="AB">Alberta</option>
+                                    <option value="BC">British Columbia</option>
+                                    <option value="MB">Manitoba</option>
+                                    <option value="NB">New Brunswick</option>
+                                    <option value="NL">Newfoundland and Labrador</option>
+                                    <option value="NS">Nova Scotia</option>
+                                    <option value="NT">Northwest Territories</option>
+                                    <option value="NU">Nunavut</option>
+                                    <option selected value="ON">Ontario</option>
+                                    <option value="PE">Prince Edward Island</option>
+                                    <option value="QC">Quebec</option>
+                                    <option value="SK">Saskatchewan</option>
+                                    <option value="YT">Yukon</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label">Customer Postal Code:</label> 
+                            <div class = "info-field"><input class = "info-field-input" type = "text" value="M5V 2N9"/> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "main-info-buttons">
+                    <a href = "" class = "btn-info btn-edit">Update Equipment</a>
+                    <a href = "./details.html"class = "btn-info btn-edit">Cancel</a>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

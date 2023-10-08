@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Prototype_2/src/styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+        <script src="/Prototype_2/src/main.js" async defer></script>
+    </head>
+    <body>
+        <header class = "head-section">
+            <nav class = "head-nav-section">
+                <img src ="/Prototype_2/src/assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+                <a href = "">Dashboard</a>
+                <a href = "/Prototype_2/src/components/customer/index.html" class = "disabled">Customers</a>
+                <a href = "/Prototype_2/src/components/employees/index.html">Employees</a>
+                <a href = "/Prototype_2/src/components/equipment/index.html">Equipment</a>
+                <a href = "">Repairs</a>
+            </nav>
+            <div class = "head-profile-section">
+                <img class = "head-profile-img" src = "/Prototype_2/src/assets/profile_pic.jpg" alt = "Profile Picture">
+                <div class = "head-profile-text"> Hello Emma! </div>
+            </div>
+        </header>
+        <main class = "main-section">
+            <section class = "main-heading">
+                <div class = "main-heading-title">
+                    <h1 class = "main-heading-head">Customer</h1>
+                </div>
+                <div class = "main-heading-input">
+                    <div class = "main-heading-input-section">
+                        <div class = "input-group">
+                            <input id = "main-search-input" name = "search" class = "form-input" type="text" placeholder="Search...">
+                            <label for = "main-search-input" class = "form-label">Search...</label>
+                        </div>
+                        <button class = "search-btn"><img class ="search-btn-img" src="/Prototype_2/src/assets/search-icon.png"></button>
+                    </div>
+                    <div class = "main-heading-input-section" style="    padding-right:5rem;">
+                        <div class ="select-wrapper">
+                            <select class = "main-select">
+                                <option value="" disabled selected>Sort By</option>
+                                <option>Name</option>
+                                <option>Type</option>
+                                <option>Modified Date</option>
+                            </select>
+                        </div>
+                        <div class ="select-wrapper">
+                            <select class = "main-select">
+                                <option value="" disabled selected>Group By</option>
+                                <option>Name</option>
+                                <option>Type</option>
+                                <option>Modified Date</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class = "main-body">
+                <div class="main-body-row" href = "./details.html">
+                    <a class="main-body-item" href = "./details.html">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Sarah Johnson - 123 Maple Street, Toronto</div>
+                    </a>
+                    <a class="main-body-item" href = "./details.html">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Michael Smith - 456 Oak Avenue, Ottawa</div>
+                    </a>
+                </div>
+                <div class="main-body-row">
+                    <a class="main-body-item" href = "./details.html">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Emily Brown - 789 Elm Road, Hamilton</div>
+                    </a>
+                    <a class="main-body-item" href = "./details.html">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">David Wilson - 101 Pine Lane, London</div>
+                    </a>
+                </div>
+                <div class="main-body-row">
+                    <a class="main-body-item" href = "./details.html">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Jessica Davis - 222 Birch Street, Mississauga</div>
+                    </a>
+                    <a class="main-body-item" href = "./details.html">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">William Taylor - 333 Cedar Drive, Brampton</div>
+                    </a>
+                </div>
+                <div class="main-body-row">
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Olivia Anderson - 444 Spruce Court, Windsor</div>
+                    </div>
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">James Lee - 555 Oakwood Road, Kingston</div>
+                    </div>
+                </div>
+                <div class="main-body-row">
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Sophia Martinez - 666 Willow Avenue, Markham</div>
+                    </div>
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Benjamin White - 777 Birchwood Lane, Guelph</div>
+                    </div>
+                </div>
+                <div class="main-body-row">
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Mia Robinson - 888 Redwood Street, Ajax</div>
+                    </div>
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Samuel Hall - 999 Cedar Avenue, Richmond Hill</div>
+                    </div>
+                </div>
+                <div class="main-body-row">
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Ava Garcia - 111 Pinecrest Drive, Barrie</div>
+                    </div>
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Ethan Miller - 222 Elmwood Road, Oakville</div>
+                    </div>
+                </div>
+                <div class="main-body-row">
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Charlotte Young - 333 Maplewood Court, Whitby</div>
+                    </div>
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Daniel Adams - 444 Oakridge Avenue, Oshawa</div>
+                    </div>
+                </div>
+                <div class="main-body-row">
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Sofia Turner - 555 Willow Lane, Sudbury</div>
+                    </div>
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Noah Harris - 666 Birchwood Street, Pickering</div>
+                    </div>
+                </div>
+                <div class="main-body-row">
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Amelia Clark - 777 Cedar Drive, Vaughan</div>
+                    </div>
+                    <div class="main-body-item">
+                        <img class="img-customer" src="/Prototype_2/src/assets/customer-icon.png" alt="customer image">
+                        <div class="item-title">Liam Walker - 888 Maple Avenue, Waterloo</div>
+                    </div>
+                </div>
+                </div>
+                
+                <a class = "btn-add" href="./insert.html">Add Customer</a>
+            </section>
+        </main>
+    </body>
+    <!-- <footer>
+        <p>Footer of the page starts here.<br>
+            &copy;2023 TechLink Software</p>
+        <img src="logo.jpeg" alt="TechLink logo Picture">
+    </footer> -->
+</html>
