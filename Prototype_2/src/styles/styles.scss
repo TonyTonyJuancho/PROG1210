@@ -26,6 +26,7 @@ $color-select-active: #9799ae;
     margin:0;
     box-sizing: border-box;
 }
+a {text-decoration: none; color:inherit}
 body, html
 {
     min-width: 100vw;
@@ -380,7 +381,9 @@ body, html
 {
     display: flex;
     flex-direction: column;
-     justify-content: space-evenly;
+    justify-content: space-evenly;
+    min-height: 35rem;
+
 }
 .img-info {height:30rem;width: auto;}
 .main-info-display
@@ -412,13 +415,13 @@ body, html
     margin-top: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 0.4rem;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
 }
 .info-select
 {
     padding:1rem;
     border-radius: 1rem 1rem 1rem 1rem;
-    width:80%;
+    width:100%;
     font-size: 2.2rem;
     cursor: pointer;
     &:hover
