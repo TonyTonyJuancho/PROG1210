@@ -35,22 +35,25 @@
             <section class = "main-body">
                 <div class = "main-info-item">
                     <div class = "main-info-img">
-                        <img class = "img-info" src = "/Prototype_2/src/assets/equipment-icon.png">
+                        <img class = "img-info" style="height:20rem;" src = "/Prototype_2/src/assets/equipment-icon.png">
+                        <div class = "info-row" style = "flex-direction: column; height:11rem;">
+                            <label for = "img-add-input" style = "text-align: center;"class = "info-label">Change Equipment Image</label>
+                            <input id = "img-add-input" style = "text-align: center; width: 100%;" class = "info-field-input" type="file">
+                        </div> 
                     </div>
                     <div class = "main-info-display">
                         <div class = "info-row">
-                            <label class ="info-label">Equipment Name:</label> 
-                            <div class = "info-field"><input class = "info-field-input" type = "text" value="Generic Equipment"/> </div>
-                              
+                            <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
+                            <div class = "info-field"><input id = "input-equip-name" class = "info-field-input" type = "text" value="Generic Equipment"/> </div>       
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label">Equipment Color:</label> 
-                            <div class = "info-field"><input class = "info-field-input" type = "text" value="Yellow"/> </div>
+                            <label class ="info-label" for = "input-equip-color">Equipment Color:</label> 
+                            <div class = "info-field"><input id = "input-equip-color" class = "info-field-input" type = "text" value="Yellow"/> </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label">Equipment Type:</label> 
+                            <label class ="info-label" for = "input-equip-type">Equipment Type:</label> 
                             <div class = "info-field"> 
-                                <select class = "info-select">
+                                <select class = "info-select" id = "input-equip-type">
                                     <option>Construction</option>
                                     <option selected>Kitchen</option>
                                     <option>Furniture</option>
@@ -63,8 +66,8 @@
                             </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label">Equipment Manufacturer:</label> 
-                            <div class = "info-field"><input class = "info-field-input" type = "text" value="AlphaCraft Furniture"/> </div>
+                            <label class ="info-label" for = "input-equip-manufacturer">Equipment Manufacturer:</label> 
+                            <div class = "info-field"><input id = "input-equip-manufacturer" class = "info-field-input" type = "text" value="AlphaCraft Furniture"/> </div>
                         </div>
                     </div>
                 </div>
