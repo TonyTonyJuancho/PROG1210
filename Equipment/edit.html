@@ -6,36 +6,36 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/Prototype_2/src/styles/styles.css">
+        <link rel="stylesheet" href="../CSS/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
-        <script src="/Prototype_2/src/main.js" async defer></script>
+        <script src="../JavaScript/main.js" async defer></script>
     </head>
     <body>
         <header class = "head-section">
             <nav class = "head-nav-section">
-                <img src ="/Prototype_2/src/assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+                <img src ="../images/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
                 <a href = "">Dashboard</a>
-                <a href = "/Prototype_2/src/components/customer/index.html">Customers</a>
-                <a href = "/Prototype_2/src/components/employees/index.html">Employees</a>
-                <a href = "/Prototype_2/src/components/equipment/index.html">Equipment</a>
-                <a href = "">Repairs</a>
+                <a href = "../Customer/index.html">Customers</a>
+                <a href = "../Equipment/index.html">Equipment</a>
+                <!--<a href = "">Employees</a>
+                <a href = "">Repairs</a> -->
             </nav>
             <div class = "head-profile-section">
-                <img class = "head-profile-img" src = "/Prototype_2/src/assets/profile_pic.jpg" alt = "Profile Picture">
-                <div class = "head-profile-text"> Hello Emma! </div>
+                <img class = "head-profile-img" src = "../images/profile_pic.jpg" alt = "Profile Picture">
+                <div class = "head-profile-text">Emma</div>
             </div>
         </header>
         <main class = "main-section">
             <section class = "main-heading">
                 <div class = "main-heading-title">
-                    <h1 class = "main-heading-head">Editing Equipment</h1>
+                    <h1 class = "main-heading-head">Equipment Edit</h1>
                     <h3 class = "main-heading-sub">Generic Equipment - Yellow - ID#12345</h3>
                 </div>
             </section>
             <section class = "main-body">
                 <div class = "main-info-item">
                     <div class = "main-info-img">
-                        <img class = "img-info" style="height:20rem;" src = "/Prototype_2/src/assets/equipment-icon.png">
+                        <img class = "img-info" style="height:20rem;" src = "../images/equipment-icon.png">
                         <div class = "info-row" style = "flex-direction: column; height:11rem;">
                             <label for = "img-add-input" style = "text-align: center;"class = "info-label">Change Equipment Image</label>
                             <input id = "img-add-input" style = "text-align: center; width: 100%;" class = "info-field-input" type="file">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class = "main-info-buttons">
-                    <a href = "" class = "btn-info btn-edit">Update Equipment</a>
+                    <a href = "./details.html" class = "btn-info btn-edit">Update Equipment</a>
                     <a href = "./details.html"class = "btn-info btn-edit">Cancel</a>
                 </div>
             </section>

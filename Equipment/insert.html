@@ -7,55 +7,54 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/Prototype_2/src/styles/styles.css">
+        <link rel="stylesheet" href="../CSS/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
-        <script src="/Prototype_2/src/main.js" async defer></script>
+        <script src="../JavaScript/main.js" async defer></script>
     </head>
     <body>
-        <header class = "head-section">
-            <nav class = "head-nav-section">
-                <img src ="/Prototype_2/src/assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
-                <a href = "">Dashboard</a>
-                <a href = "/Prototype_2/src/components/customer/index.html">Customers</a>
-                <a href = "/Prototype_2/src/components/employees/index.html">Employees</a>
-                <a href = "/Prototype_2/src/components/equipment/index.html">Equipment</a>
-                <a href = "">Repairs</a>
+        <header class="head-section">
+            <nav class="head-nav-section">
+                <img src ="../images/logo-sample.png" alt ="Emma Small Engines Logo" class="head-img-logo">
+                <a href="">Dashboard</a>
+                <a href="../Customer/index.html">Customers</a>
+                <a href="../Equipment/index.html">Equipments</a>
+                <!--<a href="">Employees</a>
+                <a href="">Repairs</a> -->
             </nav>
-            <div class = "head-profile-section">
-                <img class = "head-profile-img" src = "/Prototype_2/src/assets/profile_pic.jpg" alt = "Profile Picture">
-                <div class = "head-profile-text"> Hello Emma! </div>
+            <div class="head-profile-section">
+                <img class="head-profile-img" src="../images/profile_pic.jpg" alt="Profile Picture">
+                <div class="head-profile-text">Emma</div>
             </div>
         </header>
-        <main class = "main-section">
-            <section class = "main-heading">
-                <div class = "main-heading-title">
-                    <h1 class = "main-heading-head">Adding Item</h1>
-                    <h3 class = "main-heading-sub">Equipment</h3>
+        <main class="main-section">
+            <section class="main-heading">
+                <div class="main-heading-title">
+                    <h1 class="main-heading-head">Add Equipment</h1>
                 </div>
             </section>
-            <section class = "main-body">
+            <section class="main-body">
             
-                <div class = "main-info-item">
-                    <div class = "main-info-img">
-                        <img class = "img-info" style="height:20rem;" src = "/Prototype_2/src/assets/equipment-icon.png">
-                        <div class = "info-row" style = "flex-direction: column; height:11rem;">
-                            <label for = "img-add-input" style = "text-align: center;"class = "info-label">Add Equipment Image</label>
-                            <input id = "img-add-input" style = "text-align: center; width: 100%;" class = "info-field-input" type="file">
+                <div class="main-info-item">
+                    <div class="main-info-img">
+                        <img class="img-info" style="height:20rem;" src="../images/equipment-icon.png">
+                        <div class="info-row" style="flex-direction: column; height:11rem;">
+                            <label for="img-add-input" style="text-align: center;"class="info-label">Add Equipment Image</label>
+                            <input id="img-add-input" style="text-align: center; width: 100%;" class="info-field-input" type="file">
                         </div> 
                     </div>
-                    <div class = "main-info-display">
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
-                            <div class = "info-field"><input id = "input-equip-name" class = "info-field-input" type = "text"/> </div>       
+                    <div class="main-info-display">
+                        <div class="info-row">
+                            <label class ="info-label" for="input-equip-name">Equipment Name:</label> 
+                            <div class="info-field"><input id="input-equip-name" class="info-field-input" type="text"/> </div>       
                         </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-color">Equipment Color:</label> 
-                            <div class = "info-field"><input id = "input-equip-color" class = "info-field-input" type = "text"/> </div>
+                        <div class="info-row">
+                            <label class ="info-label" for="input-equip-color">Equipment Color:</label> 
+                            <div class="info-field"><input id="input-equip-color" class="info-field-input" type="text"/> </div>
                         </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Equipment Type:</label> 
-                            <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type">
+                        <div class="info-row">
+                            <label class ="info-label" for="input-equip-type">Equipment Type:</label> 
+                            <div class="info-field"> 
+                                <select class="info-select" id="input-equip-type">
                                     <option>Construction</option>
                                     <option>Kitchen</option>
                                     <option>Furniture</option>
@@ -67,15 +66,15 @@
                                 </select>
                             </div>
                         </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-manufacturer">Equipment Manufacturer:</label> 
-                            <div class = "info-field"><input id = "input-equip-manufacturer" class = "info-field-input" type = "text"/> </div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-equip-manufacturer">Equipment Manufacturer:</label> 
+                            <div class="info-field"><input id="input-equip-manufacturer" class="info-field-input" type="text"/> </div>
                         </div>
                     </div>
                 </div>
-                <div class = "main-info-buttons">
-                    <a class = "btn-info btn-edit">Add Equipment</a>
-                    <a href = "./index.html" class = "btn-info btn-edit">Cancel</a>
+                <div class="main-info-buttons">
+                    <a href="./details.html" class="btn-info btn-edit">Add Equipment</a>
+                    <a href="./index.html" class="btn-info btn-edit">Cancel</a>
                 </div>
             </section>
         </main>
