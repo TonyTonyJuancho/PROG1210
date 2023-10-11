@@ -3,26 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Customer Details</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/Prototype_2/src/styles/styles.css">
+        <link rel="stylesheet" href="../CSS/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
-        <script src="/Prototype_2/src/main.js" async defer></script>
+        <script src="./JavaScript/main.js" async defer></script>
     </head>
     <body>
         <header class = "head-section">
             <nav class = "head-nav-section">
-                <img src ="/Prototype_2/src/assets/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
-                <a href = "">Dashboard</a>
-                <a href = "/Prototype_2/src/components/customer/index.html">Customers</a>
-                <a href = "/Prototype_2/src/components/employees/index.html">Employees</a>
-                <a href = "/Prototype_2/src/components/equipment/index.html">Equipment</a>
+                <img src ="../images/logo-sample.png" alt="Emma Small Engines Logo" class = "head-img-logo">
+                <a href = "../index.html">Dashboard</a>
+                <a href = "../Customer/index.html">Customers</a>
+                <a href = "../Equipment/index.html">Equipment</a>
+                <a href = "">Employees</a>
                 <a href = "">Repairs</a>
             </nav>
             <div class = "head-profile-section">
-                <img class = "head-profile-img" src = "/Prototype_2/src/assets/profile_pic.jpg" alt = "Profile Picture">
-                <div class = "head-profile-text"> Hello Emma! </div>
+                <img class = "head-profile-img" src = "../images/profile_pic.jpg" alt = "Profile Picture">
+                <div class = "head-profile-text">Emma</div>
             </div>
         </header>
         <main class = "main-section">
@@ -36,44 +36,52 @@
             
                 <div class = "main-info-item">
                    <div class = "main-info-img">
-                        <img class = "img-info" src = "/Prototype_2/src/assets/customer-icon.png">
+                        <img class = "img-info" src = "../images/customer-icon.png">
                     </div>
 
                     <div class = "main-info-display">
                         <div class = "info-row">
-                            <div class ="info-label">Customer First Name:</div> 
+                            <div class ="info-label">First Name:</div> 
                             <div class = "info-field">Jane</div>
                         </div>
                         <div class = "info-row">
-                            <div class ="info-label">Customer Last Name:</div> 
+                            <div class ="info-label">Middle Name:</div> 
+                            <div class = "info-field"></div>
+                        </div>
+                        <div class = "info-row">
+                            <div class ="info-label">Last Name:</div> 
                             <div class = "info-field">Doe</div>
                         </div>
                         <div class = "info-row">
-                            <div class ="info-label">Customer Phone Number:</div> 
+                            <div class ="info-label">Phone Number:</div> 
                             <div class = "info-field">(123) - 456 - 7890</div>     
                         </div>
                         <div class = "info-row">
-                            <div class ="info-label">Customer Street Address:</div> 
+                            <div class ="info-label">Email:</div> 
+                            <div class = "info-field">(123) - 456 - 7890</div>     
+                        </div>
+                        <div class = "info-row">
+                            <div class ="info-label">Address:</div> 
                             <div class = "info-field">123 Maple Street</div>  
                         </div>
                         <div class = "info-row">
-                            <div class ="info-label">Customer Province:</div> 
-                            <div class = "info-field">Ontario</div>  
-                        </div>
-                        <div class = "info-row">
-                            <div class ="info-label">Customer City Address:</div> 
+                            <div class ="info-label">City:</div> 
                             <div class = "info-field">Toronto</div>  
                         </div>
                         <div class = "info-row">
-                            <div class ="info-label">Customer Postal Code:</div> 
+                            <div class ="info-label">Province:</div> 
+                            <div class = "info-field">Ontario</div>  
+                        </div>
+                        <div class = "info-row">
+                            <div class ="info-label">Postal Code:</div> 
                             <div class = "info-field">M5V 2N9</div>  
                         </div>
                     </div>
                 </div>
                 <div class = "main-info-buttons">
-                    <a class = "btn-info btn-edit" href = "index.html">Back</a>
-                    <a class = "btn-info btn-edit" href = "edit.html">Edit Customer</a>
-                    <button onclick = "confirm('Are you sure you want to delete this item?');" class = "btn-info btn-delete">Delete Customer</button>
+                    <a class = "btn-info btn-edit" href = "./index.html">Back</a>
+                    <a class = "btn-info btn-edit" href = "./edit.html">Edit Customer</a>
+                    <button onclick = "confirm('Are you sure you want to delete this Customer?');" class = "btn-info btn-delete">Delete Customer</button>
                 </div>
             </section>
         </main>
