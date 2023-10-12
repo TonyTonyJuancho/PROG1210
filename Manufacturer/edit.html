@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Manufacturer Edit</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+        <script src="../JavaScript/main.js" async defer></script>
+    </head>
+    <body>
+        <header class = "head-section">
+            <nav class = "head-nav-section">
+                <img src ="../images/logo-sample.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+                <a href = "../index.html">Dashboard</a>
+                <a href = "../Customer/index.html">Customers</a>
+                <a href = "../Equipment/index.html">Equipment</a>
+                <a href = "../Manufacturer/index.html">Manufacturer</a>
+                <!--<a href = "">Repairs</a> -->
+            </nav>
+            <div class = "head-profile-section">
+                <img class = "head-profile-img" src = "../images/profile_pic.jpg" alt = "Profile Picture">
+                <div class = "head-profile-text">Emma</div>
+            </div>
+        </header>
+        <main class = "main-section">
+            <section class = "main-heading">
+                <div class = "main-heading-title">
+                    <h1 class = "main-heading-head">Manufacturer Edit</h1>
+                    <h3 class = "main-heading-sub">Yamaha - ID#001</h3>
+                </div>
+            </section>
+            <div class = "main-body">
+                <div class = "main-info-item">
+                    <div class = "main-info-display">
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-manufacturer-id">Manufacturer ID:</label> 
+                            <div class = "info-field"><input id = "input-manufacturer-id" class = "info-field-input" type = "text" value="001"> </div>       
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-manufacturer-name">Manufacturer Name:</label> 
+                            <div class = "info-field"><input id = "input-manufacturer-name" class = "info-field-input" type = "text" value="Yamaha"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "main-info-buttons">
+                    <a href = "./details.html" class = "btn-info btn-edit">Update Manufacturer</a>
+                    <a href = "./details.html" class = "btn-info btn-edit">Cancel</a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
