@@ -417,40 +417,44 @@ body, html {
 
 .dashboard-2 {
   background-color: #576490;
+  display: flex;
+  flex-direction: column;
 }
 
 .dashboard-2-profile {
+  padding-top: 3rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 16%;
+  width: 100%;
+  justify-content: center;
   font-size: 20px;
-  margin: 15px 60px 0 auto;
   font-weight: bold;
   color: #faf9f9;
 }
 
 .dashboard-2-profile img {
   height: 6.5rem;
+  padding-right: 2rem;
   border-radius: 50%;
-  margin-right: 30px;
 }
 
 .dashboard-2 nav {
-  display: grid;
-  gap: 35px;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: bold;
-  padding-top: 190px;
-  padding-left: 20px;
+  padding-top: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.dashboard-2 a {
+.dashboard-2 .head-nav-link {
+  height: 8rem;
   width: 90%;
+  padding: 3rem;
   display: flex;
   text-decoration: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
   -webkit-text-decoration: underline transparent;
   text-decoration: underline transparent;
   transition: color 300ms ease, background-color 300 ms ease, -webkit-text-decoration 300ms ease;
@@ -460,7 +464,7 @@ body, html {
   color: #faf9f9;
 }
 
-.dashboard-2 a:hover, a:focus {
+.dashboard-2 nav a:hover, .dashboard-2 nav a:focus {
   background-color: #444e71;
   color: #faf9f9;
   text-decoration-color: #D5B606;
@@ -492,15 +496,18 @@ nav a {
   z-index: 1;
   opacity: 0.75;
   width: 100%;
+  padding: none;
 }
 
-.dropdown-link:hover + .dropdown-menu, .dropdown-link:focus + .dropdown-menu, .dropdown-link.tabbed + .dropdown-menu {
-  display: block;
+.dropdown-link.tabbed + .dropdown-menu, .dropdown-link:hover + .dropdown-menu, .dropdown-menu:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.dropdown-menu a {
+.lookup-link {
   color: #fff;
-  font-size: 2rem;
+  height: 4rem;
   padding: 1rem 0 1rem 0;
   border-radius: 2;
   -webkit-text-decoration: underline transparent;
@@ -509,8 +516,9 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  font-size: 2rem;
+  height: 8rem;
 }
-.dropdown-menu a:hover, .dropdown-menu a:focus {
+.lookup-link:hover, .lookup-link:focus {
   background-color: #444e71;
 }/*# sourceMappingURL=styles.css.map */
