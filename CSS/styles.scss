@@ -79,7 +79,7 @@ body, html
     text-decoration: underline transparent;
     transition: text-decoration 300ms ease, color 300ms ease, background-color 300 ms ease;
     color: $color-white;
-    &:hover
+    &:hover, &:focus
     {
         background-color: $color-nav-hover;
         color:$color-white;
@@ -201,7 +201,7 @@ body, html
     height:3rem;
     width: auto;
     opacity: 40%;
-    &:hover
+    &:hover, &:focus
     {
         opacity: 65%;
     }
@@ -242,7 +242,7 @@ body, html
     background: transparent;
     border: none;
     cursor: pointer;
-    &:hover
+    &:hover, &:focus
     {
         background-color: $color-select-hover;
     }
@@ -279,7 +279,7 @@ body, html
     display: flex;
     align-items: center;
     cursor: pointer;
-    &:hover
+    &:hover, &:focus
     {
         opacity: 85%;
     }
@@ -315,7 +315,7 @@ body, html
     padding:2.5rem;
     border-radius: 3rem;
     cursor: pointer;
-    &:hover
+    &:hover, &:focus
     {
         background-color: $color-nav-hover;
     }
@@ -350,7 +350,8 @@ body, html
 .btn-edit
 {
     background-color: $color-main;
-    &:hover{
+    &:hover, &:focus
+    {
         background-color: $color-nav-hover;
     }
     &:active
@@ -361,7 +362,8 @@ body, html
 .btn-delete
 {
     background-color: $color-red;
-    &:hover{
+    &:hover, &:focus
+    {
         background-color: $color-red-hover;
     }
     &:active
@@ -424,7 +426,7 @@ body, html
     width:100%;
     font-size: 2.2rem;
     cursor: pointer;
-    &:hover
+    &:hover, &:focus
     {
         background-color: $color-select-hover;
     }
@@ -487,7 +489,8 @@ body, html
   transition: text-decoration 300ms ease, color 300ms ease, background-color 300ms ease, -webkit-text-decoration 300ms ease;
   color: #faf9f9;
 }
-.dashboard-2 a:hover {
+.dashboard-2 a:hover, a:focus
+  {
   background-color: #444e71;
   color: #faf9f9;
   text-decoration-color: #D5B606;
@@ -524,7 +527,8 @@ nav a {
   width:100%;
 }
 
-.head-dropdown:hover .dropdown-menu {
+.dropdown-link:hover + .dropdown-menu, .dropdown-link:focus + .dropdown-menu, .dropdown-link.tabbed+.dropdown-menu
+{
   display: block;
 }
 
@@ -539,8 +543,10 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-  &:hover
+    z-index: 1;
+  &:hover, &:focus
   {
     background-color: #444e71;
   }
+
 }
