@@ -39,10 +39,12 @@ body, html {
   justify-content: center;
   align-items: center;
 }
-.head-nav-section a {
+
+.head-nav-link {
   height: 100%;
   box-sizing: border-box;
   width: 22.5rem;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,19 +52,19 @@ body, html {
   -webkit-text-decoration: underline transparent;
           text-decoration: underline transparent;
   transition: color 300ms ease, background-color 300 ms ease, -webkit-text-decoration 300ms ease;
-  transition: text-decoration 300ms ease, color 300ms ease, background-color 300ms ease;
-  transition: text-decoration 300ms ease, color 300ms ease, background-color 300ms ease, -webkit-text-decoration 300ms ease;
+  transition: text-decoration 300ms ease, color 300ms ease, background-color 300 ms ease;
+  transition: text-decoration 300ms ease, color 300ms ease, background-color 300 ms ease, -webkit-text-decoration 300ms ease;
   color: #faf9f9;
 }
-.head-nav-section a:hover {
+.head-nav-link:hover {
   background-color: #444e71;
   color: #faf9f9;
   text-decoration-color: #D5B606;
 }
-.head-nav-section a:active {
+.head-nav-link:active {
   background-color: #363e58;
 }
-.head-nav-section a.disabled {
+.head-nav-link.disabled {
   pointer-events: none;
   cursor: default;
   background-color: #363e58;
@@ -245,7 +247,7 @@ body, html {
 
 .main-body-item {
   opacity: 70%;
-  width: 60%;
+  width: 45%;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -395,24 +397,29 @@ body, html {
 .info-select:active {
   background-color: #9799ae;
 }
+
 /*Dashborad css*/
-.dashboard{
+.dashboard {
   display: grid;
   grid-template-columns: 1300px 1fr;
   background-color: #D4D6E6;
 }
-.dashboard-1{
+
+.dashboard-1 {
   background-color: #D4D6E6;
-  margin:auto 0 auto 0;
+  margin: auto 0 auto 0;
   text-align: center;
 }
-.dashboard-1 img{
+
+.dashboard-1 img {
   border-radius: 20px;
 }
-.dashboard-2{
+
+.dashboard-2 {
   background-color: #576490;
 }
-.dashboard-2-profile{
+
+.dashboard-2-profile {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -422,12 +429,14 @@ body, html {
   font-weight: bold;
   color: #faf9f9;
 }
-.dashboard-2-profile img{
+
+.dashboard-2-profile img {
   height: 6.5rem;
   border-radius: 50%;
   margin-right: 30px;
 }
-.dashboard-2 nav{
+
+.dashboard-2 nav {
   display: grid;
   gap: 35px;
   font-size: 30px;
@@ -435,29 +444,27 @@ body, html {
   padding-top: 190px;
   padding-left: 20px;
 }
+
 .dashboard-2 a {
-  height: 80%;
-  box-sizing: border-box;
   width: 90%;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   text-decoration: none;
   padding-top: 20px;
   padding-bottom: 20px;
   -webkit-text-decoration: underline transparent;
-          text-decoration: underline transparent;
+  text-decoration: underline transparent;
   transition: color 300ms ease, background-color 300 ms ease, -webkit-text-decoration 300ms ease;
+  transition: color 300ms ease, background-color 300ms ease, -webkit-text-decoration 300ms ease;
   transition: text-decoration 300ms ease, color 300ms ease, background-color 300ms ease;
   transition: text-decoration 300ms ease, color 300ms ease, background-color 300ms ease, -webkit-text-decoration 300ms ease;
   color: #faf9f9;
 }
+
 .dashboard-2 a:hover {
   background-color: #444e71;
   color: #faf9f9;
   text-decoration-color: #D5B606;
-}/*# sourceMappingURL=styles.css.map */
-
+} 
 /* Style the navigation bar */
 nav ul {
   list-style: armenian;
@@ -469,10 +476,8 @@ nav ul {
 }
 
 nav li {
-  display: inline;
-  margin-right: 20px;
   position: relative;
-  height:50px;
+  height: 100%;
   padding: 0;
 }
 
@@ -480,39 +485,31 @@ nav a {
   color: #fff;
 }
 
-.dropdown a{
-  height: 60px;
-}
-
 /* Style the dropdown menu */
 .dropdown-menu {
   display: none;
-  position: absolute;
-  background-color: #576490;
+  text-align: center;
   z-index: 1;
   opacity: 0.75;
+  width: 100%;
 }
 
-.dropdown:hover .dropdown-menu {
+.head-dropdown:hover .dropdown-menu {
   display: block;
-}
-
-.dropdown-menu li {
-  display: block;
-  margin: 0;
-  height: 30px;
-  width: 200%;
 }
 
 .dropdown-menu a {
   color: #fff;
-  font-size: 20px;
-  height: 30px;
-  padding: 0;
+  font-size: 2rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 2;
   -webkit-text-decoration: underline transparent;
   text-decoration: underline transparent;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .dropdown-menu a:hover {
-  background-color: #444e71; /*this aint doing shit*/
-}
+  background-color: #444e71;
+}/*# sourceMappingURL=styles.css.map */
