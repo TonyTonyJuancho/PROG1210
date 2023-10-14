@@ -521,4 +521,56 @@ nav a {
 }
 .lookup-link:hover, .lookup-link:focus {
   background-color: #444e71;
+}
+
+.foot-main {
+  background-color: #576490;
+  color: #faf9f9;
+  display: flex;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding-bottom: 5rem;
+  align-items: center;
+}
+
+.footer-section-heading {
+  font-size: 3rem;
+  padding: 5rem 0 3rem 0;
+}
+
+.footer-section-row {
+  width: 60%;
+  display: flex;
+}
+
+.footer-section-item {
+  font-size: 2rem;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+}
+.footer-section-item:hover, .footer-section-item:focus {
+  background-color: #444e71;
+}
+
+.contact-link {
+  width: 50%;
+}
+
+.contact-link .footer-section-item {
+  justify-content: space-between;
+}
+
+.footer-section-img {
+  height: 6rem;
+  width: auto;
+  background-color: #faf9f9;
+  border-radius: 40%;
 }/*# sourceMappingURL=styles.css.map */
