@@ -497,6 +497,7 @@ nav a {
   opacity: 0.75;
   width: 100%;
   padding: none;
+  height: 50px;
 }
 
 .dropdown-link.tabbed + .dropdown-menu, .dropdown-link:hover + .dropdown-menu, .dropdown-menu:hover {
