@@ -34,18 +34,7 @@
             </section>
             <div class = "main-body">
                 <div class = "main-info-item">
-                    <div class = "main-info-img">
-                        <img class = "img-info" style="height:20rem;" src = "../images/equipment-icon.png" alt="Default Equipment image">
-                        <div class = "info-row" style = "flex-direction: column; height:11rem;">
-                            <label for = "img-add-input" style = "text-align: center;" class = "info-label">Change Equipment Image</label>
-                            <input id = "img-add-input" style = "text-align: center; width: 100%;" class = "info-field-input" type="file">
-                        </div> 
-                    </div>
                     <div class = "main-info-display">
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-id">Equipment ID:</label> 
-                            <div class = "info-field"><input id = "input-equip-id" class = "info-field-input" type = "text" value="12345"> </div>       
-                        </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
                             <div class = "info-field"><input id = "input-equip-name" class = "info-field-input" type = "text" value="Generic Equipment"> </div>       
@@ -65,7 +54,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Equipment Type:</label> 
                             <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type">
+                                <select class = "info-select" id = "input-equip-type" style = "width:82%">
                                     <option>Rotary mower</option>
                                     <option>Robotic lawn mower</option>
                                     <option>Cylinder mower</option>
@@ -75,7 +64,9 @@
                                     <option>Reel mower</option>
                                     <option>Rear Engine mower</option>
                                 </select>
+                                <button style ="width:15%;" class ="info-field-btn">+</button>
                             </div>
+                           
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-color">Equipment Color:</label> 
@@ -85,6 +76,48 @@
                             <label class ="info-label" for = "input-equip-manufacturer">Equipment Manufacturer:</label> 
                             <div class = "info-field"><input id = "input-equip-manufacturer" class = "info-field-input" type = "text" value="Yamaha"> </div>
                         </div>
+                    </div>
+                     <div class = "main-info-table">
+                    
+                        <table class = "main-table-container">
+                            <tr class = "main-info-tablerow" >
+                                <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Add New(+)</button></th>
+                                <th class = "main-info-tablehead" style="width:33%">Owner Name</th>
+                                <th class = "main-info-tablehead" style="width:25%">Owner Email</th>
+                                <th class = "main-info-tablehead" style="width:25%">Owner Phone</th>
+                            </tr>
+                            <tr class = "main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class = "main-info-tabledata" style="width:33%">Jane Doe</td>
+                                <td class = "main-info-tabledata"style="width:25%">jdoe@gmail.com</td>
+                                <td class = "main-info-tabledata"style="width:25%">(923)-052-5355</td>
+                            </tr>
+                            <tr class = "main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class = "main-info-tabledata" style="width:33%">Bill Delos Santos</td>
+                                <td class = "main-info-tabledata"style="width:25%">bdesantos@gmail.com</td>
+                                <td class = "main-info-tabledata"style="width:25%">(905)-132-8631</td>
+                            </tr>
+                            <tr class = "main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class = "main-info-tabledata" style="width:33%">William Chang</td>
+                                <td class = "main-info-tabledata"style="width:25%">wchang@gmail.com</td>
+                                <td class = "main-info-tabledata"style="width:25%">(963)-034-7621</td>
+                            </tr>
+                            <tr class = "main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class = "main-info-tabledata" style="width:33%">Amy Hicks</td>
+                                <td class = "main-info-tabledata"style="width:25%">ahicks@gmail.com</td>
+                                <td class = "main-info-tabledata"style="width:25%">(921)-055-6622</td>
+                            </tr>
+                         </table>
+                        <div class="main-info-paging">
+                            <button class = "paging-btn"><< Previous</button>
+                            <button class = "paging-btn">1</button>
+                            <button class = "paging-btn">2</button>
+                            <button class = "paging-btn">Next >></button>
+                        </div>
+                      
                     </div>
                 </div>
                 <div class = "main-info-buttons">
@@ -98,10 +131,10 @@
                 &copy;2023 TechLink Software</p>
             <!--<a href="" class ="foot-text">Sitemap</a>-->
             <div class ="foot-links">
-                <a href= ""><img class = "contact-link" src="/PROG1180/images/facebook-icon.png" alt="ESE Facebook page"></a>
-                <a href= ""> <img class = "contact-link" src="/PROG1180/images/instagram-icon.png" alt="ESE Instragram page"></a>
-                <a href= ""><img class = "contact-link"  src="/PROG1180/images/twitter-icon.png" alt="ESE Twitter page"></a>
-                <a href= ""><img class = "contact-link" src="/PROG1180/images/whatsapp-icon.png" alt="ESE Whatsapp contact"></a>
+                <a href= ""><img class = "contact-link" src="../images/facebook-icon.png" alt="ESE Facebook page"></a>
+                <a href= ""> <img class = "contact-link" src="../images/instagram-icon.png" alt="ESE Instragram page"></a>
+                <a href= ""><img class = "contact-link"  src="../images/twitter-icon.png" alt="ESE Twitter page"></a>
+                <a href= ""><img class = "contact-link" src="../images/whatsapp-icon.png" alt="ESE Whatsapp contact"></a>
             </div>
         </footer>
     </body>

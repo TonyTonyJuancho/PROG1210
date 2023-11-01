@@ -34,25 +34,14 @@
             </section>
             <div class="main-body">
                 <div class="main-info-item">
-                    <div class="main-info-img">
-                        <img class="img-info" style="height:20rem " src="../images/customer-icon.png" alt="default profile picture icon">
-                        <div class="info-row" style="flex-direction: column; height:11rem; ">
-                            <label for="img-add-input" style="text-align: center" class="info-label">Add Customer Image</label>
-                            <input id="img-add-input" style="text-align: center; width: 100%" class="info-field-input" type="file">
-                        </div>   
-                    </div>
-                    <div class="main-info-display">
-                        <div class="info-row">
-                            <label class ="info-label" for="input-cust-id">ID:</label> 
-                            <div class="info-field"><input id="input-cust-id" class="info-field-input" type="text" value="123"> </div>
-                        </div>
+                    <div class="main-info-display" style="width: 35%;">
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-fname">First Name:</label> 
                             <div class="info-field"><input id="input-cust-fname" class="info-field-input" type="text" value="Jane"> </div>
                         </div>
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-midname">Middle Name:</label> 
-                            <div class="info-field"><input id="input-cust-midname" class="info-field-input" type="text" value=""> </div>
+                            <div class="info-field"><input id="input-cust-midname" value = "Montes" class="info-field-input" type="text" value=""> </div>
                         </div>
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-lname">Last Name:</label> 
@@ -64,7 +53,7 @@
                         </div>
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-email">Email:</label> 
-                            <div class="info-field"><input id="input-cust-email" class="info-field-input" type="tel" value="1234567890"> </div>
+                            <div class="info-field"><input id="input-cust-email" class="info-field-input" type="tel" value="janedoe@gmail.com"> </div>
                         </div>
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-street">Address:</label> 
@@ -72,12 +61,24 @@
                         </div>
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-city">City:</label> 
-                            <div class="info-field"><input id="input-cust-city" class="info-field-input" type="text" value="Toronto"> </div>
+                            <div class="info-field">
+                                <select class="info-select" id="input-cust-province" style = "width:82%">
+                                    <option value="AB">Welland</option>
+                                    <option value="BC">Pelham</option>
+                                    <option value="MB">Port Colborne</option>
+                                    <option value="NB">WainFleet</option>
+                                    <option value="NL" selected>St. Catharines</option>
+                                    <option value="NS">Niagara Falls</option>
+                                    <option value="NT">Thorold</option>
+                                    <option value="NU">Niagara-On-The-Lake</option>
+                                </select>
+                                <button style ="width:15%;" class ="info-field-btn">+</button>
+                            </div>
                         </div>
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-province">Province:</label> 
                             <div class="info-field"> 
-                                <select class="info-select" id="input-cust-province">
+                                <select class="info-select" id="input-cust-province" style = "width:82%"> 
                                     <option value="AB">Alberta</option>
                                     <option value="BC">British Columbia</option>
                                     <option value="MB">Manitoba</option>
@@ -92,12 +93,94 @@
                                     <option value="SK">Saskatchewan</option>
                                     <option value="YT">Yukon</option>
                                 </select>
+                                <button style ="width:15%;" class ="info-field-btn">+</button>
                             </div>
                         </div>
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-pcode">Postal Code:</label> 
                             <div class="info-field"><input id="input-cust-pcode" class="info-field-input" type="text" value="M5V 2N9"> </div>
                         </div>
+                    </div>
+                    <div class = "main-info-table" style="width: 25%;">
+                        <table class = "main-table-container">
+                            <tr class = "main-info-tablerow" >
+                                <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Insert(+)</button></th>
+                                <th class = "main-info-tablehead" style="width:40%">Equipment Name</th>
+                                <th class = "main-info-tablehead" style="width:30%">Equipment Model</th>
+                            </tr>
+                            <tr class = "main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class = "main-info-tabledata" style="width:40%">Excavator EX-2000</td>
+                                <td class = "main-info-tabledata"style="width:30%">YP50830</td>
+                            </tr>
+                            <tr class = "main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class = "main-info-tabledata" style="width:40%">Welding Machine WM-500</td>
+                                <td class = "main-info-tabledata"style="width:30%">GE15000</td>
+                            </tr>
+                            <tr class = "main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class = "main-info-tabledata" style="width:40%">Power Drill PD-550</td>
+                                <td class = "main-info-tabledata"style="width:30%">PG798340</td>
+                            </tr>
+                            <tr class = "main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class = "main-info-tabledata" style="width:40%">Chainsaw CS-700</td>
+                                <td class = "main-info-tabledata"style="width:30%">ZXH95000</td>
+                            </tr>
+                         </table>
+                        <div class="main-info-paging">
+                            <button class = "paging-btn"><< Previous</button>
+                            <button class = "paging-btn">1</button>
+                            <button class = "paging-btn">2</button>
+                            <button class = "paging-btn">Next >></button>
+                        </div>
+                    </div>
+                    <div class = "main-info-table" style="width: 35%;">
+                        <table class="main-table-container">
+                            <tr class="main-info-tablerow">
+                                <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Insert(+)</button></th>
+                                <th class="main-info-tablehead" style="width:20%">Request Date</th>
+                                <th class="main-info-tablehead" style="width:15%">Type</th>
+                                <th class="main-info-tablehead" style="width:34%">Equipment Name</th>
+                                <th class="main-info-tablehead" style="width:30%">Status</th>
+                            </tr>
+                            <tr class="main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class="main-info-tabledata" style="width:20%">2023-11-01</td>
+                                <td class="main-info-tabledata" style="width:15%">Repair</td>
+                                <td class="main-info-tabledata" style="width:34%">Excavator EX-2000</td>
+                                <td class="main-info-tabledata" style="width:30%">Completed</td>
+                            </tr>
+                            <tr class="main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class="main-info-tabledata" style="width:20%">2023-10-25</td>
+                                <td class="main-info-tabledata" style="width:15%">Sale</td>
+                                <td class="main-info-tabledata" style="width:34%">Welding Machine WM-500</td>
+                                <td class="main-info-tabledata" style="width:30%">Pending</td>
+                            </tr>
+                            <tr class="main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class="main-info-tabledata" style="width:20%">2023-09-15</td>
+                                <td class="main-info-tabledata" style="width:15%">Repair</td>
+                                <td class="main-info-tabledata" style="width:34%">Power Drill PD-550</td>
+                                <td class="main-info-tabledata" style="width:30%">Pending</td>
+                            </tr>
+                            <tr class="main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                                <td class="main-info-tabledata" style="width:20%">2023-08-05</td>
+                                <td class="main-info-tabledata" style="width:15%">Sale</td>
+                                <td class="main-info-tabledata" style="width:34%">Chainsaw CS-700</td>
+                                <td class="main-info-tabledata" style="width:30%">Completed</td>
+                            </tr>
+                        </table>
+                        
+                    <div class="main-info-paging">
+                        <button class = "paging-btn"><< Previous</button>
+                        <button class = "paging-btn">1</button>
+                        <button class = "paging-btn">2</button>
+                        <button class = "paging-btn">Next >></button>
+                    </div>
                     </div>
                 </div>
                 <div class="main-info-buttons">
@@ -111,10 +194,10 @@
                 &copy;2023 TechLink Software</p>
             <!--<a href="" class ="foot-text">Sitemap</a>-->
             <div class ="foot-links">
-                <a href= ""><img class = "contact-link" src="/PROG1180/images/facebook-icon.png" alt="ESE Facebook page"></a>
-                <a href= ""> <img class = "contact-link" src="/PROG1180/images/instagram-icon.png" alt="ESE Instragram page"></a>
-                <a href= ""><img class = "contact-link"  src="/PROG1180/images/twitter-icon.png" alt="ESE Twitter page"></a>
-                <a href= ""><img class = "contact-link" src="/PROG1180/images/whatsapp-icon.png" alt="ESE Whatsapp contact"></a>
+                <a href= ""><img class = "contact-link" src="../images/facebook-icon.png" alt="ESE Facebook page"></a>
+                <a href= ""> <img class = "contact-link" src="../images/instagram-icon.png" alt="ESE Instragram page"></a>
+                <a href= ""><img class = "contact-link"  src="../images/twitter-icon.png" alt="ESE Twitter page"></a>
+                <a href= ""><img class = "contact-link" src="../images/whatsapp-icon.png" alt="ESE Whatsapp contact"></a>
             </div>
         </footer>
     </body>
