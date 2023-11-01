@@ -481,19 +481,19 @@ body, html
     width:100%;
     font-size:2rem;
     text-align: center;
-    height:40rem;
 }
 .main-table-container, .main-info-tablerow, .main-info-tablehead, .main-info-tabledata
 {
     border: 0.5rem solid $color-black;
 }
+.main-info-tablerow, .main-info-tablehead, .main-info-tabledata{padding: 0.4rem;}
 .main-info-tablehead
 {
     background-color: $color-main;
     color:$color-white;
     height:10rem;
 }
-.main-info-tabledata{height: 5rem;}
+.main-info-tabledata{height: 6rem;}
 .btn-table{padding:0.6rem; font-size: 1.6rem; cursor: pointer;}
 .table-link
 {

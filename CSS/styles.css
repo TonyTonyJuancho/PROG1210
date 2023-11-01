@@ -437,11 +437,14 @@ body, html {
   width: 100%;
   font-size: 2rem;
   text-align: center;
-  height: 40rem;
 }
 
 .main-table-container, .main-info-tablerow, .main-info-tablehead, .main-info-tabledata {
   border: 0.5rem solid #181d1d;
+}
+
+.main-info-tablerow, .main-info-tablehead, .main-info-tabledata {
+  padding: 0.4rem;
 }
 
 .main-info-tablehead {
@@ -451,7 +454,7 @@ body, html {
 }
 
 .main-info-tabledata {
-  height: 5rem;
+  height: 6rem;
 }
 
 .btn-table {
