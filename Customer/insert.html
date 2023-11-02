@@ -33,14 +33,7 @@
             </section>
             <div class="main-body">
                 <div class="main-info-item">
-                    <div class="main-info-img">
-                        <img class="img-info" style="height:20rem;" src="../images/customer-icon.png" alt="default customer image">
-                        <div class="info-row" style="flex-direction: column; height:11rem;">
-                            <label for="img-add-input" style="text-align: center;" class="info-label">Add Customer Image</label>
-                            <input id="img-add-input" style="text-align: center; width: 100%;" class="info-field-input" type="file">
-                        </div>   
-                    </div>
-                    <div class="main-info-display">
+                    <div class="main-info-display" style ="width: 35%;">
                         <div class="info-row">
                             <label class="info-label" for="input-cust-id">ID:</label> 
                             <div class="info-field"><input id="input-cust-id" class="info-field-input" type="text" value=""> </div>
@@ -71,12 +64,24 @@
                         </div>
                         <div class="info-row">
                             <label class="info-label"  for="input-cust-city">City:</label> 
-                            <div class="info-field"><input id="input-cust-city" class="info-field-input" type="text" value=""> </div>
+                            <div class="info-field">
+                                <select class="info-select" id="input-cust-province" style = "width:82%">
+                                    <option value="AB">Welland</option>
+                                    <option value="BC">Pelham</option>
+                                    <option value="MB">Port Colborne</option>
+                                    <option value="NB">WainFleet</option>
+                                    <option value="NL" selected>St. Catharines</option>
+                                    <option value="NS">Niagara Falls</option>
+                                    <option value="NT">Thorold</option>
+                                    <option value="NU">Niagara-On-The-Lake</option>
+                                </select>
+                                <button style ="width:15%;" class ="info-field-btn">+</button>
+                            </div>
                         </div>
                         <div class="info-row">
                             <label class="info-label"  for="input-cust-province">Province:</label> 
                             <div class="info-field"> 
-                                <select class="info-select" id="input-cust-province">
+                                <select class="info-select" id="input-cust-province" style = "width:82%"> 
                                     <option value="AB">Alberta</option>
                                     <option value="BC">British Columbia</option>
                                     <option value="MB">Manitoba</option>
@@ -91,6 +96,7 @@
                                     <option value="SK">Saskatchewan</option>
                                     <option value="YT">Yukon</option>
                                 </select>
+                                <button style ="width:15%;" class ="info-field-btn">+</button>
                             </div>
                         </div>
                         <div class="info-row">
@@ -98,6 +104,29 @@
                             <div class="info-field"><input id="input-cust-pcode" class="info-field-input" type="text" placeholder="A1A 1A1" value=""> </div>
                         </div>
                     </div>
+                    <div class = "main-info-table" style="width: 25%;">
+                        <table class = "main-table-container">
+                            <tr class = "main-info-tablerow" >
+                                <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Insert(+)</button></th>
+                                <th class = "main-info-tablehead" style="width:40%">Equipment Name</th>
+                                <th class = "main-info-tablehead" style="width:30%">Equipment Model</th>
+                            </tr>
+                          
+                         </table>
+                    </div>
+                    <div class = "main-info-table" style="width: 35%;">
+                        <table class="main-table-container">
+                            <tr class="main-info-tablerow">
+                                <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Insert(+)</button></th>
+                                <th class="main-info-tablehead" style="width:20%">Request Date</th>
+                                <th class="main-info-tablehead" style="width:15%">Type</th>
+                                <th class="main-info-tablehead" style="width:34%">Equipment Name</th>
+                                <th class="main-info-tablehead" style="width:30%">Status</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
                 </div>
                 <div class="main-info-buttons">
                     <a href="./details.html" class="btn-info btn-edit">Add Customer</a>

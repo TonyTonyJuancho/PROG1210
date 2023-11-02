@@ -90,6 +90,7 @@ body, html {
 
 .main-section {
   margin: 0;
+  height: 65%;
   padding-top: 11rem;
   width: 100%;
   background-color: #293b64;
@@ -263,14 +264,14 @@ body, html {
 
 .main-body {
   background-color: #faf9f9;
-  padding: 3rem 3rem 3rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
   width: 100%;
 }
 
 .main-body-row {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1rem 0 1rem 0;
   width: 100%;
 }
 
@@ -427,12 +428,71 @@ body, html {
   width: 100%;
   font-size: 2.2rem;
   cursor: pointer;
+  width: 83%;
 }
 .info-select:hover, .info-select:focus {
   background-color: #b9bbce;
 }
 .info-select:active {
   background-color: #9799ae;
+}
+
+.info-field-btn {
+  font-size: 2.5rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  width: 15%;
+  height: auto;
+}
+
+.main-info-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 45%;
+}
+
+.main-table-container {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main-table-container, .main-info-tablerow, .main-info-tablehead, .main-info-tabledata {
+  border: 0.5rem solid #181d1d;
+}
+
+.main-info-tablerow, .main-info-tablehead, .main-info-tabledata {
+  padding: 0.4rem;
+}
+
+.main-info-tablehead {
+  background-color: #576490;
+  color: #faf9f9;
+  height: 10rem;
+}
+
+.main-info-tabledata {
+  height: 6rem;
+}
+
+.btn-table {
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.table-link {
+  opacity: 50%;
+}
+.table-link:hover {
+  text-decoration: underline;
+  opacity: 75%;
+}
+.table-link:active {
+  text-decoration: underline;
+  opacity: 100%;
 }
 
 /*Dashborad css*/
