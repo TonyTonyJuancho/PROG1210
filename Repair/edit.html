@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Equipment Edit</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+        <script src="../JavaScript/main.js" async defer></script>
+    </head>
+    <body>
+        <header class = "head-section">
+            <nav class = "head-nav-section">
+                <img src ="../images/sample-Logo2.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
+                <a class="head-nav-link" href = "../index.html">Dashboard</a>
+                <a class="head-nav-link" href = "../Customer/index.html">Customers</a>
+                <a class="head-nav-link" href = "../Equipment/index.html">Equipment</a>
+                <!--<a href = "">Employees</a>
+                <a href = "">Repairs</a> -->
+            </nav>
+            <div class = "head-profile-section">
+                <img class = "head-profile-img" src = "../images/profile_pic.jpg" alt = "Profile Picture">
+                <div class = "head-profile-text">Emma</div>
+            </div>
+        </header>
+        <main class = "main-section">
+            <section class = "main-heading">
+                <div class = "main-heading-title">
+                    <h2 class = "main-heading-head">Repair Edit</h2>
+                    <h3 class = "main-heading-sub">Generic Repair - Yellow - ID#12345</h3>
+                </div>
+            </section>
+            <div class = "main-body">
+                <div class = "main-info-item">
+                    <div class = "main-info-display">
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
+                            <div class = "info-field"><input id = "input-equip-name" class = "info-field-input" type = "text" value="Generic Equipment"> </div>       
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-model">Start Date:</label> 
+                            <div class = "info-field"><input id = "input-equip-model" class = "info-field-input" type = "text" value="2023-11-02"> </div>       
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-serial">End Date:</label> 
+                            <div class = "info-field"><input id = "input-equip-serial" class = "info-field-input" type = "text" value="2023-11-05"> </div>       
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-notes">Start Time:</label> 
+                            <div class = "info-field"><input id = "input-equip-notes" class = "info-field-input" type = "text" value="09:00 AM"> </div>       
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-notes">End Time:</label> 
+                            <div class = "info-field"><input id = "input-equip-notes" class = "info-field-input" type = "text" value="02:30 PM"> </div>       
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-notes">Repair Notes:</label> 
+                            <div class = "info-field"><input id = "input-equip-notes" class = "info-field-input" type = "text" value="Notes here"> </div>       
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-type">Warranty:</label> 
+                            <div class = "info-field"> 
+                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-type">Technician:</label> 
+                            <div class = "info-field"> 
+                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                    <option>Sarah Johnson</option>
+                                    <option>John Smith</option>
+                                    <option>Maria Rodriguez</option>
+                                    <option>David Lee</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-type">Repair Type:</label> 
+                            <div class = "info-field"> 
+                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                    <option>Blade Sharpening</option>
+                                    <option>Spark Plug Replacement</option>
+                                    <option>Carburetor Cleaning</option>
+                                    <option>Oil Change</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-type">Parts:</label> 
+                            <div class = "info-field"> 
+                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                    <option>Blade</option>
+                                    <option>Spark Plug</option>
+                                    <option>Carburetor</option>
+                                    <option>Air Filter</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equip-type">Status:</label> 
+                            <div class = "info-field"> 
+                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                    <option>Haven't started</option>
+                                    <option>In process</option>
+                                    <option>Waiting for parts</option>
+                                    <option>Finished</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class = "main-info-buttons">
+                    <a href = "./details.html" class = "btn-info btn-edit">Update Equipment</a>
+                    <a href = "./details.html" class = "btn-info btn-edit">Cancel</a>
+                </div>
+            </div>
+        </main>
+        <footer class = "foot-main">
+            <p class="foot-text">Application Developed By<br>
+                &copy;2023 TechLink Software</p>
+            <!--<a href="" class ="foot-text">Sitemap</a>-->
+            <div class ="foot-links">
+                <a href= ""><img class = "contact-link" src="/PROG1180/images/facebook-icon.png" alt="ESE Facebook page"></a>
+                <a href= ""> <img class = "contact-link" src="/PROG1180/images/instagram-icon.png" alt="ESE Instragram page"></a>
+                <a href= ""><img class = "contact-link"  src="/PROG1180/images/twitter-icon.png" alt="ESE Twitter page"></a>
+                <a href= ""><img class = "contact-link" src="/PROG1180/images/whatsapp-icon.png" alt="ESE Whatsapp contact"></a>
+            </div>
+        </footer>
+    </body>
+</html>
