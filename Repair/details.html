@@ -58,11 +58,11 @@
                         </div>
                         <div class = "info-row">
                             <div class ="info-label">Repair Notes:</div> 
-                            <div class = "info-field">Lawnmower doesn't turn on, already check battery and gas</div>
+                            <div class = "info-field">Lawnmower doesn't turn on</div>
                         </div>
                         <div class = "info-row">
                             <div class ="info-label">Warranty:</div> 
-                            <div class = "info-field"><input type="checkbox" checked></div>
+                            <div class = "info-field"><input class = "info-field-chk" disabled type="checkbox" checked></div>
                         </div>
                         <div class = "info-row">
                             <div class ="info-label">Technician:</div> 
@@ -77,7 +77,38 @@
                             <div class = "info-field">Finished</div>
                         </div>
                     </div>
+                    <div class = "main-info-table">
+                        <table class = "main-table-container">
+                            <tr class="main-info-tablerow">
+                                <th class="main-info-tablehead" style="width:50%">Parts Name</th>
+                                <th class="main-info-tablehead" style="width:50%">Parts Cost</th>
+                            </tr>
+                            <tr class="main-info-tablerow">
+                                <td class="main-info-tabledata" style="width:50%">Bolt Assembly</td>
+                                <td class="main-info-tabledata" style="width:50%">$5.00</td>
+                            </tr>
+                            <tr class="main-info-tablerow">
+                                <td class="main-info-tabledata" style="width:50%">Gasket Set</td>
+                                <td class="main-info-tabledata" style="width:50%">$10.00</td>
+                            </tr>
+                            <tr class="main-info-tablerow">
+                                <td class="main-info-tabledata" style="width:50%">Oil Filter</td>
+                                <td class="main-info-tabledata" style="width:50%">$3.50</td>
+                            </tr>
+                            <tr class="main-info-tablerow">
+                                <td class="main-info-tabledata" style="width:50%">Spark Plug</td>
+                                <td class="main-info-tabledata" style="width:50%">$2.00</td>
+                            </tr>
+                         </table>
+                        <div class="main-info-paging">
+                            <button class = "paging-btn"><< Previous</button>
+                            <button class = "paging-btn">1</button>
+                            <button class = "paging-btn">2</button>
+                            <button class = "paging-btn">Next >></button>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class = "main-info-buttons">
                     <a class = "btn-info btn-edit" href = "./index.html">Back</a>
                     <a class = "btn-info btn-edit" href = "./edit.html">Edit Repair</a>

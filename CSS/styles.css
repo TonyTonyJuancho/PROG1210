@@ -450,6 +450,13 @@ body, html {
   font-size: 2.2rem;
 }
 
+.info-field-chk {
+  cursor: pointer;
+  accent-color: #293b64;
+  width: 4rem;
+  height: 4rem;
+}
+
 .main-heading-input {
   padding-right: 20rem;
   padding-top: 4rem;
@@ -482,7 +489,7 @@ body, html {
 }
 
 .main-info-tablehead {
-  background-color: #576490;
+  background-color: #293b64;
   color: #faf9f9;
   height: 10rem;
 }
@@ -668,22 +675,6 @@ nav a {
 
 .foot-text {
   font-size: 1.5rem;
-}
-
-/*dropdown*/
-.dropdown-menu {
-  display: none;
-  text-align: center;
-  z-index: 1;
-  opacity: 0.75;
-  width: 100%;
-  padding: none;
-}
-
-.dropdown-link.tabbed + .dropdown-menu, .dropdown-link:hover + .dropdown-menu, .dropdown-menu:hover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*label*/
