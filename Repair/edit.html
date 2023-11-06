@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Employee Edit</title>
+        <title>Repair Edit</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../CSS/styles.css">
@@ -17,6 +17,7 @@
                 <a class="head-nav-link" href = "../index.html">Dashboard</a>
                 <a class="head-nav-link" href = "../Customer/index.html">Customers</a>
                 <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
+                <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
                 <a class="head-nav-link" href = "../Equipment/index.html">Equipment</a>
                 <a class="head-nav-link" href="../Lookup/index.html">Lookup Tables</a>
             </nav>
@@ -73,45 +74,58 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Technician:</label> 
                             <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                <div class="info-field-group">
+                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
                                     <option>Sarah Johnson</option>
                                     <option>John Smith</option>
                                     <option>Maria Rodriguez</option>
                                     <option>David Lee</option>
                                 </select>
+                                <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
+                                </div>
                             </div>
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Repair Type:</label> 
                             <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                <div class="info-field-group">
+                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
                                     <option>Blade Sharpening</option>
                                     <option>Spark Plug Replacement</option>
                                     <option>Carburetor Cleaning</option>
                                     <option>Oil Change</option>
                                 </select>
+                                <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
+                                </div>
                             </div>
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Parts:</label> 
                             <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                <div class="info-field-group">
+                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
                                     <option>Blade</option>
                                     <option>Spark Plug</option>
                                     <option>Carburetor</option>
                                     <option>Air Filter</option>
                                 </select>
+                                <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
+                                </div>
                             </div>
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Status:</label> 
                             <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                            <div class="info-field-group">
+                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
                                     <option>Haven't started</option>
                                     <option>In process</option>
                                     <option>Waiting for parts</option>
                                     <option selected>Finished</option>
                                 </select>
+                                <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
+                            </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -155,7 +169,7 @@
                     </div>
                 </div>
                 <div class = "main-info-buttons">
-                    <a href = "./details.html" class = "btn-info btn-edit">Update Employee</a>
+                    <a href = "./details.html" class = "btn-info btn-edit">Update Repair</a>
                     <a href = "./details.html" class = "btn-info btn-edit">Cancel</a>
                 </div>
             </div>

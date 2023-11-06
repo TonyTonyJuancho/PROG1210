@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Repair Type Index</title>
+        <title>Repair Request Index</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../CSS/styles.css">
@@ -29,12 +29,11 @@
         <main class = "main-section">
             <section class = "main-heading">
                 <div class = "main-heading-title">
-                    <h1 class = "main-heading-head">Repair Type</h1>
-                    <a href = "./insert.html" class = "btn-add">+ Add New Repair Type</a>
+                    <h1 class = "main-heading-head">Repair Request</h1>
+                    <a href = "./insert.html" class = "btn-add">+ Add New Repair Request</a>
                     <div class ="main-heading-brdcrumbs">
                         <a class="brdcrumbs-link" href="../index.html">Home</a> | 
-                        <a class="brdcrumbs-link" href="../Lookup/index.html">Lookups</a> |
-                        <a class="brdcrumbs-link" href="./index.html">Repair Types</a>
+                        <a class="brdcrumbs-link" href="./index.html">Repair Request</a>
                     </div>
                 </div>
                 <div class = "main-heading-input">
@@ -43,13 +42,14 @@
                             <input id = "main-search-input" name = "search" class = "form-input" type="text" placeholder="Search...">
                             <label for = "main-search-input" class = "form-label">Search...</label>
                         </div>
-                        <button class = "search-btn"><img class ="search-btn-img" src="../images/search-icon.png" alt="Search icon image"></button>
+                        <button class = "search-btn"><img class ="search-btn-img" src="../images/search-icon.png" alt="Search icon"></button>
                     </div>
                     <div class = "main-heading-input-section" style="    padding-right:5rem;">
                         <div class ="select-wrapper">
                             <select class = "main-select">
                                 <option value="" disabled selected>Sort By</option>
                                 <option>Name</option>
+                                <option>Type</option>
                                 <option>Modified Date</option>
                             </select>
                         </div>
@@ -57,6 +57,7 @@
                             <select class = "main-select">
                                 <option value="" disabled selected>Group By</option>
                                 <option>Name</option>
+                                <option>Type</option>
                                 <option>Modified Date</option>
                             </select>
                         </div>
@@ -66,19 +67,50 @@
             <div class = "main-body">
                 <div class="main-body-row">
                     <a class="main-body-item" href = "./details.html">
-                        <div class="item-title">ID#01 <br> Blade Sharpening</div>
+                        <div class="item-title"> ID#021<br>2023-11-01<br> Lawn mower Doesn't Turn On </div>
                     </a>
                     <a class="main-body-item" href = "./details.html">
-                        <div class="item-title">ID#02 <br> Spark Plug Replacement</div>
+                        <div class="item-title"> ID#022<br>2023-12-01<br> Lawn mower makes strange noises </div>
                     </a>
                     <a class="main-body-item" href = "./details.html">
-                        <div class="item-title">ID#03 <br> Carburetor Cleaning</div>
+                        <div class="item-title"> ID#023<br>2022-07-22<br> Lawn mower emits strange odors when used </div>
                     </a>
                     <a class="main-body-item" href = "./details.html">
-                        <div class="item-title">ID#04 <br> Oil Change</div>
+                        <div class="item-title"> ID#024<br>2021-10-05<br> Lawn mower Doesn't Turn On </div>
                     </a>
                 </div>
-                
+                 <div class="main-body-row">
+                    
+                    <a class="main-body-item" href = "./details.html">
+                        <div class="item-title"> ID#025<br>2021-10-15<br> Lawn mower leaks oil</div>
+                    </a>
+                    <a class="main-body-item" href = "./details.html">
+                        <div class="item-title"> ID#026<br>2022-05-17<br> Lawn mower leaks gas </div>
+                    </a>                    
+                    <a class="main-body-item" href = "./details.html">
+                        <div class="item-title"> ID#027<br>2023-07-27<br> Lawn mower leaks oil</div>
+                    </a>
+                    
+                    <a class="main-body-item" href = "./details.html">
+                        <div class="item-title"> ID#028<br>2020-10-11<br> Lawn mower leaks gas</div>
+                    </a>
+                </div>
+                <div class="main-body-row">
+               
+                    <a class="main-body-item" href = "./details.html">
+                        <div class="item-title"> ID#035<br>2022-07-15<br> Lawn mower makes strange noises </div>
+                    </a>
+                    <a class="main-body-item" href = "./details.html">
+                        <div class="item-title"> ID#038<br>2020-07-22<br> Lawn mower leaks gas</div>
+                    </a>
+                    <a class="main-body-item" href = "./details.html">
+                        <div class="item-title"> ID#032<br>2021-12-11<br> Lawn mower Doesn't Turn On </div>
+                    </a>
+                               
+                    <a class="main-body-item" href = "./details.html">
+                        <div class="item-title"> ID#033<br>2021-06-22<br> Lawn mower leaks gas</div>
+                    </a>
+                </div>
                 
             </div>
             <div class="main-paging-section">
@@ -101,6 +133,6 @@
                     <a href= ""><img class = "contact-link" src="../images/whatsapp-icon.png" alt="ESE Whatsapp contact"></a>
                 </div>
             </footer>
-        </main>
+        </main> 
     </body>
 </html>
