@@ -86,7 +86,7 @@ body, html {
 
 .dashboard-section {
   display: grid;
-  grid-template-columns: 1350px 1fr;
+  grid-template-columns: 73% 27%;
   background-color: #fbfbfd;
 }
 
