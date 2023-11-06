@@ -43,32 +43,52 @@
                     <div class = "main-info-display">
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
-                            <div class = "info-field">
+                            <div class = "info-field tooltip">
                                 <div class ="info-field-error">Error: Please equipment name in the field</div>
                                 <input id = "input-equip-name" class = "info-field-input" type = "text" value="Generic Equipment"> 
+                                <div class="right">
+                                    <h3>Equipment Name</h3>
+                                    <p>Ex: Lawn Mover</p>
+                                    <i></i>
+                                </div>
                             </div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-model">Equipment Model:</label> 
-                            <div class = "info-field">
+                            <div class = "info-field tooltip">
                                 <div class ="info-field-error">Error: Please equipment model in the field</div>
                                 <input id = "input-equip-model" class = "info-field-input" type = "text" value="GE15000">
+                                <div class="right">
+                                    <h3>Equipment Model</h3>
+                                    <p>Ex: GE101001</p>
+                                    <i></i>
+                                </div>
                             </div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-serial">Equipment Serial Number:</label> 
-                            <div class = "info-field">
+                            <div class = "info-field tooltip">
                                     <div class ="info-field-error">Error: Please equipment serial number in the field</div>
                                 <input id = "input-equip-serial" class = "info-field-input" type = "text" value="GE20201010"> 
+                                <div class="right">
+                                    <h3>Equipment Serial No.</h3>
+                                    <p>Ex: GE30302020</p>
+                                    <i></i>
+                                </div>
                             </div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-notes">Equipment Notes:</label> 
-                            <div class = "info-field"><input id = "input-equip-notes" class = "info-field-input" type = "text" value="Start-Stop button"> </div>       
+                            <div class = "info-field tooltip"><input id = "input-equip-notes" class = "info-field-input" type = "text" value="Start-Stop button"> 
+                            <div class="right">
+                                    <h3>Equipment Notes</h3>
+                                    <p>Ex: Start-Stop Button</p>
+                                    <i></i>
+                                </div></div>       
                         </div>
                         <div class="info-row">
                             <label class ="info-label" for = "input-equip-type">Equipment Type:</label> 
-                            <div class="info-field"> 
+                            <div class = "info-field tooltip">
                                 <div class ="info-field-error">Error: Please select an equipment type in the dropdown</div>
                                 <div class="info-field-group">
                                     <select class = "info-select" id = "input-equip-type" style = "width:82%">
@@ -82,13 +102,18 @@
                                         <option>Reel mower</option>
                                         <option>Rear Engine mower</option>
                                     </select>
+                                    <div class="right">
+                                        <h3>Equipment Type</h3>
+                                        <p>Please select a type from the given dropdown or add a type if not present</p>
+                                        <i></i>
+                                    </div>
                                     <button style ="width:15%;" class ="btn-edit-dropdowns">+</button>
                                 </div>
                             </div>
                         </div>
                         <div class="info-row">
                             <label class ="info-label" for = "input-equip-type">Equipment Colour:</label> 
-                            <div class="info-field"> 
+                            <div class = "info-field tooltip">
                                 <div class ="info-field-error">Error: Please select an equipment colour in the dropdown</div>
                                 <div class="info-field-group">
                                     <select class = "info-select" id = "input-equip-type" style = "width:82%">
@@ -102,13 +127,18 @@
                                         <option>Purple</option>
                                         <option>Red</option>
                                     </select>
+                                    <div class="right">
+                                        <h3>Equipment Colour</h3>
+                                        <p>Please select a Colour from the given dropdown or add a Colour if not present</p>
+                                        <i></i>
+                                    </div>
                                     <button style ="width:15%;" class ="btn-edit-dropdowns">+</button>
                                 </div>
                             </div>
                         </div>                    
                         <div class="info-row">
                             <label class="info-label" for="input-manufacturer">Manufacturer:</label>
-                            <div class="info-field">
+                            <div class = "info-field tooltip">
                                 <div class="info-field-error">Error: Please select a manufacturer in the dropdown</div>
                                 <div class="info-field-group">
                                     <select class="info-select" id="input-manufacturer" style="width: 82%">
@@ -122,6 +152,11 @@
                                         <option>American Standard</option>
                                         <option>Bradford White</option>
                                     </select>
+                                    <div class="right">
+                                        <h3>Equipment Manufacturer</h3>
+                                        <p>Please select a Manufacturer from the given dropdown or add a Manufacturer if not present</p>
+                                        <i></i>
+                                    </div>
                                     <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
                                 </div>
                             </div>
