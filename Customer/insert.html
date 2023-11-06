@@ -29,59 +29,87 @@
             <section class="main-heading">
                 <div class="main-heading-title">
                     <h2 class="main-heading-head">Customer Insert</h2>
+                    <div class ="main-heading-brdcrumbs">
+                        <a class="brdcrumbs-link" href="../index.html">Home</a> | 
+                        <a class="brdcrumbs-link" href="./index.html">Customers</a> |
+                        <a class="brdcrumbs-link" href="./details.html">Insert</a>
+                    </div>
                 </div>
             </section>
             <div class="main-body">
                 <div class="main-info-item">
-                    <div class="main-info-display" style ="width: 35%;">
+                    <div class="main-info-display" style="width: 35%;">
                         <div class="info-row">
-                            <label class="info-label" for="input-cust-id">ID:</label> 
-                            <div class="info-field"><input id="input-cust-id" class="info-field-input" type="text" value=""> </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label" for="input-cust-fname">First Name:</label> 
-                            <div class="info-field"><input id="input-cust-fname" class="info-field-input" type="text" value=""> </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label" for="input-cust-midname">Middle Name:</label> 
-                            <div class="info-field"><input id="input-cust-midname" class="info-field-input" type="text" value=""> </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label"  for="input-cust-lname">Last Name:</label> 
-                            <div class="info-field"><input id="input-cust-lname" class="info-field-input" type="text" value=""> </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label" for="input-cust-phone">Phone Number:</label> 
-                            <div class="info-field"><input id="input-cust-phone" class="info-field-input" type="tel" value=""> </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label" for="input-cust-email">Email:</label> 
-                            <div class="info-field"><input id="input-cust-email" class="info-field-input" type="tel" value=""> </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label" for="input-cust-street">Address:</label> 
-                            <div class="info-field"><input id="input-cust-street" class="info-field-input" type="text" value=""> </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label"  for="input-cust-city">City:</label> 
+                            <label class ="info-label" for="input-cust-fname">First Name:</label> 
                             <div class="info-field">
-                                <select class="info-select" id="input-cust-province" style = "width:82%">
-                                    <option value="AB">Welland</option>
-                                    <option value="BC">Pelham</option>
-                                    <option value="MB">Port Colborne</option>
-                                    <option value="NB">WainFleet</option>
-                                    <option value="NL" selected>St. Catharines</option>
-                                    <option value="NS">Niagara Falls</option>
-                                    <option value="NT">Thorold</option>
-                                    <option value="NU">Niagara-On-The-Lake</option>
-                                </select>
-                                <button style ="width:15%;" class ="btn-edit-dropdowns">+</button>
+                                <div class ="info-field-error">Error: Please input first name in the field</div>
+                                <input id="input-cust-fname" class="info-field-input" type="text" value=""> 
                             </div>
                         </div>
                         <div class="info-row">
-                            <label class="info-label"  for="input-cust-province">Province:</label> 
+                            <label class ="info-label" for="input-cust-midname">Middle Name:</label> 
+                            <div class="info-field">
+                                <div class ="info-field-error">Error: Please input middle name in the field</div>
+                                <input id="input-cust-midname" value ="" class="info-field-input" type="text" value=""> 
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class ="info-label"  for="input-cust-lname">Last Name:</label> 
+                            <div class="info-field">
+                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input last name in the field</div>
+                                <input id="input-cust-lname" class="info-field-input" type="text" value=""> 
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class ="info-label" for="input-cust-phone">Phone Number:</label> 
+                            <div class="info-field">
+                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input a phone in the field</div>
+                                <input id="input-cust-phone" class="info-field-input" type="tel" value=""> 
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class ="info-label" for="input-cust-email">Email:</label> 
+                            <div class="info-field">
+                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input a email in the field</div>
+                                <input id="input-cust-email" class="info-field-input" type="tel" value=""> 
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class ="info-label" for="input-cust-street">Address:</label> 
+                            <div class="info-field">
+                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input an address in the field</div>
+                                <input id="input-cust-street" class="info-field-input" type="text" value=""> 
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class ="info-label"  for="input-cust-city">City:</label> 
+                            <div class="info-field">
+                                <div class ="info-field-error">Error: Please select a city in the dropdown</div>
+                                <div class="info-field-group">
+                                    <select class="info-select" id="input-cust-province" style = "width:82%">
+                                        <option selected value="">Select a City..</option>
+                                        <option value="AB">Welland</option>
+                                        <option value="BC">Pelham</option>
+                                        <option value="MB">Port Colborne</option>
+                                        <option value="NB">WainFleet</option>
+                                        <option value="NL" >St. Catharines</option>
+                                        <option value="NS">Niagara Falls</option>
+                                        <option value="NT">Thorold</option>
+                                        <option value="NU">Niagara-On-The-Lake</option>
+                                    </select>
+                                    <button style ="width:15%;" class ="btn-edit-dropdowns">+</button>
+                                </div>
+                                
+                               
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class ="info-label"  for="input-cust-province">Province:</label> 
                             <div class="info-field"> 
+                                <div class ="info-field-error">Error: Please select a province in the dropdown</div>
+                                <div class="info-field-group">
                                 <select class="info-select" id="input-cust-province" style = "width:82%"> 
+                                    <option selected value-="">Select a Province..</option>
                                     <option value="AB">Alberta</option>
                                     <option value="BC">British Columbia</option>
                                     <option value="MB">Manitoba</option>
@@ -97,34 +125,41 @@
                                     <option value="YT">Yukon</option>
                                 </select>
                                 <button style ="width:15%;" class ="btn-edit-dropdowns">+</button>
+                                </div>
                             </div>
                         </div>
                         <div class="info-row">
-                            <label class="info-label"  for="input-cust-pcode">Postal Code:</label> 
-                            <div class="info-field"><input id="input-cust-pcode" class="info-field-input" type="text" placeholder="A1A 1A1" value=""> </div>
+                            <label class ="info-label"  for="input-cust-pcode">Postal Code:</label> 
+                            <div class="info-field">
+                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input a postal code in the field</div>
+                                <input id="input-cust-pcode" class="info-field-input" type="text" value=""> 
+                            </div>
                         </div>
                     </div>
-                    <div class = "main-info-table" style="width: 25%;">
-                        <table class = "main-table-container">
-                            <tr class = "main-info-tablerow" >
-                                <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">New(+)</button></th>
-                                <th class = "main-info-tablehead" style="width:40%">Equipment Name</th>
-                                <th class = "main-info-tablehead" style="width:30%">Equipment Model</th>
-                            </tr>
-                          
-                         </table>
+                    <div style="display: flex;flex-direction: column; justify-content: space-evenly;">
+                        <div class = "main-info-table" style="width: 100%;">
+                            <table class = "main-table-container">
+                                <tr class = "main-info-tablerow" >
+                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">New(+)</button></th>
+                                    <th class = "main-info-tablehead" style="width:40%">Equipment Name</th>
+                                    <th class = "main-info-tablehead" style="width:30%">Equipment Model</th>
+                                </tr>
+                              
+                             </table>
+                        </div>
+                        <div class = "main-info-table"style="width: 100%;">
+                            <table class="main-table-container">
+                                <tr class="main-info-tablerow">
+                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">New(+)</button></th>
+                                    <th class="main-info-tablehead" style="width:20%">Request Date</th>
+                                    <th class="main-info-tablehead" style="width:15%">Type</th>
+                                    <th class="main-info-tablehead" style="width:34%">Equipment Name</th>
+                                    <th class="main-info-tablehead" style="width:30%">Status</th>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                    <div class = "main-info-table" style="width: 35%;">
-                        <table class="main-table-container">
-                            <tr class="main-info-tablerow">
-                                <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">New(+)</button></th>
-                                <th class="main-info-tablehead" style="width:20%">Request Date</th>
-                                <th class="main-info-tablehead" style="width:15%">Type</th>
-                                <th class="main-info-tablehead" style="width:34%">Equipment Name</th>
-                                <th class="main-info-tablehead" style="width:30%">Status</th>
-                            </tr>
-                        </table>
-                    </div>
+                   
                 </div>
                 </div>
                 <div class="main-info-buttons">
