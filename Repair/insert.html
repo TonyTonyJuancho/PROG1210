@@ -29,8 +29,8 @@
         <main class = "main-section">
             <section class = "main-heading">
                 <div class = "main-heading-title">
-                    <h2 class = "main-heading-head">Repair Edit</h2>
-                    <h3 class = "main-heading-sub">Generic Repair - Yellow - ID#12345</h3>
+                    <h2 class = "main-heading-head">Repair Insert</h2>
+
                     <div class ="main-heading-brdcrumbs">
                         <a class="brdcrumbs-link" href="../index.html">Home</a> | 
                         <a class="brdcrumbs-link" href="./index.html">Repairs</a> |
@@ -43,7 +43,7 @@
                     <div class = "main-info-display">
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
-                            <div class = "info-field"><input id = "input-equip-name" class = "info-field-input" type = "text" value="Generic Equipment"> </div>       
+                            <div class = "info-field"><input id = "input-equip-name" class = "info-field-input" type = "text" value=""> </div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-model">Start Date:</label> 
@@ -68,16 +68,14 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Warranty:</label> 
                             <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
-                                    <option>Yes</option>
-                                    <option>No</option>
-                                </select>
+                                <input type="checkbox" class ="info-field-chk">
                             </div>
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Technician:</label> 
                             <div class = "info-field"> 
                                 <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                    <option selected>Select a Technician..</option>
                                     <option>Sarah Johnson</option>
                                     <option>John Smith</option>
                                     <option>Maria Rodriguez</option>
@@ -89,6 +87,7 @@
                             <label class ="info-label" for = "input-equip-type">Repair Type:</label> 
                             <div class = "info-field"> 
                                 <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                    <option selected>Select Repair Type..</option>
                                     <option>Blade Sharpening</option>
                                     <option>Spark Plug Replacement</option>
                                     <option>Carburetor Cleaning</option>
@@ -97,20 +96,10 @@
                             </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Parts:</label> 
-                            <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
-                                    <option>Blade</option>
-                                    <option>Spark Plug</option>
-                                    <option>Carburetor</option>
-                                    <option>Air Filter</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Status:</label> 
                             <div class = "info-field"> 
                                 <select class = "info-select" id = "input-equip-type" style = "width:100%">
+                                    <option selected>Select Repair Status..</option>
                                     <option>Haven't started</option>
                                     <option>In process</option>
                                     <option>Waiting for parts</option>
@@ -119,7 +108,32 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class = "table-group">
+                        <div class = "main-info-table" style="width:100%">
+                           <div class ="table-header-group">
+                               <h2 class="table-header">Request</h2> 
+                           </div>
+                           <table class = "main-table-container">
+                               <tr class="main-info-tablerow">
+                                   <th class = "main-info-tablehead" style ="width:5%">    <button class ="btn-table"><a href ="../RepairRequest/insert.html">Link Request</a></button></th>
+                                   <th class="main-info-tablehead" style="width:25%">Request Date</th>
+                                   <th class="main-info-tablehead" style="width:60%">Request Reason</th>
+                               </tr>
+                            </table>
+                        </div>
+                       <div class = "main-info-table" style ="width:100%">
+                           <h2 class="table-header">Parts</h2>
+                           <table class = "main-table-container">
+                               <tr class="main-info-tablerow">
+                                   <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">New(+)</button></th>
+                                   <th class="main-info-tablehead" style="width:50%">Parts Name</th>
+                                   <th class="main-info-tablehead" style="width:50%">Parts Cost</th>
+                               </tr>
+                                </table>
+                            </table>
+                       </div>
+                   </div>
+                   
                 </div>
                 <div class = "main-info-buttons">
                     <a href = "./details.html" class = "btn-info btn-edit">Insert Repair</a>

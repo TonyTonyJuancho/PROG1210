@@ -43,48 +43,52 @@
                     <div class = "main-info-display">
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-model">Request Date:</label> 
-                            <div class = "info-field"><input id = "input-equip-model" class = "info-field-input" type = "text" value=""> </div>       
+                            <div class = "info-field"><input id = "input-equip-model" class = "info-field-input" type = "date"> </div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-serial">Reason:</label> 
-                            <div class = "info-field"><input id = "input-equip-serial" class = "info-field-input" type = "text" value=""> </div>       
-                        </div>
-                        
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Customer Name:</label> 
-                            <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
-                                    <option>Jose Deodo</option>
-                                    <option>Dwayne Johnson</option>
-                                    <option>Koldo Perez</option>
-                                    <option>Ethan Miller </option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Equipment:</label> 
-                            <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
-                                    <option>Paint Sprayer</option>
-                                    <option>Leaf Blower</option>
-                                    <option>Air Compressor</option>
-                                    <option>Circular Saw</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Repair ID:</label> 
-                            <div class = "info-field"> 
-                                <select class = "info-select" id = "input-equip-type" style = "width:100%">
-                                    <option>#0201</option>
-                                    <option>#0281</option>
-                                    <option>#0233</option>
-                                    <option>#0237</option>
-                                </select>
-                            </div>
+                            <div class = "info-field"><input id = "input-equip-serial" class = "info-field-input" type = "text"> </div>       
                         </div>
                     </div>
-                    
+                    <div class = "table-group">
+                        <div class = "main-info-table" style="width:100%">
+                           <div class ="table-header-group">
+                               <h2 class="table-header">Repair</h2> 
+                           </div>
+                           <table class = "main-table-container">
+                               <tr class="main-info-tablerow">
+                                <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Link Repair</button></th>
+                                   <th class="main-info-tablehead" style="width:25%">Repair Start</th>
+                                   <th class="main-info-tablehead" style="width:20%">Repair Status</th>
+                               </tr>
+                            </table>
+                        </div>
+                        <div class = "main-info-table" style="width:100%">
+                            <div class ="table-header-group">
+                                <h2 class="table-header">Customer</h2> 
+                            </div>
+                            <table class = "main-table-container">
+                                <tr class="main-info-tablerow">
+                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Link Customer</button></th>
+                                    <th class="main-info-tablehead" style="width:19%">Customer Name</th>
+                                    <th class="main-info-tablehead" style="width:19%">Customer Email</th>
+                                    <th class="main-info-tablehead" style="width:19%">Customer Phone</th>
+                                </tr>
+                             </table>
+                         </div>
+                         <div class = "main-info-table" style="width:100%">
+                            <div class ="table-header-group">
+                                <h2 class="table-header">Equipment</h2> 
+                            </div>
+                            <table class = "main-table-container">
+                                <tr class="main-info-tablerow">
+                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Link Equipment</button></th>
+                                    <th class="main-info-tablehead" style="width:25%">Equipment Name</th>
+                                    <th class="main-info-tablehead" style="width:30%">Equipment Model</th>
+                                </tr>
+                             </table>
+                         </div>
+                    </div>
                 </div>
                 <div class = "main-info-buttons">
                     <a href = "./details.html" class = "btn-info btn-edit">Insert Repair Repair Request</a>

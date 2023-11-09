@@ -43,32 +43,74 @@
                 <div class = "main-info-item">
                     <div class = "main-info-display">
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-name">Repair Request ID::</label> 
-                            <div class = "info-field">#021</div>       
-                        </div>
-                        <div class = "info-row">
                             <label class ="info-label" for = "input-equip-model">Request Date:</label> 
-                            <div class = "info-field"><input id = "input-equip-model" class = "info-field-input" type = "text" value="2023-11-01"> </div>       
+                            <div class = "info-field"><input id = "input-equip-model" class = "info-field-input" type = "date" value="2023-11-01"> </div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-serial">Reason:</label> 
                             <div class = "info-field"><input id = "input-equip-serial" class = "info-field-input" type = "text" value="Lawn mower Doesn't Turn On"> </div>       
                         </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-notes">Customer Name:</label> 
-                            <div class = "info-field"><input id = "input-equip-serial" class = "info-field-input" type = "text" value="Jose Deodo"> </div>     
-                        </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-notes">Equipment:</label> 
-                            <div class = "info-field"><input id = "input-equip-serial" class = "info-field-input" type = "text" value="Paint Sprayer"> </div>     
-                        </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-notes">Reapir ID:</label> 
-                            <div class = "info-field"><input id = "input-equip-serial" class = "info-field-input" type = "text" value="0201"> </div>     
-                        </div>
                     </div>
-                    
+                    <div class = "table-group">
+                        <div class = "main-info-table" style="width:100%">
+                           <div class ="table-header-group">
+                               <h2 class="table-header">Repair</h2> 
+                               <a class = "table-header-link" href = "../Repair/details.html">Go to Repair</a>
+                           </div>
+                           <table class = "main-table-container">
+                               <tr class="main-info-tablerow">
+                                 <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Change Repair</button></th>
+                                   <th class="main-info-tablehead" style="width:25%">Repair Start</th>
+                                   <th class="main-info-tablehead" style="width:20%">Repair Status</th>
+                               </tr>
+                               <tr class="main-info-tablerow">
+                                    <td class = "main-info-tabledata" style ="width:17%"></td>   
+                                   <td class="main-info-tabledata" style="width:25%">2023-11-02</td>
+                                   <td class="main-info-tabledata" style="width:20%">Ongoing</td>
+                               </tr>
+                            </table>
+                        </div>
+                        <div class = "main-info-table" style="width:100%">
+                            <div class ="table-header-group">
+                                <h2 class="table-header">Customer</h2> 
+                                <a class = "table-header-link" href = "../Customer/details.html">Go to Customer</a>
+                            </div>
+                            <table class = "main-table-container">
+                                <tr class="main-info-tablerow">
+                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Change Customer</button></th>
+                                    <th class="main-info-tablehead" style="width:19%">Customer Name</th>
+                                    <th class="main-info-tablehead" style="width:19%">Customer Email</th>
+                                    <th class="main-info-tablehead" style="width:19%">Customer Phone</th>
+                                </tr>
+                                <tr class="main-info-tablerow">
+                                    <td class = "main-info-tabledata" style ="width:17%"></td>   
+                                    <td class="main-info-tabledata" style="width:20%">Jane Doe</td>
+                                    <td class="main-info-tabledata" style="width:20%">jdoe@email.com</td>
+                                    <td class="main-info-tabledata" style="width:20%">(123)456-7890</td>
+                                </tr>
+                             </table>
+                         </div>
+                         <div class = "main-info-table" style="width:100%">
+                            <div class ="table-header-group">
+                                <h2 class="table-header">Equipment</h2> 
+                                <a class = "table-header-link" href = "../Repair/details.html">Go to Equipment</a>
+                            </div>
+                            <table class = "main-table-container">
+                                <tr class="main-info-tablerow">
+                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Change Equipment</button></th>
+                                    <th class="main-info-tablehead" style="width:25%">Equipment Name</th>
+                                    <th class="main-info-tablehead" style="width:30%">Equipment Model</th>
+                                </tr>
+                                <tr class="main-info-tablerow">
+                                    <td class = "main-info-tabledata" style ="width:17%"></td>   
+                                    <td class="main-info-tabledata" style="width:25%">2023-11-02</td>
+                                    <td class="main-info-tabledata" style="width:20%">Ongoing</td>
+                                </tr>
+                             </table>
+                         </div>
+                    </div>
                 </div>
+                
                 <div class = "main-info-buttons">
                     <a href = "./details.html" class = "btn-info btn-edit">Update Repair Repair Request</a>
                     <a href = "./details.html" class = "btn-info btn-edit">Cancel</a>
