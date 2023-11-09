@@ -42,13 +42,17 @@
             
                 <div class="main-info-item">
                     <div class="main-info-display">
-                        <div class="info-row">
-                            <label class ="info-label" for="input-colour-id">Colour ID:</label> 
-                            <div class="info-field"><input id="input-colour-id" class="info-field-input" type="text"> </div>       
-                        </div>
-                        <div class="info-row">
-                            <label class ="info-label" for="input-colour-name">Colour Name:</label> 
-                            <div class="info-field"><input id="input-colour-name" class="info-field-input" type="text"> </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-colour-name">Colour Name:</label> 
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input colour name in the field</div>
+                                <input id = "input-city-name" class = "info-field-input" type = "text" value=""> 
+                                <div class="right">
+                                    <h3>Colour Name</h3>
+                                    <p>Ex: Red</p>
+                                    <i></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

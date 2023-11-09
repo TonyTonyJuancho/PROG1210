@@ -45,11 +45,19 @@
                     <div class = "main-info-display">
                         <div class = "info-row">
                             <label class ="info-label" for = "input-type-id">Type ID:</label> 
-                            <div class = "info-field"><input id = "input-type-id" class = "info-field-input" type = "text" value="001"> </div>       
+                            <div class = "info-field">001</div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-type-name">Type Name:</label> 
-                            <div class = "info-field"><input id = "input-type-name" class = "info-field-input" type = "text" value="Rotary"> </div>
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input type name in the field</div>
+                                <input id = "input-type-name" class = "info-field-input" type = "text" value="Rotary Mower"> 
+                                <div class="right">
+                                    <h3>Type Name</h3>
+                                    <p>Ex: Rotary Mower</p>
+                                    <i></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

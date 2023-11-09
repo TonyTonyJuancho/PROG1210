@@ -45,11 +45,19 @@
                     <div class = "main-info-display">
                         <div class = "info-row">
                             <label class ="info-label" for = "input-city-id">City ID:</label> 
-                            <div class = "info-field"><input id = "input-city-id" class = "info-field-input" type = "text" value="004"> </div>       
+                            <div class = "info-field">004</div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-city-name">City Name:</label> 
-                            <div class = "info-field"><input id = "input-city-name" class = "info-field-input" type = "text" value="Welland"> </div>
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input city name in the field</div>
+                                <input id = "input-city-name" class = "info-field-input" type = "text" value="Welland"> 
+                                <div class="right">
+                                    <h3>City Name</h3>
+                                    <p>Ex: Welland</p>
+                                    <i></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

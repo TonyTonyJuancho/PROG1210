@@ -42,13 +42,17 @@
             
                 <div class="main-info-item">
                     <div class="main-info-display">
-                        <div class="info-row">
-                            <label class ="info-label" for="input-manufacturer-id">Manufacturer ID:</label> 
-                            <div class="info-field"><input id="input-manufacturer-id" class="info-field-input" type="text"> </div>       
-                        </div>
-                        <div class="info-row">
-                            <label class ="info-label" for="input-manufacturer-name">Manufacturer Name:</label> 
-                            <div class="info-field"><input id="input-manufacturer-name" class="info-field-input" type="text"> </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-manufacturer-name">Manufacturer Name:</label>
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input manufacturer name in the field</div>
+                                <input id = "input-manufacturer-name" class = "info-field-input" type = "text" value=""> 
+                                <div class="right">
+                                    <h3>Manufacturer Name</h3>
+                                    <p>Ex: Yamaha</p>
+                                    <i></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
