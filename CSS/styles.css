@@ -119,6 +119,87 @@ body, html {
   width: 100%;
 }
 
+.main-auth-page {
+  background-color: #0a1331;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-auth-body {
+  background-color: #faf9f9;
+  border-radius: 15px;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #faf9f9;
+  box-shadow: 0px -1px 45px -4px rgba(0, 0, 0, 0.75);
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+  color: #181d1d;
+  justify-content: center;
+  padding: 3.5rem 0 2.5rem 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #181d1d;
+}
+
+.input-group {
+  padding: 2rem 0 0rem 0;
+}
+
+.form-navs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0 0 4rem 0;
+}
+.form-navs > span {
+  font-size: 2rem;
+  padding: 0 1rem 0 1rem;
+  color: #181d1d;
+}
+.form-navs .form-navs-link {
+  font-size: 2rem;
+  color: #576490;
+  cursor: pointer;
+}
+.form-navs .form-navs-link:hover {
+  text-decoration: underline;
+}
+
+.form-button {
+  font-family: "Rubik", sans-serif;
+  color: #faf9f9;
+  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  margin: 2rem 0 2rem 0;
+  font-size: 1.7rem;
+  transition: all 300ms;
+  cursor: pointer;
+  transform-origin: left;
+  background-color: #181d1d;
+  width: 100%;
+}
+.form-button:active {
+  background-color: #9799ae;
+}
+
+.form-error {
+  opacity: 0;
+  font-size: 1.4rem;
+  color: #ba3f3f;
+  transform: translateY(8rem);
+}
+.form-error.active {
+  opacity: 1;
+}
+
 /*Links*/
 .head-nav-link {
   height: 100%;
@@ -799,6 +880,10 @@ nav a {
 }
 
 /*label*/
+.form-block form .input-group .form-label {
+  color: #040a24;
+}
+
 .form-label {
   font-size: 2.3rem;
   color: #fdfdfd;
