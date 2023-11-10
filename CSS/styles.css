@@ -539,6 +539,10 @@ body, html {
   transform: translateY(-8rem) scale(0.7);
 }
 
+::placeholder{
+  font-size: 1.9rem;
+}
+
 .info-field-input {
   width: 100%;
   padding: 0.8rem;
@@ -894,8 +898,12 @@ nav a {
   transition: all 300ms;
 }/*# sourceMappingURL=styles.css.map */
 
-#input-repair-reason{
+#input-repair-reason, #input-equip-notes{
   height: 150px;
   width: 100%;
   resize: vertical;
+}
+
+textarea{
+  font-size: 1.9rem;
 }

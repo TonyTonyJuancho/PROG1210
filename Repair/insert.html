@@ -45,10 +45,10 @@
                             <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
                             <div class="info-field tooltip">
                                 <div class ="info-field-error">Error: Please input Equipment Name in the field</div>
-                                <input id = "input-equip-name" class = "info-field-input" type = "text" value="">
+                                <input id = "input-equip-name" class = "info-field-input" type = "text" value="" placeholder="Rotary Lawnmower">
                                 <div class="right">
                                     <h3>Equipment Name:</h3>
-                                    <p>Ex: Generic Equipment</p>
+                                    <p>Ex: Rotary Lawnmower</p>
                                     <i></i>
                                 </div>
                             </div>     
@@ -81,7 +81,7 @@
                             <label class ="info-label" for = "input-start-time">Start Time:</label> 
                             <div class="info-field tooltip">
                                 <div class ="info-field-error">Error: Please input Start Time in the field</div>
-                                <input id = "input-equip-notes" class = "info-field-input" type = "time" value="">
+                                <input id = "input-start-time" class = "info-field-input" type = "time" value="">
                                 <div class="right">
                                     <h3>Start Time:</h3>
                                     <p>Ex: 09:00 </p>
@@ -102,13 +102,13 @@
                             </div>       
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-notes">Repair Notes:</label> 
+                            <label class ="info-label" for = "input-equip-notes" style="padding-bottom: 50px;">Repair Notes:</label> 
                             <div class="info-field tooltip">
                                 <div class ="info-field-error">Error: Please input Repair Notes in the field</div>
-                                <input id = "input-equip-notes" class = "info-field-input" type = "text" value="Notes here">
+                                <textarea id="input-equip-notes" class="input-equip-notes" row="25" cols="50" placeholder="Repair Details here"></textarea>
                                 <div class="right">
                                     <h3>Repair Notes:</h3>
-                                    <p>Ex: Lawnmower doesn't turn on, already check the battery and gas</p>
+                                    <p>Ex: Replaced the ignition housing and changed the keys. Blade were in need of Sharpening and did that as well.</p>
                                     <i></i>
                                 </div>
                             </div>        
@@ -124,6 +124,7 @@
                                 <div class ="info-field-error">Error: Please input technician in the field</div>
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                    <option>Select a Technician:</option>
                                     <option>Sarah Johnson</option>
                                     <option>John Smith</option>
                                     <option>Maria Rodriguez</option>
@@ -139,6 +140,7 @@
                                 <div class ="info-field-error">Error: Please input repair type in the field</div>
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                    <option>Select a Repair Type:</option>
                                     <option>Blade Sharpening</option>
                                     <option>Spark Plug Replacement</option>
                                     <option>Carburetor Cleaning</option>
@@ -151,8 +153,10 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Parts:</label> 
                             <div class = "info-field tooltip"> 
+                                <div class ="info-field-error">Error: Please input repair type in the field</div>
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                    <option>Select Parts used:</option>
                                     <option>Blade</option>
                                     <option>Spark Plug</option>
                                     <option>Carburetor</option>
@@ -169,10 +173,11 @@
                             <div class ="info-field-error">Error: Please input status in the field</div>
                             <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                    <option>Select a Status of the repair:</option>
                                     <option>Haven't started</option>
                                     <option>In process</option>
                                     <option>Waiting for parts</option>
-                                    <option selected>Finished</option>
+                                    <option>Finished</option>
                                 </select>
                                 <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
                             </div>
