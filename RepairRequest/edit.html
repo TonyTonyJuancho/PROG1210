@@ -43,12 +43,28 @@
                 <div class = "main-info-item">
                     <div class = "main-info-display">
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-model">Request Date:</label> 
-                            <div class = "info-field"><input id = "input-equip-model" class = "info-field-input" type = "date" value="2023-11-01"> </div>       
+                            <label class ="info-label" for = "input-repair-date">Request Date:</label> 
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input request date in the field</div>
+                                <input id = "input-repair-date" class = "info-field-input" type = "date" value="2023-11-01">
+                                <div class="right">
+                                    <h3>Request Date</h3>
+                                    <p>Ex: 2023-11-01</p>
+                                    <i></i>
+                                </div>
+                            </div>    
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-serial">Reason:</label> 
-                            <div class = "info-field"><input id = "input-equip-serial" class = "info-field-input" type = "text" value="Lawn mower Doesn't Turn On"> </div>       
+                            <label class ="info-label" for = "input-repair-reason">Reason:</label> 
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input the reason in the field</div>
+                                <input id = "input-repair-reason" class = "info-field-input" type = "text" value="Lawn mower Doesn't Turn On">
+                                <div class="right">
+                                    <h3>Reason:</h3>
+                                    <p>Ex: Lawn mower Doesn't Turn On....</p>
+                                    <i></i>
+                                </div>
+                            </div>     
                         </div>
                     </div>
                     <div class = "table-group">

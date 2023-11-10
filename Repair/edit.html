@@ -44,27 +44,75 @@
                     <div class = "main-info-display">
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
-                            <div class = "info-field"><input id = "input-equip-name" class = "info-field-input" type = "text" value="Generic Equipment"> </div>       
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input Equipment Name in the field</div>
+                                <input id = "input-equip-name" class = "info-field-input" type = "text" value="Generic Equipment">
+                                <div class="right">
+                                    <h3>Equipment Name:</h3>
+                                    <p>Ex: Generic Equipment</p>
+                                    <i></i>
+                                </div>
+                            </div>     
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-model">Start Date:</label> 
-                            <div class = "info-field"><input id = "input-equip-model" class = "info-field-input" type = "text" value="2023-11-02"> </div>       
+                            <label class ="info-label" for = "input-start-date">Start Date:</label> 
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input Start Date in the field</div>
+                                <input id = "input-start-date" class = "info-field-input" type = "date" value="2023-11-02"> 
+                                <div class="right">
+                                    <h3>Start Date:</h3>
+                                    <p>Ex: 02-11-2023</p>
+                                    <i></i>
+                                </div>
+                            </div>      
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-serial">End Date:</label> 
-                            <div class = "info-field"><input id = "input-equip-serial" class = "info-field-input" type = "text" value="2023-11-05"> </div>       
+                            <label class ="info-label" for = "input-end-date">End Date:</label> 
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input End Date in the field</div>
+                                <input id = "input-equip-serial" class = "info-field-input" type = "date" value="2023-11-05">
+                                <div class="right">
+                                    <h3>End Date:</h3>
+                                    <p>Ex: 02-11-2023</p>
+                                    <i></i>
+                                </div>
+                            </div>      
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-notes">Start Time:</label> 
-                            <div class = "info-field"><input id = "input-equip-notes" class = "info-field-input" type = "text" value="09:00 AM"> </div>       
+                            <label class ="info-label" for = "input-start-time">Start Time:</label> 
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input Start Time in the field</div>
+                                <input id = "input-equip-notes" class = "info-field-input" type = "time" value="09:00">
+                                <div class="right">
+                                    <h3>Start Time:</h3>
+                                    <p>Ex: 09:00</p>
+                                    <i></i>
+                                </div>
+                            </div>       
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-notes">End Time:</label> 
-                            <div class = "info-field"><input id = "input-equip-notes" class = "info-field-input" type = "text" value="02:30 PM"> </div>       
+                            <label class ="info-label" for = "input-end-time">End Time:</label> 
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input End Time in the field</div>
+                                <input id = "input-end-time" class = "info-field-input" type = "time" value="14:30">
+                                <div class="right">
+                                    <h3>End Time:</h3>
+                                    <p>Ex: 14:30</p>
+                                    <i></i>
+                                </div>
+                            </div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-notes">Repair Notes:</label> 
-                            <div class = "info-field"><input id = "input-equip-notes" class = "info-field-input" type = "text" value="Notes here"> </div>       
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error">Error: Please input Repair Notes in the field</div>
+                                <input id = "input-equip-notes" class = "info-field-input" type = "text" value="Notes here">
+                                <div class="right">
+                                    <h3>Repair Notes:</h3>
+                                    <p>Ex: Lawnmower doesn't turn on, already check the battery and gas</p>
+                                    <i></i>
+                                </div>
+                            </div>        
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Warranty:</label> 
@@ -73,7 +121,8 @@
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Technician:</label> 
-                            <div class = "info-field"> 
+                            <div class = "info-field tooltip"> 
+                                <div class ="info-field-error">Error: Please input technician in the field</div>
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
                                     <option>Sarah Johnson</option>
@@ -87,7 +136,8 @@
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Repair Type:</label> 
-                            <div class = "info-field"> 
+                            <div class = "info-field tooltip"> 
+                                <div class ="info-field-error">Error: Please input repair type in the field</div>
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
                                     <option>Blade Sharpening</option>
@@ -101,7 +151,7 @@
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Parts:</label> 
-                            <div class = "info-field"> 
+                            <div class = "info-field tooltip"> 
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
                                     <option>Blade</option>
@@ -115,7 +165,9 @@
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Status:</label> 
-                            <div class = "info-field"> 
+                            
+                            <div class = "info-field tooltip"> 
+                            <div class ="info-field-error">Error: Please input status in the field</div>
                             <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
                                     <option>Haven't started</option>
