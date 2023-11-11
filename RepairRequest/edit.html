@@ -16,9 +16,9 @@
                 <img src ="../images/sample-Logo2.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
                 <a class="head-nav-link" href = "../index.html">Dashboard</a>
                 <a class="head-nav-link" href = "../Customer/index.html">Customers</a>
-                <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
-                <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
                 <a class="head-nav-link" href = "../Equipment/index.html">Equipment</a>
+                <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
+                <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
                 <a class="head-nav-link" href="../Lookup/index.html">Lookup Tables</a>
             </nav>
             <div class = "head-profile-section">
@@ -75,7 +75,15 @@
                            </div>
                            <table class = "main-table-container">
                                <tr class="main-info-tablerow">
-                                 <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Change Repair</button></th>
+                                 <th class = "main-info-tablehead" style ="width:17%">    
+                                    <div class ="tooltip">
+                                        <button class ="btn-table">Link repair</button>
+                                        <div class="right">
+                                            <h3>Link to repair</h3>
+                                            <p>Select an existing repair data entry to link the request to</p>
+                                            <i></i>
+                                        </div> 
+                                    </div></th>
                                    <th class="main-info-tablehead" style="width:25%">Repair Start</th>
                                    <th class="main-info-tablehead" style="width:20%">Repair Status</th>
                                </tr>
@@ -93,7 +101,15 @@
                             </div>
                             <table class = "main-table-container">
                                 <tr class="main-info-tablerow">
-                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Change Customer</button></th>
+                                    <th class = "main-info-tablehead" style ="width:17%">    
+                                        <div class ="tooltip">
+                                            <button class ="btn-table">Link Customer</button>
+                                            <div class="right">
+                                                <h3>Link to customer</h3>
+                                                <p>Select an customer or create a new customer to link the request to</p>
+                                                <i></i>
+                                            </div> 
+                                        </div></th>
                                     <th class="main-info-tablehead" style="width:19%">Customer Name</th>
                                     <th class="main-info-tablehead" style="width:19%">Customer Email</th>
                                     <th class="main-info-tablehead" style="width:19%">Customer Phone</th>
@@ -113,7 +129,15 @@
                             </div>
                             <table class = "main-table-container">
                                 <tr class="main-info-tablerow">
-                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">Change Equipment</button></th>
+                                    <th class = "main-info-tablehead" style ="width:17%">    
+                                        <div class ="tooltip">
+                                            <button class ="btn-table">Link Equipment</button>
+                                            <div class="right">
+                                                <h3>Link to equipment</h3>
+                                                <p>Select an equipment or create a new equipment to link the request to</p>
+                                                <i></i>
+                                            </div> 
+                                        </div></th>
                                     <th class="main-info-tablehead" style="width:25%">Equipment Name</th>
                                     <th class="main-info-tablehead" style="width:30%">Equipment Model</th>
                                 </tr>

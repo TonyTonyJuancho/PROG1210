@@ -16,9 +16,9 @@
                 <img src ="../images/sample-Logo2.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
                 <a class="head-nav-link" href = "../index.html">Dashboard</a>
                 <a class="head-nav-link" href = "../Customer/index.html">Customers</a>
-                <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
-                <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
                 <a class="head-nav-link" href = "../Equipment/index.html">Equipment</a>
+                <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
+                <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
                 <a class="head-nav-link" href="../Lookup/index.html">Lookup Tables</a>
             </nav>
             <div class = "head-profile-section">
@@ -130,6 +130,11 @@
                                     <option>Maria Rodriguez</option>
                                     <option>David Lee</option>
                                 </select>
+                                <div class="right">
+                                    <h3>Technician</h3>
+                                    <p>Please select a technician in the given dropdown or add a technician if not present</p>
+                                    <i></i>
+                                </div> 
                                 <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
                                 </div>
                             </div>
@@ -146,6 +151,11 @@
                                     <option>Carburetor Cleaning</option>
                                     <option>Oil Change</option>
                                 </select>
+                                <div class="right">
+                                    <h3>Repair Type</h3>
+                                    <p>Please select a repair type in the given dropdown or add a repair type if not present</p>
+                                    <i></i>
+                                </div> 
                                 <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
                                 </div>
                             </div>
@@ -162,6 +172,11 @@
                                     <option>Carburetor</option>
                                     <option>Air Filter</option>
                                 </select>
+                                <div class="right">
+                                    <h3>Parts</h3>
+                                    <p>Please select a parts in the given dropdown or add a part if not present</p>
+                                    <i></i>
+                                </div> 
                                 <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
                                 </div>
                             </div>
@@ -179,13 +194,60 @@
                                     <option>Waiting for parts</option>
                                     <option>Finished</option>
                                 </select>
+                                <div class="right">
+                                    <h3>Status</h3>
+                                    <p>Please select a status in the given dropdown or add a status if not present</p>
+                                    <i></i>
+                                </div> 
                                 <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
                             </div>
                                
                             </div>
                         </div>
                     </div>
-                   
+                    <div class = "table-group">
+                        <div class = "main-info-table" style="width:100%">
+                           <div class ="table-header-group">
+                               <h2 class="table-header">Request
+                               </h2> 
+                           </div>
+                           <table class = "main-table-container">
+                               <tr class="main-info-tablerow">
+                                   <th class = "main-info-tablehead" style ="width:5%">    
+                                       <div class ="tooltip">
+                                           <button class ="btn-table">Link Request</button>
+                                           <div class="right">
+                                               <h3>Link to a request</h3>
+                                               <p>Select a request or create a new request to link the repair to</p>
+                                               <i></i>
+                                           </div> 
+                                       </div>
+                                    </th>
+                                   <th class="main-info-tablehead" style="width:25%">Request Date</th>
+                                   <th class="main-info-tablehead" style="width:60%">Request Reason</th>
+                               </tr>
+                            </table>
+                        </div>
+                        <div class = "main-info-table" style ="width:100%">
+                            <h2 class="table-header">Parts</h2>
+                            <table class = "main-table-container">
+                                <tr class="main-info-tablerow">
+                                    <th class = "main-info-tablehead" style ="width:17%">    
+                                        <div class ="tooltip">
+                                            <button class ="btn-table">New(+)</button>
+                                            <div class="right">
+                                                <h3>Add new parts</h3>
+                                                <p>Select new parts to add to the repair from the parts index</p>
+                                                <i></i>
+                                            </div> 
+                                        </div>
+                                    </th>
+                                    <th class="main-info-tablehead" style="width:50%">Parts Name</th>
+                                    <th class="main-info-tablehead" style="width:50%">Parts Cost</th>
+                                </tr>
+                            </table>
+                        </div>
+                   </div>
                 </div>
                 <div class = "main-info-buttons">
                     <a href = "./details.html" class = "btn-info btn-edit">Insert Repair</a>
