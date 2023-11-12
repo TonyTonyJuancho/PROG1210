@@ -323,6 +323,22 @@ body, html {
   cursor: pointer;
 }
 
+.help-btn {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 80%;
+  font-size: 1.8rem;
+  background-color: #0a1331;
+  color: #faf9f9;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.help-btn:hover, .help-btn:focus {
+  background-color: #959494;
+}
+.help-btn:active {
+  background-color: #5c5a5a;
+}
+
 .search-btn-img {
   height: 3rem;
   width: auto;
@@ -486,6 +502,8 @@ body, html {
 
 .main-heading-head {
   font-size: 3rem;
+  display: flex;
+  align-items: center;
 }
 
 .main-heading-sub {
