@@ -66,10 +66,10 @@
                             </div>      
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-end-date">End Date:</label> 
+                            <label class ="info-label" for = "input-repair-enddate">End Date:</label> 
                             <div class="info-field tooltip">
                                 <div class ="info-field-error">Error: Please input End Date in the field</div>
-                                <input id = "input-equip-serial" class = "info-field-input" type = "date" value="">
+                                <input id = "input-repair-enddate" class = "info-field-input" type = "date" value="">
                                 <div class="right">
                                     <h3>End Date:</h3>
                                     <p>Ex: 02-11-2023</p>
@@ -114,16 +114,16 @@
                             </div>        
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Warranty:</label> 
-                            <div class = "info-field"> <input class = "info-field-chk"  type="checkbox" >
+                            <label class ="info-label" for = "input-repair-warr">Warranty:</label> 
+                            <div class = "info-field"> <input id="input-repair-warr" class = "info-field-chk"  type="checkbox" checked>
                             </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Technician:</label> 
+                            <label class ="info-label" for = "input-repair-tech">Technician:</label> 
                             <div class = "info-field tooltip"> 
                                 <div class ="info-field-error">Error: Please input technician in the field</div>
                                 <div class="info-field-group">
-                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                <select class = "info-select" id = "input-repair-tech" style = "width:80%">
                                     <option>Select a Technician:</option>
                                     <option>Sarah Johnson</option>
                                     <option>John Smith</option>
@@ -140,11 +140,11 @@
                             </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Repair Type:</label> 
+                            <label class ="info-label" for = "input-repair-type">Repair Type:</label> 
                             <div class = "info-field tooltip"> 
                                 <div class ="info-field-error">Error: Please input repair type in the field</div>
                                 <div class="info-field-group">
-                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                <select class = "info-select" id = "input-repair-type" style = "width:80%">
                                     <option>Select a Repair Type:</option>
                                     <option>Blade Sharpening</option>
                                     <option>Spark Plug Replacement</option>
@@ -161,11 +161,11 @@
                             </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Parts:</label> 
+                            <label class ="info-label" for = "input-repair-parts">Parts:</label> 
                             <div class = "info-field tooltip"> 
                                 <div class ="info-field-error">Error: Please input repair type in the field</div>
                                 <div class="info-field-group">
-                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                <select class = "info-select" id = "input-repair-parts" style = "width:80%">
                                     <option>Select Parts used:</option>
                                     <option>Blade</option>
                                     <option>Spark Plug</option>
@@ -182,12 +182,12 @@
                             </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Status:</label> 
+                            <label class ="info-label" for = "input-repair-status">Status:</label> 
                             
                             <div class = "info-field tooltip"> 
                             <div class ="info-field-error">Error: Please input status in the field</div>
                             <div class="info-field-group">
-                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                <select class = "info-select" id = "input-repair-status" style = "width:80%">
                                     <option>Select a Status of the repair:</option>
                                     <option>Not Started</option>
                                     <option>In Progress</option>
@@ -217,7 +217,7 @@
                                        <div class ="tooltip">
                                            <button class ="btn-table">Link Request</button>
                                            <div class="right">
-                                               <h3>Link to a request</h3>
+                                               <p><strong>Link to a request</strong></p>
                                                <p>Select a request or create a new request to link the repair to</p>
                                                <i></i>
                                            </div> 
@@ -236,7 +236,7 @@
                                         <div class ="tooltip">
                                             <button class ="btn-table">New(+)</button>
                                             <div class="right">
-                                                <h3>Add new parts</h3>
+                                                <p><strong>Add new parts</strong></p>
                                                 <p>Select new parts to add to the repair from the parts index</p>
                                                 <i></i>
                                             </div> 

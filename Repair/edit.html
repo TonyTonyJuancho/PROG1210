@@ -141,11 +141,11 @@
                             </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Repair Type:</label> 
+                            <label class ="info-label" for = "input-repair">Repair Type:</label> 
                             <div class = "info-field tooltip"> 
                                 <div class ="info-field-error">Error: Please input repair type in the field</div>
                                 <div class="info-field-group">
-                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                <select class = "info-select" id = "input-repair" style = "width:80%">
                                     <option>Select Repair Type:</option>
                                     <option>Blade Sharpening</option>
                                     <option>Spark Plug Replacement</option>
@@ -162,11 +162,11 @@
                             </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Parts:</label> 
+                            <label class ="info-label" for = "input-repair-parts">Parts:</label> 
                             <div class = "info-field tooltip"> 
                                 <div class ="info-field-error">Error: Please select parts used for this request.</div>
                                 <div class="info-field-group">
-                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                <select class = "info-select" id = "input-repair-parts" style = "width:80%">
                                     <option>Select Parts Used:</option>
                                     <option >Blade</option>
                                     <option>Spark Plug</option>
@@ -184,12 +184,12 @@
                             </div>
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Status:</label> 
+                            <label class ="info-label" for = "input-repair-status">Status:</label> 
                             
                             <div class = "info-field tooltip"> 
                             <div class ="info-field-error">Error: Please input status in the field</div>
                             <div class="info-field-group">
-                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
+                                <select class = "info-select" id = "input-repair-status" style = "width:80%">
                                     <option>Select Repair Status:</option>
                                     <option>Not Started</option>
                                     <option selected>In Progress</option>
@@ -220,7 +220,7 @@
                                         <div class ="tooltip">
                                             <button class ="btn-table">Change Request</button>
                                             <div class="right">
-                                                <h3>Link to a new request</h3>
+                                                <p><strong>Link to a new request</strong></p>
                                                 <p>Select a request or create a new request to link the repair to</p>
                                                 <i></i>
                                             </div> 
@@ -244,7 +244,7 @@
                                         <div class ="tooltip">
                                             <button class ="btn-table">New(+)</button>
                                             <div class="right">
-                                                <h3>Add new parts</h3>
+                                                <p><strong>Add new parts</strong></p>
                                                 <p>Select new parts to add to the repair from the parts index</p>
                                                 <i></i>
                                             </div> 
@@ -273,7 +273,6 @@
                                     <td class="main-info-tabledata" style="width:50%">Spark Plug</td>
                                     <td class="main-info-tabledata" style="width:50%">$2.00</td>
                                 </tr>
-                                 </table>
                              </table>
                             <div class="main-info-paging">
                                 <button class = "paging-btn">&lt;&lt; Previous</button>
