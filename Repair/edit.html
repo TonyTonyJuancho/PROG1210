@@ -70,7 +70,7 @@
                             <label class ="info-label" for = "input-end-date">End Date:</label> 
                             <div class="info-field tooltip">
                                 <div class ="info-field-error">Error: Please input End Date in the field</div>
-                                <input id = "input-end-date" class = "info-field-input" type = "date" value="2023-11-05">
+                                <input id = "input-end-date" class = "info-field-input" type = "date" value="">
                                 <div class="right">
                                     <h3>End Date:</h3>
                                     <p>Ex: 02-11-2023</p>
@@ -94,7 +94,7 @@
                             <label class ="info-label" for = "input-end-time">End Time:</label> 
                             <div class="info-field tooltip">
                                 <div class ="info-field-error">Error: Please input End Time in the field</div>
-                                <input id = "input-end-time" class = "info-field-input" type = "time" value="14:30">
+                                <input id = "input-end-time" class = "info-field-input" type = "time" value="">
                                 <div class="right">
                                     <h3>End Time:</h3>
                                     <p>Ex: 14:30</p>
@@ -106,7 +106,7 @@
                             <label class ="info-label" for = "input-equip-notes" style="padding-bottom: 50px;">Repair Notes:</label> 
                             <div class="info-field tooltip">
                                 <div class ="info-field-error">Error: Please input Repair Notes in the field</div>
-                                <textarea id="input-equip-notes" class="input-equip-notes" rows="6" cols="60" >Replaced the oil filter and made a battery change</textarea>
+                                <textarea id="input-equip-notes" class="input-equip-notes" rows="6" cols="60" >Diagnosing the engine to figure out why it is not starting. Checked sparkplug and air and fuel sensor and all seems to be working properly.</textarea>
                                 <div class="right">
                                     <h3>Repair Notes:</h3>
                                     <p>Ex: Replaced the ignition housing and changed the keys. Blade were in need of Sharpening and did that as well.</p>
@@ -125,8 +125,8 @@
                                 <div class ="info-field-error">Error: Please input technician in the field</div>
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
-                                    <option>Select Who Worked On This:</option>
-                                    <option selected>Sarah Johnson</option>
+                                    <option>Select a Technician:</option>
+                                    <option selected>Harry Kane</option>
                                     <option>John Smith</option>
                                     <option>Maria Rodriguez</option>
                                     <option>David Lee</option>
@@ -149,8 +149,8 @@
                                     <option>Select Repair Type:</option>
                                     <option>Blade Sharpening</option>
                                     <option>Spark Plug Replacement</option>
-                                    <option>Carburetor Cleaning</option>
-                                    <option selected>Oil Change</option>
+                                    <option selected>Diagnosing</option>
+                                    <option>Oil Change</option>
                                 </select>
                                 <div class="right">
                                     <h3>Repair Type</h3>
@@ -171,7 +171,8 @@
                                     <option >Blade</option>
                                     <option>Spark Plug</option>
                                     <option>Carburetor</option>
-                                    <option selected>Air Filter</option>
+                                    <option >Air Filter</option>
+                                    <option selected>Not Applicable</option>
                                 </select>
                                 <div class="right">
                                     <h3>Parts</h3>
@@ -190,10 +191,10 @@
                             <div class="info-field-group">
                                 <select class = "info-select" id = "input-equip-type" style = "width:80%">
                                     <option>Select Repair Status:</option>
-                                    <option>Haven't started</option>
-                                    <option>In process</option>
+                                    <option>Not Started</option>
+                                    <option selected>In Progress</option>
                                     <option>Waiting for parts</option>
-                                    <option selected>Finished</option>
+                                    <option>Finished</option>
                                 </select>
                                 <div class="right">
                                     <h3>Status</h3>
