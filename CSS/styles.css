@@ -11,6 +11,7 @@ body, html {
   background-color: #faf9f9;
   font-size: 10px;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
