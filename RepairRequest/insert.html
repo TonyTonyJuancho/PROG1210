@@ -43,7 +43,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-repair-date">Request Date:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input request date in the field</div>
+                                <div class ="info-field-error">Error: Please input request date in the field.</div>
                                 <input id = "input-repair-date" class = "info-field-input" type = "date" value="">
                                 <div class="right">
                                     <h3>Request Date</h3>
@@ -55,7 +55,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-repair-reason" style="padding-bottom: 50px;">Reason:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input the reason in the field</div>
+                                <div class ="info-field-error">Error: Please input the reason in the field.</div>
                                 <textarea id="input-equip-notes" class="input-equip-notes" rows="6" cols="60" placeholder="Customer explanation of the issue"></textarea>
                                 <div class="right">
                                     <h3>Reason:</h3>
@@ -63,6 +63,26 @@
                                     <i></i>
                                 </div>
                             </div>     
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-equiprepair-status">Status:</label> 
+                            <div class = "info-field tooltip"> 
+                                <div class ="info-field-error">Error: Status is required.</div>
+                                <div class="info-field-group">
+                                    <select class = "info-select" id = "input-equiprepair-status" style = "width:100%">
+                                        <option selected>Select a Status</option>
+                                        <option >Not Started</option>
+                                        <option>In Progress</option>
+                                        <option>Waiting for Parts</option>
+                                        <option>Completed</option>
+                                    </select>
+                                    <div class="right">
+                                        <h3>Status</h3>
+                                        <p>Select 'Not Started' if you are initiating the repair request.</p>
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class = "table-group">
