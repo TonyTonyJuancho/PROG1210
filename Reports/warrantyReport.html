@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Warranty Report</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="../JavaScript/main.js" async defer></script>
+</head>
+
+<body>
+    <header class="head-section">
+        <nav class="head-nav-section">
+            <a href="../index.html"><img src="../images/sample-Logo2.png" alt="Emma Small Engines Logo"
+                    class="head-img-logo"></a>
+            <a class="head-nav-link" href="../Customer/index.html">Customers</a>
+            <a class="head-nav-link" href="../RepairRequest/index.html">Repair Request</a>
+            <a class="head-nav-link" href="../Repair/index.html">Repairs</a>
+            <a class="head-nav-link" href="../Reports/index.html">Reports</a>
+        </nav>
+        <div class="head-profile-section">
+            <img class="head-profile-img" src="../images/profile_pic.jpg" alt="Profile Picture">
+            <div class="head-profile-text">Emma</div>
+        </div>
+    </header>
+    <form>
+        <main class="main-section">
+            <section class="main-heading">
+                <div class="main-heading-title">
+                    <h2 class="main-heading-head">Warranty Report</h2>
+                    <div class="main-heading-brdcrumbs">
+                        <a class="brdcrumbs-link" href="../index.html">Home</a> |
+                        <a class="brdcrumbs-link" href="../Reports/index.html">Reports</a> |
+                        <a class="brdcrumbs-link" href="../Reports/warrantyReport.html">Warranty Report</a>
+                    </div>
+                </div>
+            </section>
+            <div class="main-body">
+                <div class="main-info-item">
+                    <div class="main-info-display" style="width: 35%;">
+                        <div class="info-row">
+                            <label class="info-label" for="input-run-date">Report Run Date:
+                            </label>
+                            <div class="info-field tooltip">
+                                <div class="info-field-error">Report Run Date is required.</div>
+                                <input id="input-run-date" class="info-field-input" type="date" value="2023-11-30">
+                                <div class="right">
+                                    <h3>Report Run Date</h3>
+                                    <p>Ex: 2023-11-15</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-report-run-by">Report Run By:</label>
+                            <div class="info-field tooltip">
+                                <div class="info-field-error">Employee needs to be selected.</div>
+                                <div class="info-field-group">
+                                    <select class="info-select" id="input-report-run-by" style="width:100%">
+                                        <option value="">Select a Employee</option>
+                                        <option>Emma</option>
+                                        <option selected>Admin Employee</option>
+                                    </select>
+                                    <div class="right">
+                                        <h3>Report Run by</h3>
+                                        <p>Please select who is running this report.</p>
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-start-date">Start Date:
+                            </label>
+                            <div class="info-field tooltip">
+                                <div class="info-field-error">Start Date is required.</div>
+                                <input id="input-start-date" class="info-field-input" type="date" value="2023-11-20">
+                                <div class="right">
+                                    <h3>Start Date</h3>
+                                    <p>Ex: 2023-11-01</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-end-date">End Date:
+                            </label>
+                            <div class="info-field tooltip">
+                                <div class="info-field-error">End Date is required.</div>
+                                <input id="input-end-date" class="info-field-input" type="date" value="2023-11-25">
+                                <div class="right">
+                                    <h3>End Date</h3>
+                                    <p>Ex: 2023-11-13</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-total-repairs">Number of Repairs:</label>
+                            <div class="info-field tooltip">
+                                <div class="info-field-error" style="visibility: hidden;"></div>
+                                <input id="input-total-repairs" class="info-field-input" type="number" value="70">
+                                <div class="right">
+                                    <h3>Number of Repairs</h3>
+                                    <p>This field is automatically calculated by system based on repairs completed.</p>
+                                    <p>Please check the number of repairs to make sure it is accurate.</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-warranty-repairs">Warranty Repairs:</label>
+                            <div class="info-field tooltip">
+                                <div class="info-field-error" style="visibility: hidden;"></div>
+                                <input id="input-warranty-repairs" class="info-field-input" type="number" value="10">
+                                <div class="right">
+                                    <h3>Warranty Repairs</h3>
+                                    <p>This field is automatically calculated by system based on repairs completed.</p>
+                                    <p>Please check the number of repairs to make sure it is accurate.</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-info-buttons">
+                    <a href="./warrantyReportPreview.html" class="btn-info btn-edit">Preview Report</a>
+                    <a href="./warrantyReport.html" class="btn-info btn-edit">Clear</a>
+                </div>
+            </div>
+    </form>
+    <footer class="foot-main">
+        <p class="foot-text">Application Developed By<br>
+            &copy;2023 TechLink Software</p>
+        <!--<a href="" class ="foot-text">Sitemap</a>-->
+        <div class="foot-links">
+            <a href=""><img class="contact-link" src="../images/facebook-icon.png" alt="ESE Facebook page"></a>
+            <a href=""> <img class="contact-link" src="../images/instagram-icon.png" alt="ESE Instragram page"></a>
+            <a href=""><img class="contact-link" src="../images/twitter-icon.png" alt="ESE Twitter page"></a>
+            <a href=""><img class="contact-link" src="../images/whatsapp-icon.png" alt="ESE Whatsapp contact"></a>
+        </div>
+    </footer>
+    </main>
+</body>
+
+</html>
