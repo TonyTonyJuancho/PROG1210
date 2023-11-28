@@ -13,8 +13,7 @@
     <body>
         <header class = "head-section">
             <nav class = "head-nav-section">
-                <img src ="../images/sample-Logo2.png" alt ="Emma Small Engines Logo" class = "head-img-logo">
-                <a class="head-nav-link" href = "../index.html">Dashboard</a>
+                <a href = "../index.html"><img src ="../images/sample-Logo2.png" alt ="Emma Small Engines Logo" class = "head-img-logo"></a>
                 <a class="head-nav-link" href = "../Customer/index.html">Customers</a>
                 <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
                 <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
@@ -43,9 +42,12 @@
                 <div class = "main-info-item">
                     <div class = "main-info-display">
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-model">Inventory ID:</label> 
-                            <div class = "info-field">0014</div>       
+                            <label class ="info-label" for = "input-inventory-model">Inventory ID:</label> 
+                            <div class = "info-field tooltip">
+                                <input id="input-inventory-model" class="info-field-input" type="text" value="0014" disabled>
+                            </div>       
                         </div>
+                        
                         <div class = "info-row">
                             <label class ="info-label" for = "input-inv-name">Inventory Name:</label> 
                             <div class="info-field tooltip">
