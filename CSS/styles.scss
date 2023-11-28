@@ -186,20 +186,6 @@ body, html {
         }
     }
 }
-.form-button
-{
-    font-family: 'Rubik', sans-serif;
-    color: $color-white;
-    padding:1.5rem 0.5rem 1.5rem 0.5rem;
-    margin: 2rem 0 2rem 0;
-    font-size: 1.7rem;
-    transition:all 300ms;
-    cursor: pointer;
-    transform-origin: left;
-    background-color: $color-black;
-    width: 100%;
-    &:active {background-color: $color-select-active;}
-}
 .form-error
 {
     &.active{opacity: 1;}
@@ -449,7 +435,19 @@ body, html {
     border: solid;
   }
 }
-
+.login-button{
+  font-family: 'Rubik', sans-serif;
+  color: $color-white;
+  padding:1.5rem 0.5rem 1.5rem 0.5rem;
+  margin: 2rem 0 2rem 0;
+  font-size: 1.7rem;
+  transition:all 300ms;
+  cursor: pointer;
+  transform-origin: left;
+  background-color: $color-black;
+  width: 100%;
+  &:active {background-color: $color-select-active;}
+}
 
 
 /*images*/
@@ -522,6 +520,26 @@ body, html {
 /*inputs*/
 .input-group {
   width: 100%;
+}
+.input-group label{
+  font-size: 18px;
+}
+.input-group select{
+  font-weight: bold;
+  font-size: 15px;
+  width: 30%;
+  height: 25px;
+  border-radius: 7px;
+  margin: 0 0 0 10px;
+}
+.input-group select:hover, .input-group select:focus {
+  background-color: #0a1331;
+  color: #fdfdfd;
+}
+
+.input-group select:active {
+  background-color: #0a1331;
+  color: #fdfdfd;
 }
 .form-input {
   font-size: 2.3rem;
