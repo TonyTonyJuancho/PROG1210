@@ -28,7 +28,18 @@
         <main class = "main-section">
             <section class = "main-heading">
                 <div class = "main-heading-title">
-                    <h2 class = "main-heading-head">Repair Insert</h2>
+                    <h2 class = "main-heading-head">Repair Insert
+                        <span class = "help-btn-group tooltip">
+                            <button class ="help-btn">?</button>  
+                            <span class="right">
+                                <strong>Repair Help:</strong>
+                                <p>1- In the Insert Page you can create a new repair from one of the available requests. </p><br/>
+                                <p>2- </p><br/>
+                                <p> 3- With the search bar you can search a repair by the notes, sort them or group them.</p><br/>
+                                <i></i>
+                            </span>
+                        </span>
+                    </h2>
 
                     <div class ="main-heading-brdcrumbs">
                         <a class="brdcrumbs-link" href="../index.html">Home</a> | 
@@ -43,7 +54,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input Equipment Name in the field</div>
+                                <div class ="info-field-error">Please input Equipment Name in the field</div>
                                 <input id = "input-equip-name" class = "info-field-input" type = "text" value="" placeholder="Rotary Lawnmower">
                                 <div class="right">
                                     <h3>Equipment Name:</h3>
@@ -55,7 +66,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-start-date">Start Date:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input Start Date in the field</div>
+                                <div class ="info-field-error">Please input Start Date in the field</div>
                                 <input id = "input-start-date" class = "info-field-input" type = "date" value=""> 
                                 <div class="right">
                                     <h3>Start Date:</h3>
@@ -67,7 +78,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-repair-enddate">End Date:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input End Date in the field</div>
+                                <div class ="info-field-error">Please input End Date in the field</div>
                                 <input id = "input-repair-enddate" class = "info-field-input" type = "date" value="">
                                 <div class="right">
                                     <h3>End Date:</h3>
@@ -79,7 +90,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-start-time">Start Time:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input Start Time in the field</div>
+                                <div class ="info-field-error">Please input Start Time in the field</div>
                                 <input id = "input-start-time" class = "info-field-input" type = "time" value="">
                                 <div class="right">
                                     <h3>Start Time:</h3>
@@ -91,7 +102,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-end-time">End Time:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input End Time in the field</div>
+                                <div class ="info-field-error">Please input End Time in the field</div>
                                 <input id = "input-end-time" class = "info-field-input" type = "time" value="">
                                 <div class="right">
                                     <h3>End Time:</h3>
@@ -103,7 +114,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-notes" style="padding-bottom: 50px;">Repair Notes:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input Repair Notes in the field</div>
+                                <div class ="info-field-error">Please input Repair Notes in the field</div>
                                 <textarea id="input-equip-notes" class="input-equip-notes" rows="6" cols="60" placeholder="Repair Details here"></textarea>
                                 <div class="right">
                                     <h3>Repair Notes:</h3>
@@ -120,7 +131,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-repair-tech">Technician:</label> 
                             <div class = "info-field tooltip"> 
-                                <div class ="info-field-error">Error: Please input technician in the field</div>
+                                <div class ="info-field-error">Please input technician in the field</div>
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-repair-tech" style = "width:80%">
                                     <option>Select a Technician:</option>
@@ -141,7 +152,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-repair-type">Repair Type:</label> 
                             <div class = "info-field tooltip"> 
-                                <div class ="info-field-error">Error: Please input repair type in the field</div>
+                                <div class ="info-field-error">Please input repair type in the field</div>
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-repair-type" style = "width:80%">
                                     <option>Select a Repair Type:</option>
@@ -162,7 +173,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-repair-parts">Parts:</label> 
                             <div class = "info-field tooltip"> 
-                                <div class ="info-field-error">Error: Please input repair type in the field</div>
+                                <div class ="info-field-error">Please input repair type in the field</div>
                                 <div class="info-field-group">
                                 <select class = "info-select" id = "input-repair-parts" style = "width:80%">
                                     <option>Select Parts used:</option>
@@ -184,7 +195,7 @@
                             <label class ="info-label" for = "input-repair-status">Status:</label> 
                             
                             <div class = "info-field tooltip"> 
-                            <div class ="info-field-error">Error: Please input status in the field</div>
+                            <div class ="info-field-error">Please input status in the field</div>
                             <div class="info-field-group">
                                 <select class = "info-select" id = "input-repair-status" style = "width:80%">
                                     <option>Select a Status of the repair:</option>
