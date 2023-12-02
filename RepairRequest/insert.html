@@ -15,10 +15,9 @@
             <nav class = "head-nav-section">
                 <a href = "../index.html"><img src ="../images/sample-Logo2.png" alt ="Emma Small Engines Logo" class = "head-img-logo"></a>
                 <a class="head-nav-link" href = "../Customer/index.html">Customers</a>
-                <a class="head-nav-link" href = "../Equipment/index.html">Equipment</a>
                 <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
                 <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
-                <a class="head-nav-link" href="../Lookup/index.html">Lookup Tables</a>
+                <a class="head-nav-link" href = "../Reports/index.html">Reports</a>
             </nav>
             <div class = "head-profile-section">
                 <img class = "head-profile-img" src = "../images/profile_pic.jpg" alt = "Profile Picture">
@@ -54,7 +53,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-repair-reason" style="padding-bottom: 50px;">Reason:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input the reason in the field.</div>
+                                <div class ="info-field-error">Please input the reason in the field.</div>
                                 <textarea id="input-repair-reason" class="input-equip-notes" rows="6" cols="60" placeholder="Customer explanation of the issue"></textarea>
                                 <div class="right">
                                     <h3>Reason:</h3>
@@ -64,24 +63,11 @@
                             </div>     
                         </div>
                         <div class = "info-row">
-                            <label class ="info-label" for = "input-equiprepair-status">Status:</label> 
-                            <div class = "info-field tooltip"> 
-                                <div class ="info-field-error">Error: Status is required.</div>
-                                <div class="info-field-group">
-                                    <select class = "info-select" id = "input-equiprepair-status" style = "width:100%">
-                                        <option selected>Select a Status</option>
-                                        <option >Not Started</option>
-                                        <option>In Progress</option>
-                                        <option>Waiting for Parts</option>
-                                        <option>Completed</option>
-                                    </select>
-                                    <div class="right">
-                                        <h3>Status</h3>
-                                        <p>Select 'Not Started' if you are initiating the repair request.</p>
-                                        <i></i>
-                                    </div>
-                                </div>
+                            <label class ="info-label" for = "input-repair-status">Status:</label> 
+                            <div>
+                                <input id = "input-repair-status" class = "info-field-input" type = "text" value="Not Started" disabled>
                             </div>
+                            
                         </div>
                     </div>
                     <div class = "table-group">

@@ -12,15 +12,15 @@
     </head>
     <body>
         <header class = "head-section">
-            <nav class = "head-nav-section">
+             <nav class = "head-nav-section">
                 <a href = "../index.html"><img src ="../images/sample-Logo2.png" alt ="Emma Small Engines Logo" class = "head-img-logo"></a>
                 <a class="head-nav-link" href = "../Customer/index.html">Customers</a>
-                <a class="head-nav-link" href = "../Equipment/index.html">Equipment</a>
                 <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
                 <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
-                <a class="head-nav-link" href="../Lookup/index.html">Lookup Tables</a>
+                <a class="head-nav-link" href = "../Reports/index.html">Reports</a>
             </nav>
             <div class = "head-profile-section">
+                <a id="input-cust-help" class="head-nav-link" >Help ?</a>
                 <img class = "head-profile-img" src = "../images/profile_pic.jpg" alt = "Profile Picture">
                 <div class = "head-profile-text">Emma</div>
             </div>
@@ -32,12 +32,15 @@
                         <span class = "help-btn-group tooltip">
                             <button class ="help-btn">?</button>  
                             <span class="right">
-                                <strong>Note:</strong> Repair requests are required for repairs to be added to the system
+                                <strong>Reapir Request Help:</strong>
+                                <p> 1- In the Repair Request Page you can see the ID,Date, Reason, and status from the repairs requests  </p><br/>
+                                <p>2- You can click on any repair request box and you will see all of their details and a link under the details for the technicians to create a repair if it's not staryted yet. </p><br/>
+                                <p> 3- The first table is the repair table where you will be able to  go to the details of the repair if it has been created already.</p><br/>
+                                <p> 4- The second table is the customer table, you can see some of the information about the customer and if it's needed you can go to the customer page using the "Go to Customer" Link.</p>
                                 <i></i>
                             </span>
                         </span>
                     </h1>
-                    <a href = "./insert.html" class = "btn-add">+ Add New Repair Request</a>
                     <div class ="main-heading-brdcrumbs">
                         <a class="brdcrumbs-link" href="../index.html">Home</a> | 
                         <a class="brdcrumbs-link" href="./index.html">Repair Request</a>
@@ -55,17 +58,14 @@
                         <div class ="select-wrapper">
                             <select class = "main-select">
                                 <option value="" disabled selected>Sort By</option>
-                                <option>Name</option>
-                                <option>Type</option>
-                                <option>Modified Date</option>
+                                <option>Status</option>
+                                <option>Date</option>
                             </select>
                         </div>
                         <div class ="select-wrapper">
                             <select class = "main-select">
                                 <option value="" disabled selected>Group By</option>
-                                <option>Name</option>
-                                <option>Type</option>
-                                <option>Modified Date</option>
+                                <option>Status</option>
                             </select>
                         </div>
                     </div>

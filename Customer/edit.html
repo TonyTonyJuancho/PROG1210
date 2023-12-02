@@ -12,13 +12,12 @@
     </head>
     <body>
         <header class="head-section">
-            <nav class = "head-nav-section">
+             <nav class = "head-nav-section">
                 <a href = "../index.html"><img src ="../images/sample-Logo2.png" alt ="Emma Small Engines Logo" class = "head-img-logo"></a>
                 <a class="head-nav-link" href = "../Customer/index.html">Customers</a>
-                <a class="head-nav-link" href = "../Equipment/index.html">Equipment</a>
                 <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
                 <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
-                <a class="head-nav-link" href="../Lookup/index.html">Lookup Tables</a>
+                <a class="head-nav-link" href = "../Reports/index.html">Reports</a>
             </nav>
             <div class="head-profile-section">
                 <a id="input-cust-help" class="head-nav-link" >Help ?</a> 
@@ -62,7 +61,7 @@
 
                             </label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input first name in the field</div>
+                                <div class ="info-field-error">Please input first name in the field</div>
                                 <input id="input-cust-fname" class="info-field-input" type="text" value=""> 
                                 <div class="right">
                                     <h3>Customer First Name</h3>
@@ -74,7 +73,7 @@
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-midname">Middle Name:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please input middle name in the field</div>
+                                <div class ="info-field-error">Please input middle name in the field</div>
                                 <input id="input-cust-midname" value = "Montes" class="info-field-input" type="text" value="Montes"> 
                                 <div class="right">
                                     <h3>Customer Middle Name</h3>
@@ -86,7 +85,7 @@
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-lname">Last Name:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input last name in the field</div>
+                                <div class ="info-field-error" style="visibility: hidden;">Please input last name in the field</div>
                                 <input id="input-cust-lname" class="info-field-input" type="text" value="Doe"> 
                                 <div class="right">
                                     <h3>Customer Last Name</h3>
@@ -98,7 +97,7 @@
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-phone">Phone Number:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input a phone in the field</div>
+                                <div class ="info-field-error" style="visibility: hidden;">Please input a phone in the field</div>
                                 <input id="input-cust-phone" class="info-field-input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="1234567890">
                                 <div class="right">
                                     <h3>Customer Phone Number</h3>
@@ -110,7 +109,7 @@
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-email">Email:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input a email in the field</div>
+                                <div class ="info-field-error" style="visibility: hidden;">Please input a email in the field</div>
                                 <input id="input-cust-email" class="info-field-input" type="tel" value="janedoe@gmail.com"> 
                                 <div class="right">
                                     <h3>Customer Email Address</h3>
@@ -122,7 +121,7 @@
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-street">Address (Street):</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input an address in the field</div>
+                                <div class ="info-field-error" style="visibility: hidden;">Please input an address in the field</div>
                                 <input id="input-cust-street" class="info-field-input" type="text" value= "123 Maple Street"> 
                                 <div class="right">
                                     <h3>Customer Address (Street)</h3>
@@ -134,7 +133,7 @@
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-city">City:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Error: Please select a city in the dropdown</div>
+                                <div class ="info-field-error">Please select a city in the dropdown</div>
                                 <div class="info-field-group">
                                     <select class="info-select" id="input-cust-city" style = "width:82%">
                                         <option value="">Select a City..</option>
@@ -163,7 +162,7 @@
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-province">Province:</label> 
                             <div class="info-field tooltip"> 
-                                <div class ="info-field-error">Error: Please select a province in the dropdown</div>
+                                <div class ="info-field-error">Please select a province in the dropdown</div>
                                 <div class="info-field-group">
                                 <select class="info-select" id="input-cust-province" style = "width:82%"> 
                                     <option value="">Select a Province..</option>
@@ -193,7 +192,7 @@
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-pcode">Postal Code:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Error: Please input a postal code in the field</div>
+                                <div class ="info-field-error" style="visibility: hidden;">Please input a postal code in the field</div>
                                 <input id="input-cust-pcode" class="info-field-input" type="text" value="M5V 2N9"> 
                                 <div class="right">
                                     <h3>Customer Postal Code</h3>
@@ -205,12 +204,14 @@
                     </div>
                     <div class="table-group">
                         <div class = "main-info-table" style="width: 100%;">
-                                    <div class ="table-header-group">
-                            <h2 class="table-header">Requests</h2> 
-                        </div>
+                            <div class ="table-header-group">
+                                <h2 class="table-header">Requests</h2> 
+                                <a class = "table-header-link" href = "../Repair/details.html">Go to Repair</a>
+                                <a class = "table-header-link" href = "../Repair/edit.html">Edit Repair</a>
+                            </div>
                             <table class="main-table-container">
                                 <tr class="main-info-tablerow">
-                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">New(+)</button></th>
+                                    <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table"><a href="../RepairRequest/insert.html">New(+)</a></button></th>
                                     <th class="main-info-tablehead" style="width:20%">Request Date</th>
                                     <th class="main-info-tablehead" style="width:15%">Type</th>
                                     <th class="main-info-tablehead" style="width:34%">Equipment Name</th>
@@ -255,6 +256,8 @@
                         <div class = "main-info-table" style="width: 100%;">
                             <div class ="table-header-group">
                                 <h2 class="table-header">Equipment</h2> 
+                                <a class = "table-header-link" href = "../Equipment/details.html">Go to Equipment</a>
+                                <a class = "table-header-link" href = "../Equipment/edit.html">Edit Equipment</a>
                             </div>
                             <table class = "main-table-container" >
                                 <tr class = "main-info-tablerow" >
