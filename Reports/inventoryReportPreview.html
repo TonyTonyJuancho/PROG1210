@@ -1,74 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Inventory Report Preview</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-    <script src="../JavaScript/main.js" async defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .report-container {
+            width: 80%;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #download-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: 2px;
+            border-radius: 5px;
+        }
+    </style>
+    <!-- Include the xlsx library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js" defer></script>
+    <!-- Include the html2pdf library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.js" defer></script>
 </head>
-
 <body>
-    <header class="head-section">
-        <nav class = "head-nav-section">
-            <a href = "../index.html"><img src ="../images/sample-Logo2.png" alt ="Emma Small Engines Logo" class = "head-img-logo"></a>
-            <a class="head-nav-link" href = "../Customer/index.html">Customers</a>
-            <a class="head-nav-link" href = "../RepairRequest/index.html">Repair Request</a>
-            <a class="head-nav-link" href = "../Repair/index.html">Repairs</a>
-            <a class="head-nav-link" href = "../Reports/index.html">Reports</a>
-        </nav>
-        <div class="head-profile-section">
-            <div class="info-field tooltip">
-                <a id="input-cust-help" class="head-nav-link">Help ?</a>
-                <div class="right">
-                    <h3>How to Prepare Reports.</h3>
-                    <p>
-                        All helps goes here in Steps.
-                    </p>
-                    <i></i>
-                </div>
-            </div>
-            <img class="head-profile-img" src="../images/profile_pic.jpg" alt="Profile Picture">
-            <div class="head-profile-text">Emma</div>
-        </div>
-    </header>
-    <main class="main-section">
-        <section class="main-heading">
-            <div class="main-heading-title">
-                <h1 class="main-heading-head">Inventory Reports</h1>
-                <div class="main-heading-brdcrumbs">
-                    <a class="brdcrumbs-link" href="../index.html">Home</a> |
-                    <a class="brdcrumbs-link" href="./index.html">Reports</a> |
-                    <a class="brdcrumbs-link" href="../Reports/inventoryReport.html">Inventory Report</a>
-                </div>
-            </div>
-            <div class="main-heading-input">
-                <div class="main-heading-input-section">
-                    <div class="input-group">
-                        <input id="main-search-input" name="search" class="form-input" type="text"
-                            placeholder="Search...">
-                        <label for="main-search-input" class="form-label">Search...</label>
-                    </div>
-                    <button class="search-btn"><img class="search-btn-img" src="../images/search-icon.png"
-                            alt="search image"></button>
-                </div>
-                <div class="main-heading-input-section" style="    padding-right:5rem;">
-                    <div class="select-wrapper">
-                        <select class="main-select">
-                            <option value="" disabled selected>Sort By</option>
-                            <option>Name</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
 
+    <h1>Inventory Report</h1>
+
+    <button id="download-btn" onclick="downloadReport()">Download Report</button>
+
+    <div class="report-container">
+        <h2>Sample inventory report preview.</h2>
+        <h3>Report for Inventory.</h3>
+        
+        <table border="1" style="width:100%;">
+            <p><strong><small>By: John Snow</small></strong></p>
+            <p><strong><small>Run Date:2023/11/20</small></strong></p>
+            <thead>
+                <th>Inventory ID</th>
+                <th>Inventory Name</th>
+                <th>Quantity Available</th>
+                <th>Re-Order Level</th>
+                <th>Cost Per Unit</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0001</td>
+                    <td>Mobile 1 Oil</td>
+                    <td>20 gallon</td>
+                    <td>10 gallon</td>
+                    <td>14.99</td>
+                </tr>
+                <tr>
+                    <td>0002</td>
+                    <td>Castrol Oil</td>
+                    <td>18 gallon</td>
+                    <td>10 gallon</td>
+                    <td>15.99</td>
+                </tr>
+                <tr>
+                    <td>0003</td>
+                    <td>Total Oil</td>
+                    <td>17 gallon</td>
+                    <td>10 gallon</td>
+                    <td>13.99</td>
+                </tr>
+                <tr>
+                    <td>0004</td>
+                    <td>Air Filter</td>
+                    <td>12</td>
+                    <td>5</td>
+                    <td>19.99</td>
+                </tr>
+                <tr>
+                    <td>0005</td>
+                    <td>Oil Filter</td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>24.99</td>
+                </tr>
+                <tr>
+                    <td>0006</td>
+                    <td>Adjustable Wrench-15mm</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>9.99</td>
+                </tr>
+                <tr>
+                    <td>0007</td>
+                    <td>Key Start Ignition Hub</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>34.99</td>
+                </tr>
+                <tr>
+                    <td>0008</td>
+                    <td>Electronic Ignition Hub</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>59.99</td>
+                </tr>
+                <tr>
+                    <td>0009</td>
+                    <td>Recoil Start Ignition Hub</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>54.99</td>
+                </tr>
+                <tr>
+                    <td>0010</td>
+                    <td>Replacement Blade- 26"</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>119.49</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function downloadReport() {
+                // Select the table
+                var table = document.querySelector('table');
+
+                // Additional information
+                var title = 'Inventory Report';
+                var preparedBy = 'Prepared By: John Snow';
+                var runDate = 'Run Date: 2023/11/20';
+
+                // Create a new div to hold the content
+                var content = document.createElement('div');
+                content.innerHTML = `<h1>${title}</h1><p>${preparedBy}</p><p>${runDate}</p>`;
+                content.appendChild(table.cloneNode(true));
+
+                // Options for the PDF generation
+                var options = {
+                    margin: 10,
+                    filename: 'inventory_report.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                };
+
+                // Generate PDF
+                html2pdf(content, options);
+            }
+        });
+    </script>
+</body>
 </html>
