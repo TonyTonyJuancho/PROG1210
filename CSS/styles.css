@@ -604,7 +604,32 @@ body, html {
   flex-direction: column;
   width: 40%;
 }
-
+.tooltip-help{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  text-align: left;
+  font-size: 16px;
+}
+.tooltip-help .tooltip-help-text {
+  visibility: hidden;
+  width: 400px;
+  text-align: left;
+  padding: 10px 15px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  background-color: #0a1331;
+  transform: translate(15%, -10%);
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  border: #9799ae;
+  border: solid;
+}
+.tooltip-help:hover .tooltip-help-text{
+  visibility: visible;
+  display: block;
+}
 .tooltip {
   display: inline-block;
   position: relative;
