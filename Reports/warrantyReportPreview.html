@@ -34,10 +34,6 @@
             border-radius: 5px;
         }
     </style>
-    <!-- Include the xlsx library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js" defer></script>
-    <!-- Include the html2pdf library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.js" defer></script>
 </head>
 <body>
 
@@ -48,122 +44,155 @@
     <div class="report-container">
         <h2>Sample warranty repair report preview.</h2>
         <h3>Report for warranty repairs.</h3>
+        <p><strong><small>From:2023/11/01 To:2023/11/30</small></strong></p>
         
-        <table border="1" style="width:100%;">
+        <table id="reportTable" border="1" style="width:100%;">
            
             <thead>
-                <th>Inventory ID</th>
-                <th>Inventory Name</th>
-                <th>Quantity Available</th>
-                <th>Re-Order Level</th>
-                <th>Cost Per Unit</th>
+                <tr>
+                <th colspan="7" style="text-align: center;">Warranty Repair Report</th>
+                </tr>
+                <th>Repair ID</th>
+                <th>Repair Date</th>
+                <th>Customer Name</th>
+                <th>Equipment Name</th>
+                <th>Manufactures Name</th>
+                <th>Technician Name</th>
+                <th>Total Cost of Repair</th>
             </thead>
             <tbody>
                 <tr>
-                    <td>0001</td>
-                    <td>Mobile 1 Oil</td>
-                    <td>20 gallon</td>
-                    <td>10 gallon</td>
-                    <td>14.99</td>
+                    <td>0201</td>
+                    <td>2023-11-01</td>
+                    <td>Jane Doe</td>
+                    <td>Excavator Ex-2000</td>
+                    <td>Yamaha</td>
+                    <td>Harry Kane</td>
+                    <td>$ 129.99</td>
                 </tr>
                 <tr>
-                    <td>0002</td>
-                    <td>Castrol Oil</td>
-                    <td>18 gallon</td>
-                    <td>10 gallon</td>
-                    <td>15.99</td>
+                    <td>0210</td>
+                    <td>2023-11-01</td>
+                    <td>Michael Smith</td>
+                    <td>Welding Machine WM-500</td>
+                    <td>Honda</td>
+                    <td>David Lee</td>
+                    <td>$ 199.99</td>
                 </tr>
                 <tr>
-                    <td>0003</td>
-                    <td>Total Oil</td>
-                    <td>17 gallon</td>
-                    <td>10 gallon</td>
-                    <td>13.99</td>
+                    <td>0215</td>
+                    <td>2023-11-02</td>
+                    <td>Emily Brown</td>
+                    <td>Leaf Blower LB-350</td>
+                    <td>Magna Flow</td>
+                    <td>Harry Kane</td>
+                    <td>$ 49.99</td>
                 </tr>
                 <tr>
-                    <td>0004</td>
-                    <td>Air Filter</td>
-                    <td>12</td>
-                    <td>5</td>
-                    <td>19.99</td>
+                    <td>0220</td>
+                    <td>2023-11-02</td>
+                    <td>David Wilson</td>
+                    <td>Pressure Washer PW-400</td>
+                    <td>Bosch</td>
+                    <td>John Smith</td>
+                    <td>$ 54.99</td>
                 </tr>
                 <tr>
-                    <td>0005</td>
-                    <td>Oil Filter</td>
-                    <td>14</td>
-                    <td>5</td>
-                    <td>24.99</td>
+                    <td>0221</td>
+                    <td>2023-11-05</td>
+                    <td>Joe Willock</td>
+                    <td>Excavator Ex-2000</td>
+                    <td>Yamaha</td>
+                    <td>John Smith</td>
+                    <td>$ 52.89</td>
                 </tr>
                 <tr>
-                    <td>0006</td>
-                    <td>Adjustable Wrench-15mm</td>
-                    <td>8</td>
-                    <td>2</td>
-                    <td>9.99</td>
+                    <td>0222</td>
+                    <td>2023-11-06</td>
+                    <td>Ethan Miller</td>
+                    <td>Power Drill PD-550</td>
+                    <td>Certified</td>
+                    <td>David Lee</td>
+                    <td>$ 29.99</td>
                 </tr>
                 <tr>
-                    <td>0007</td>
-                    <td>Key Start Ignition Hub</td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>34.99</td>
+                    <td>0225</td>
+                    <td>2023-11-08</td>
+                    <td>Samuel Hall</td>
+                    <td>Lawn Mower LM-500</td>
+                    <td>Manroe</td>
+                    <td>Harry Kane</td>
+                    <td>$ 49.99</td>
                 </tr>
                 <tr>
-                    <td>0008</td>
-                    <td>Electronic Ignition Hub</td>
-                    <td>8</td>
-                    <td>5</td>
-                    <td>59.99</td>
+                    <td>0228</td>
+                    <td>2023-11-12</td>
+                    <td>Olivia Anderson</td>
+                    <td>Lawn Mower LM-500</td>
+                    <td>Manroe</td>
+                    <td>Harry Kane</td>
+                    <td>$ 49.99</td>
                 </tr>
                 <tr>
-                    <td>0009</td>
-                    <td>Recoil Start Ignition Hub</td>
-                    <td>6</td>
-                    <td>5</td>
-                    <td>54.99</td>
+                    <td>0249</td>
+                    <td>2023-11-19</td>
+                    <td>James Lee</td>
+                    <td>Lawn Mower LM-500</td>
+                    <td>Manroe</td>
+                    <td>John Smith</td>
+                    <td>$ 49.99</td>
                 </tr>
                 <tr>
-                    <td>0010</td>
-                    <td>Replacement Blade- 26"</td>
-                    <td>6</td>
-                    <td>5</td>
-                    <td>119.49</td>
+                    <td>0256</td>
+                    <td>2023-11-22</td>
+                    <td>Daniel Cans</td>
+                    <td>Excavator Ex-2000</td>
+                    <td>Yamaha</td>
+                    <td>David Lee</td>
+                    <td>$ 109.99</td>
                 </tr>
             </tbody>
         </table>
-        <p><strong><small>By: John Snow</small></strong></p>
-        <p><strong><small>Run Date:2023/11/20</small></strong></p>
+        <p><strong><small>Run By: John Snow</small></strong></p>
+        <p><strong><small>Run Date:2023/12/01</small></strong></p>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            function downloadReport() {
-                // Select the table
-                var table = document.querySelector('table');
+        function downloadReport() {
+    const table = document.getElementById("reportTable");
+    const rows = table.querySelectorAll("tr");
+    const data = [];
 
-                // Additional information
-                var title = 'Inventory Report';
-                var preparedBy = 'Prepared By: John Snow';
-                var runDate = 'Run Date: 2023/11/20';
 
-                // Create a new div to hold the content
-                var content = document.createElement('div');
-                content.innerHTML = `<h1>${title}</h1><p>${preparedBy}</p><p>${runDate}</p>`;
-                content.appendChild(table.cloneNode(true));
+    // Loop through rows and cells to get data
+    for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        const cells = row.querySelectorAll("td, th");
+        const rowData = [];
+        for (let j = 0; j < cells.length; j++) {
+            rowData.push(cells[j].innerText);
+        }
+        data.push(rowData.join(","));
+    }
 
-                // Options for the PDF generation
-                var options = {
-                    margin: 10,
-                    filename: 'inventory_report.pdf',
-                    image: { type: 'jpeg', quality: 0.98 },
-                    html2canvas: { scale: 2 },
-                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-                };
+    // Add report run date and run time
+    const runDate = new Date().toLocaleDateString();
+    const runTime = new Date().toLocaleTimeString();
+    const runBy = "John Snow"
+    const runInfo = [`Report Run By: ${runBy}`,`Report Run Date: ${runDate}`, `Run Time: ${runTime}`];
+    data.push(runInfo.join(","));
 
-                // Generate PDF
-                html2pdf(content, options);
-            }
-        });
+    // Create a CSV file content
+    const csvContent = "data:text/csv;charset=utf-8," + data.join("\n");
+
+    // Create a link and trigger download
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "Warranty Repair Report.csv");
+    document.body.appendChild(link);
+    link.click();
+}
     </script>
 </body>
 </html>
