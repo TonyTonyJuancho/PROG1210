@@ -457,8 +457,10 @@ body, html {
   width: 8rem;
   height: 5rem;
   padding-top: 5px;
+  cursor: pointer;
 }
 .log-out-button-dashboard{
+  cursor: pointer;
 }
 
 .head-profile-img {

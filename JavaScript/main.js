@@ -25,5 +25,5 @@ document.addEventListener('DOMContentLoaded',()=>{
         localStorage.removeItem("loggedIn", false);
         window.location.href = "../index.html"
     })
-    document.querySelector("head-profile-text").innerHTML = `Hello ${localStorage.getItem("name")}`
+    document.querySelector(".head-profile-text").innerHTML = `Hello ${localStorage.getItem("name")}`
 })
