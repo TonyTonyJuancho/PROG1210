@@ -95,6 +95,7 @@ const authentication = (()=>
             localStorage.setItem("user", login_result.email);
             localStorage.setItem("type", login_result.type);
             window.location.href = "../index.html"
+            return false;
         }
         else
         {

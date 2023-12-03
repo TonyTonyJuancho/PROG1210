@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         localStorage.removeItem("user");
         localStorage.removeItem("type");
         localStorage.removeItem("loggedIn", false);
-        window.location.href = "../index.html"
+        window.location.href = "../index.html";
+        return false;
     })
     document.querySelector(".head-profile-text").innerHTML = `Hello ${localStorage.getItem("name")}`
 })

@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         localStorage.removeItem("type");
         localStorage.removeItem("loggedIn", false);
         window.location.href = "../index.html"
+        return false;
     })
     document.querySelector(".dashboard-profile-text").innerHTML = `Hello ${localStorage.getItem("name")}`
  })
