@@ -50,9 +50,9 @@ const formHandler = (()=>
 const authentication = (()=>
 {
     var _sampleData =
-        [{email: 'admin@email.com', password: 'password1', type: 'admin'},
-        { email: 'tech@email.com', password: 'password1', type: 'tech' },
-        { email: 'sales@email.com', password: 'password1', type: 'sales' }];
+        [{email: 'admin@email.com', password: 'password1', type: 'admin', name:"Admin"},
+        { email: 'tech@email.com', password: 'password1', type: 'tech', name:"Technician" },
+        { email: 'sales@email.com', password: 'password1', type: 'sales', name:"Salesperson"}];
     
     const _authenticate = (obj, objList) =>
     {
@@ -69,6 +69,7 @@ const authentication = (()=>
                 result.password=true;
             }
             result.type = objList[i].type;
+            result.name = objList[i].name;
             if(Object.values(result).every(item=>item))
             {
                 return result;
@@ -85,14 +86,13 @@ const authentication = (()=>
     {
         login_data = formHandler.getFormValues('login');
         login_result = _authenticate(login_data, _sampleData)
-        console.log(login_result)
         const keys = Object.keys(login_result)
 
         if (login_result[keys[0]] && login_result[keys[1]])
         {
             localStorage.setItem("loggedIn", true);
-       
-            localStorage.setItem("user", login_data.email);
+            localStorage.setItem("name", login_result.name);
+            localStorage.setItem("user", login_result.email);
             localStorage.setItem("type", login_result.type);
             window.location.href = "../index.html"
         }

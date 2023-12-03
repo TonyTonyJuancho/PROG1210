@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',()=>{
     
-    if (localStorage.getItem("loggedIn") === null || localStorage.getItem("loggedIn")==false) 
+    if (localStorage.getItem("loggedIn") === null) 
     {
         window.location.href = "../login.html"
     }
@@ -20,4 +20,11 @@ document.addEventListener('DOMContentLoaded',()=>{
             document.querySelector("#report-link").remove();
         }
     }
+    document.querySelector('.logout-btn').addEventListener('click', ()=>{
+        localStorage.removeItem("user");
+        localStorage.removeItem("type");
+        localStorage.removeItem("loggedIn", false);
+        window.location.href = "../index.html"
+    })
+    document.querySelector(".dashboard-profile-text").innerHTML = `Hello ${localStorage.getItem("name")}`
  })
