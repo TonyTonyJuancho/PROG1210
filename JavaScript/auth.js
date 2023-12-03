@@ -44,37 +44,7 @@ const formHandler = (()=>
         
     }
 
-    const containsObject = (obj, objList) =>
-    {
-        let result = {}
-        for (let i = 0; i < objList.length; i++)
-        {
-            const keys = Object.keys(objList[i])
-            for (let j = 0; j < keys.length - 1; j++) 
-            {
-                console.log(objList[i][keys[j]], obj[keys[j]])
-                console.log(`objList[i][keys[j]] == obj[keys[j]], ${objList[i][keys[j]] == obj[keys[j]]}`)
-                if(objList[i][keys[j]] != obj[keys[j]])
-                {
-                    result[keys[j]] = false
-                }
-                if (objList[i][keys[j]] == obj[keys[j]])
-                {
-                    result[keys[j]] = true
-                }
-            }
-            if(Object.values(result).every(item=>item))
-            {
-                result[keys[keys.length-1]] = (objList[i][keys[2]])
-                return result;
-            }
-          
-        }
-        console.log(result)
-        return result;
-    }
-
-    return {getFormInputs, getFormValues, containsObject, resetFormErrors}
+    return {getFormInputs, getFormValues, resetFormErrors}
 })()
 
 const authentication = (()=>
@@ -83,18 +53,45 @@ const authentication = (()=>
         [{email: 'admin@email.com', password: 'password1', type: 'admin'},
         { email: 'tech@email.com', password: 'password1', type: 'tech' },
         { email: 'sales@email.com', password: 'password1', type: 'sales' }];
+    
+    const _authenticate = (obj, objList) =>
+    {
+        let result = {email:false, password:false, type:"   "}
+        for (let i = 0; i < objList.length; i++)
+        {
+            if(objList[i].email==obj.email)
+            {
+                console.log(`${objList[i].email}==${obj.email}`,objList[i].email==obj.email)
+                result.email=true;
+            }
+            if(objList[i].password == obj.password)
+            {
+                result.password=true;
+            }
+            result.type = objList[i].type;
+            if(Object.values(result).every(item=>item))
+            {
+                return result;
+            }
+            
+        }
+
+        return result;
+    }
 
 
    
     const _loginEvent = (()=>
     {
         login_data = formHandler.getFormValues('login');
-        login_result = formHandler.containsObject(login_data, _sampleData)
+        login_result = _authenticate(login_data, _sampleData)
+        console.log(login_result)
         const keys = Object.keys(login_result)
-        console.log(login_data)
+
         if (login_result[keys[0]] && login_result[keys[1]])
         {
             localStorage.setItem("loggedIn", true);
+       
             localStorage.setItem("user", login_data.email);
             localStorage.setItem("type", login_result.type);
             window.location.href = "../index.html"
