@@ -57,8 +57,8 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Please input Equipment Name in the field</div>
-                                <input id = "input-equip-name" class = "info-field-input" type = "text" value="Rotary Lawnmower">
+                                <div class ="info-field-error"></div>
+                                <input id = "input-equip-name" class = "info-field-input" type = "text" value="Lawnmower LM-2122">
                                 <div class="right">
                                     <h3>Equipment Name:</h3>
                                     <p>Ex: Rotary Lawnmower</p>
@@ -69,14 +69,26 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-start-date">Start Date:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Please input Start Date in the field</div>
-                                <input id = "input-start-date" class = "info-field-input" type = "date" value="2023-11-02"> 
+                                <div class ="info-field-error"></div>
+                                <input id = "input-start-date" class = "info-field-input" type = "date" value=""> 
                                 <div class="right">
                                     <h3>Start Date:</h3>
                                     <p>Ex: 02-11-2023</p>
                                     <i></i>
                                 </div>
                             </div>      
+                        </div>
+                        <div class = "info-row">
+                            <label class ="info-label" for = "input-start-time">Start Time:</label> 
+                            <div class="info-field tooltip">
+                                <div class ="info-field-error"></div>
+                                <input id = "input-start-time" class = "info-field-input" type = "" value="">
+                                <div class="right">
+                                    <h3>Start Time:</h3>
+                                    <p>Ex: 09:00</p>
+                                    <i></i>
+                                </div>
+                            </div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-end-date">End Date:</label> 
@@ -89,18 +101,6 @@
                                     <i></i>
                                 </div>
                             </div>      
-                        </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-start-time">Start Time:</label> 
-                            <div class="info-field tooltip">
-                                <div class ="info-field-error">Please input Start Time in the field</div>
-                                <input id = "input-start-time" class = "info-field-input" type = "time" value="09:00">
-                                <div class="right">
-                                    <h3>Start Time:</h3>
-                                    <p>Ex: 09:00</p>
-                                    <i></i>
-                                </div>
-                            </div>       
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-end-time">End Time:</label> 
@@ -117,7 +117,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-notes" style="padding-bottom: 50px;">Repair Notes:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Please input Repair Notes in the field</div>
+                                <div  id="error-message1" class ="info-field-error">Required Field</div>
                                 <textarea id="input-equip-notes" class="input-equip-notes" rows="6" cols="60" >Diagnosing the engine to figure out why it is not starting. Checked sparkplug and air and fuel sensor and all seems to be working properly.</textarea>
                                 <div class="right">
                                     <h3>Repair Notes:</h3>
@@ -128,94 +128,74 @@
                         </div>
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-type">Warranty:</label> 
-                            <div class = "info-field"> <input class = "info-field-chk"  type="checkbox" checked>
-                            </div>
+                            <div class = "info-field"> <input class = "info-field-chk"  type="checkbox" checked></div>
                         </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-equip-type">Technician:</label> 
-                            <div class = "info-field tooltip"> 
-                                <div class ="info-field-error">Please input technician in the field</div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-repair-tech">Technician:</label>
+                            <div class="info-field tooltip">
+                                <div class="info-field-error"></div>
                                 <div class="info-field-group">
-                                <select class = "info-select" id = "input-equip-type" style = "width:80%">
-                                    <option>Select a Technician:</option>
-                                    <option selected>Harry Kane</option>
-                                    <option>John Smith</option>
-                                    <option>Maria Rodriguez</option>
-                                    <option>David Lee</option>
-                                </select>
-                                <div class="right">
-                                    <h3>Technician</h3>
-                                    <p>Please select a technician in the given dropdown or add a technician if not present</p>
-                                    <i></i>
-                                </div> 
-                                <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
+                                    <select class="info-select" id="input-repair-tech" style="width:80%">
+                                        <option>Select a Technician:</option>
+                                        <option selected>Harry Kane</option>
+                                        <option>John Smith</option>
+                                        <option>Maria Rodriguez</option>
+                                        <option>David Lee</option>
+                                    </select>
+                                    <div class="right">
+                                        <h3>Technician</h3>
+                                        <p>Please select a technician in the given dropdown or add a technician if not
+                                            present</p>
+                                        <i></i>
+                                    </div>
+                                    <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
                                 </div>
                             </div>
                         </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-repair">Repair Type:</label> 
-                            <div class = "info-field tooltip"> 
-                                <div class ="info-field-error">Please input repair type in the field</div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-repair-type">Repair Type:</label>
+                            <div class="info-field tooltip">
+                                <div id="error-message2" class="info-field-error">Required Field
+                                </div>
                                 <div class="info-field-group">
-                                <select class = "info-select" id = "input-repair" style = "width:80%">
-                                    <option>Select Repair Type:</option>
-                                    <option>Blade Sharpening</option>
-                                    <option>Spark Plug Replacement</option>
-                                    <option selected>Diagnosing</option>
-                                    <option>Oil Change</option>
-                                </select>
-                                <div class="right">
-                                    <h3>Repair Type</h3>
-                                    <p>Please select a repair type in the given dropdown or add a repair type if not present</p>
-                                    <i></i>
-                                </div> 
-                                <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
+                                    <select class="info-select" id="input-repair-type" style="width:80%">
+                                        <option>Select a Repair Type:</option>
+                                        <option>Diagnosis</option>
+                                        <option>Blade Sharpening</option>
+                                        <option>Spark Plug Replacement</option>
+                                        <option>Carburetor Cleaning</option>
+                                        <option>Oil Change</option>
+                                    </select>
+                                    <div class="right">
+                                        <h3>Repair Type</h3>
+                                        <p>Please select a repair type in the given dropdown or add a repair type if not
+                                            present</p>
+                                        <i></i>
+                                    </div>
+                                    <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
                                 </div>
                             </div>
                         </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-repair-parts">Parts:</label> 
-                            <div class = "info-field tooltip"> 
-                                <div class ="info-field-error">Please select parts used for this request.</div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-repair-status">Status:</label>
+    
+                            <div class="info-field tooltip">
+                                <div id="error-message4" class="info-field-error">Required Field</div>
                                 <div class="info-field-group">
-                                <select class = "info-select" id = "input-repair-parts" style = "width:80%">
-                                    <option>Select Parts Used:</option>
-                                    <option >Blade</option>
-                                    <option>Spark Plug</option>
-                                    <option>Carburetor</option>
-                                    <option >Air Filter</option>
-                                    <option selected>Not Applicable</option>
-                                </select>
-                                <div class="right">
-                                    <h3>Parts</h3>
-                                    <p>Please select a parts in the given dropdown or add a part if not present</p>
-                                    <i></i>
-                                </div> 
-                                <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
+                                    <select class="info-select" id="input-repair-status" style="width:100%">
+                                        <option>Select a Status of the repair:</option>
+                                        <option>Not Started</option>
+                                        <option>In Progress</option>
+                                        <option>Waiting for parts</option>
+                                        <option>Finished</option>
+                                    </select>
+                                    <div class="right">
+                                        <h3>Status</h3>
+                                        <p>Please select a status in the given dropdown or add a status if not present</p>
+                                        <i></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class = "info-row">
-                            <label class ="info-label" for = "input-repair-status">Status:</label> 
-                            
-                            <div class = "info-field tooltip"> 
-                            <div class ="info-field-error">Please input status in the field</div>
-                            <div class="info-field-group">
-                                <select class = "info-select" id = "input-repair-status" style = "width:80%">
-                                    <option>Select Repair Status:</option>
-                                    <option>Not Started</option>
-                                    <option selected>In Progress</option>
-                                    <option>Waiting for parts</option>
-                                    <option>Finished</option>
-                                </select>
-                                <div class="right">
-                                    <h3>Status</h3>
-                                    <p>Please select a status in the given dropdown or add a status if not present</p>
-                                    <i></i>
-                                </div> 
-                                <button style="width: 15%;" class="btn-edit-dropdowns">+</button>
-                            </div>
-                               
+    
                             </div>
                         </div>
                     </div>
@@ -243,11 +223,34 @@
                                 </tr>
                                 <tr class="main-info-tablerow">
                                     <td class = "main-info-tabledata" style="width:17%"></td>
-                                    <td class="main-info-tabledata" style="width:25%">2023-11-01</td>
+                                    <td class="main-info-tabledata" style="width:25%">2023-12-03</td>
                                     <td class="main-info-tabledata" style="width:60%">Lawn mower doesn't turn on</td>
                                 </tr>
                              </table>
                          </div>
+                         <div class="main-info-table" style="width:100%">
+                            <div class="table-header-group">
+                                <h2 class="table-header">Session Details</h2>
+                            </div>
+                            <table class="main-table-container">
+                                <tr class="main-info-tablerow">
+                                    <th class="main-info-tablehead" style="width:20%">Start Date</th>
+                                    <th class="main-info-tablehead" style="width:20%">Start Time</th>
+                                    <th class="main-info-tablehead" style="width:20%">End Date</th>
+                                    <th class="main-info-tablehead" style="width:20%">End Time</th>
+                                    <th class="main-info-tablehead" style="width:20%">Total Time</th>
+                                </tr>
+                                <tr class="main-info-tablerow">
+                                    <td class="main-info-tabledata" style="width:20%"><input id="input-start-date1"
+                                            class="info-field-input" type="" value=""></td>
+                                    <td class="main-info-tabledata" style="width:20%"><input id="input-start-time1"
+                                            class="info-field-input" type="" value=""></td>
+                                    <td class="main-info-tabledata" style="width:20%">-</td>
+                                    <td class="main-info-tabledata" style="width:20%">-</td>
+                                    <td class="main-info-tabledata" style="width:20%">-</td>
+                                </tr>
+                            </table>
+                        </div>
                         <div class = "main-info-table" style ="width:100%">
                             <h2 class="table-header">Parts</h2>
                             <table class = "main-table-container">
@@ -313,5 +316,67 @@
                 </div>
             </footer>
         </main>
+
+        <script>
+            const currentDate = new Date().toLocaleDateString('en-CA');
+            const options = { hour: '2-digit', minute: '2-digit', hour12: true };
+            const currentTime = new Date().toLocaleTimeString('en-US', options);
+    
+            // Set the current date as the value of the input field
+            document.getElementById('input-start-date').value = currentDate;
+            const options1 = { year: '2-digit', month: 'short', day: '2-digit' };
+            const currentDate1 = new Date().toLocaleDateString('en-US', options1);
+            document.getElementById('input-start-date1').value = currentDate1;
+            document.getElementById('input-start-time').value = currentTime;
+            document.getElementById('input-start-time1').value = currentTime;
+    
+    
+            const errorMessage = document.getElementById('error-message1');
+            const textarea = document.getElementById('input-equip-notes');
+    
+            // Add an event listener to the textarea for the 'input' event
+            textarea.addEventListener('input', function () {
+                // Check if the textarea has text
+                if (textarea.value.trim() !== '') {
+                    // If it has text, hide the error message
+                    errorMessage.style.display = 'none';
+                } else {
+                    // If it's empty, show the error message
+                    errorMessage.style.display = 'block';
+                }
+            });
+    
+    
+            const errorMessage2 = document.getElementById('error-message2');
+            const repairTypeSelect = document.getElementById('input-repair-type');
+    
+            // Add an event listener to the select element for the 'change' event
+            repairTypeSelect.addEventListener('change', function () {
+                // Check if the selected option is not the first option
+                if (repairTypeSelect.selectedIndex !== 0) {
+                    // If it's not the first option, hide the error message
+                    errorMessage2.style.display = 'none';
+                } else {
+                    // If it's the first option, show the error message
+                    errorMessage2.style.display = 'block';
+                }
+            });
+    
+            const errorMessage4 = document.getElementById('error-message4');
+            const repairStatusSelect = document.getElementById('input-repair-status');
+    
+            // Add an event listener to the select element for the 'change' event
+            repairStatusSelect.addEventListener('change', function () {
+                // Check if the selected option is not the first option
+                if (repairStatusSelect.selectedIndex !== 0) {
+                    // If it's not the first option, hide the error message
+                    errorMessage4.style.display = 'none';
+                } else {
+                    // If it's the first option, show the error message
+                    errorMessage4.style.display = 'block';
+                }
+            });
+    
+        </script>
     </body>
 </html>
