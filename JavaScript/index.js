@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     
     if (localStorage.getItem("loggedIn") === null) 
     {
-        window.location.href = "../login.html"
+        window.location.href = "/login.html"
     }
     else
     {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         localStorage.removeItem("user");
         localStorage.removeItem("type");
         localStorage.removeItem("loggedIn", false);
-        window.location.href = "../index.html"
+        window.location.href = "/index.html"
         return false;
     })
     document.querySelector(".dashboard-profile-text").innerHTML = `Hello ${localStorage.getItem("name")}`
