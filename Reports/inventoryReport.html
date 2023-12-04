@@ -63,7 +63,7 @@
                             </label>
                             <div class="info-field tooltip">
                                 <div class="info-field-error" ></div>
-                                <input id="input-start-date" class="info-field-input" type="date" value="2023-11-20">
+                                <input id="input-start-date" class="info-field-input" type="date" value="">
                                 <div class="right">
                                     <h3>Start Date</h3>
                                     <p>Ex: 2023-11-01</p>
@@ -171,6 +171,12 @@
         </div>
     </footer>
     </main>
+    <script>
+        const currentDate = new Date().toLocaleDateString('en-CA');
+
+        // Set the current date as the value of the input field
+        document.getElementById('input-start-date').value = currentDate;
+    </script>
 </body>
 
 </html>
