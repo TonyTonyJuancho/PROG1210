@@ -968,3 +968,57 @@ nav a {
   transform-origin: 0 0;
   transition: all 300ms;
 }/*# sourceMappingURL=styles.css.map */
+
+
+/* CSS FOR HAMBURGER MENU */
+
+.nav-links {
+  position: fixed;
+  right: -200px;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  transition: right 0.3s ease-in-out;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 10px 0; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 18px;
+}
+
+.fa-bars {
+  color: #2c3e50;
+  font-size: 28px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.fa-close {
+  color: #ecf0f1;
+  font-size: 28px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
