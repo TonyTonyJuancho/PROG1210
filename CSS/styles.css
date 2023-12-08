@@ -948,6 +948,10 @@ nav a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  /* changes made my subit*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .foot-text {
