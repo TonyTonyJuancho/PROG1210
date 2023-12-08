@@ -73,7 +73,7 @@
                     <div class="info-row">
                         <label class="info-label" for="input-repair-date">Request Date:</label>
                         <div class="info-field tooltip">
-                            <input id = "input-start-date" class = "info-field-input" type = "date" value="toLocaleDateString" > 
+                            <input id = "input-start-date" class = "info-field-input" type = "date" value="" > 
                             <div class="right">
                                 <h3>Request Date</h3>
                                 <p>Ex: 01-11-2023</p>
@@ -164,7 +164,7 @@
         const currentDate = new Date().toLocaleDateString('en-CA'); // Adjust 'en-CA' based on your preferred locale
 
         // Set the current date as the value of the input field
-        document.getElementById('input-repair-date').value = currentDate;
+        document.getElementById('input-start-date').value = currentDate;
 
         $(document).ready(function () {
         $('#input-repair-reason').on('input', function () {
