@@ -46,6 +46,10 @@
     <div class="report-container">
         <h2>Sample inventory report preview.</h2>
         <h3>Report for Inventory.</h3>
+        <p></p>
+        <p style="margin-bottom: 0px;"><strong><small>Prepared By: John Snow</small></strong></p>
+        <p style="margin: 0px;"><strong><small>Run Date: <span><input id="report-date" style="border-style: none; background-color: transparent; font-weight: bold;"  disabled></span></small></strong></p>
+        
 
         <table id="reportTable" border="1" style="width:100%;">
             <thead>
@@ -131,8 +135,6 @@
                 </tr>
             </tbody>
         </table>
-        <p><strong><small>Prepared By: John Snow</small></strong></p>
-        <p><strong><small>Run Date:2023/11/20</small></strong></p>
     </div>
 
     <script>
@@ -171,6 +173,11 @@
             document.body.appendChild(link);
             link.click();
         }
+
+        const currentDate = new Date().toLocaleDateString('en-CA');
+
+        // Set the current date as the value of the input field
+        document.getElementById('report-date').value = currentDate;
     </script>
 </body>
 
