@@ -120,10 +120,32 @@
                             <label class="info-label" style="margin-bottom: 50px;">Include Repairs:</label>
                             <div class="info-field tooltip" style="border-bottom: none;" >
                                 <div class="info-field-error" hidden>Need to choose one of the option.</div>
-                                <input type="radio" id="all-repairs" name="repair-option" value="all" style="transform:scale(2)">
+                                <input type="radio" id="all-repairs" name="repair-option" value="all" style="transform:scale(2)" checked="checked">
                                 <label for="all-repairs" style="padding-bottom: 20px;">All Repairs</label>
-                                <input type="radio" id="all-repairs" name="repair-option" value="warranty" checked="checked" style="transform:scale(2)">
+                                <input type="radio" id="all-repairs" name="repair-option" value="warranty" style="transform:scale(2)">
                                 <label for="all-repairs">Warranty Repairs</label>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <label class="info-label" for="input-inv-manu">Manufacture:</label>
+                            <div class="info-field tooltip">
+                                <div class="info-field-error" style="visibility:hidden">Manufacture is required.</div>
+                                <div class="info-field-group">
+                                    <select class="info-select" id="input-report-run-by" style="width:100%">
+                                        <option value="">Select a Manufacture</option>
+                                        <option selected>All Manufacturer</option>
+                                        <option>Yamaha</option>
+                                        <option>Honda</option>
+                                        <option>Kawasaki</option>
+                                        <option>John Deere</option>
+                                        <option>Craftsman</option>
+                                    </select>
+                                    <div class="right">
+                                        <h3>Manufacture</h3>
+                                        <p>Select from dropdown to get report for specific Manufacture.</p>
+                                        <i></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
