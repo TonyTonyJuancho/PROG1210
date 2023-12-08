@@ -80,7 +80,7 @@
                                     <select class="info-select" id="input-report-run-by" style="width:100%">
                                         <option value="">Select a Employee</option>
                                         <option>Emma</option>
-                                        <option selected>Admin Employee</option>
+                                        <option selected>Emily</option>
                                     </select>
                                     <div class="right">
                                         <h3>Report Run by</h3>
@@ -117,29 +117,13 @@
                             </div>
                         </div>
                         <div class="info-row">
-                            <label class="info-label" for="input-total-repairs">Number of Repairs:</label>
-                            <div class="info-field tooltip">
-                                <div class="info-field-error" hidden style="visibility: hidden;"></div>
-                                <input id="input-total-repairs" class="info-field-input" type="number" value="70">
-                                <div class="right">
-                                    <h3>Number of Repairs</h3>
-                                    <p>This field is automatically calculated by system based on repairs completed.</p>
-                                    <p>Please check the number of repairs to make sure it is accurate.</p>
-                                    <i></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label" for="input-warranty-repairs">Warranty Repairs:</label>
-                            <div class="info-field tooltip">
-                                <div class="info-field-error" hidden style="visibility: hidden;"></div>
-                                <input id="input-warranty-repairs" class="info-field-input" type="number" value="10">
-                                <div class="right">
-                                    <h3>Warranty Repairs</h3>
-                                    <p>This field is automatically calculated by system based on repairs completed.</p>
-                                    <p>Please check the number of repairs to make sure it is accurate.</p>
-                                    <i></i>
-                                </div>
+                            <label class="info-label" style="margin-bottom: 50px;">Include Repairs:</label>
+                            <div class="info-field tooltip" style="border-bottom: none;" >
+                                <div class="info-field-error" hidden>Need to choose one of the option.</div>
+                                <input type="radio" id="all-repairs" name="repair-option" value="all" style="transform:scale(2)">
+                                <label for="all-repairs" style="padding-bottom: 20px;">All Repairs</label>
+                                <input type="radio" id="all-repairs" name="repair-option" value="warranty" checked="checked" style="transform:scale(2)">
+                                <label for="all-repairs">Warranty Repairs</label>
                             </div>
                         </div>
                     </div>

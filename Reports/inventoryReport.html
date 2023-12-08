@@ -79,7 +79,7 @@
                                     <select class="info-select" id="input-report-run-by" style="width:100%">
                                         <option value="">Select a Employee</option>
                                         <option>Emma</option>
-                                        <option selected>Admin Employee</option>
+                                        <option selected>Emily</option>
                                     </select>
                                     <div class="right">
                                         <h3>Report Run by</h3>
@@ -140,15 +140,24 @@
                             </div>
                         </div>
                         <div class="info-row">
-                            <label class="info-label" for="input-inv-manu">Inventory Manufacture:</label>
+                            <label class="info-label" for="input-inv-manu">Manufacture:</label>
                             <div class="info-field tooltip">
-                                <div class="info-field-error" style="visibility: hidden;"></div>
-                                <input id="input-inv-manu" class="info-field-input" type="text" value="*All Manufacture*">
-                                <div class="right">
-                                    <h3>Inventory Manufacture</h3>
-                                    <p>Input the name correctly. Spelling mistake can generate completly different report.</p>
-                                    <p>*All Manufacture* will generate report for all Manufacutes.</p>
-                                    <i></i>
+                                <div class="info-field-error" style="visibility:hidden">Manufacture is required.</div>
+                                <div class="info-field-group">
+                                    <select class="info-select" id="input-report-run-by" style="width:100%">
+                                        <option value="">Select a Manufacture</option>
+                                        <option selected>All Manufacturer</option>
+                                        <option>Yamaha</option>
+                                        <option>Honda</option>
+                                        <option>Kawasaki</option>
+                                        <option>John Deere</option>
+                                        <option>Craftsman</option>
+                                    </select>
+                                    <div class="right">
+                                        <h3>Manufacture</h3>
+                                        <p>Select from dropdown to get report for specific Manufacture.</p>
+                                        <i></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
