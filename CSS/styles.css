@@ -51,6 +51,7 @@ body, html {
   font-size: 2rem;
   font-weight: 600;
   color: #faf9f9;
+  z-index: 999999;
   box-sizing: border-box;
 }
 
@@ -72,6 +73,7 @@ body, html {
   padding-top: 8rem;
   width: 100%;
   height: 96.59%;
+  z-index: 2;
 }
 
 .main-paging-section {
@@ -191,7 +193,7 @@ body, html {
 .head-nav-link {
   height: 100%;
   box-sizing: border-box;
-  width: 22.5rem;
+  width: inherit;
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -925,7 +927,6 @@ body, html {
 nav ul {
   list-style: armenian;
   padding: 0;
-  background-color: #576490;
   color: white;
   font-size: 24px;
   height: 50px;
@@ -1024,4 +1025,33 @@ nav a {
   cursor: pointer;
   z-index: 2;
   display: none;
+}
+
+
+.denied-heading
+{
+  color:#ecf0f1 ;
+  font-size: 8rem;
+  background-color: #293b64;
+  padding: 3rem 0 3rem 5rem;
+}
+.denied-subheading
+{
+  color:#293b64;
+  font-size: 4rem;
+  background-color: #ecf0f1;
+  padding: 4rem 0 2rem 5rem;
+}
+.denied-link
+{
+  color:#576490;
+  background-color: #ecf0f1;
+  width: 100%;
+  font-size: 3.5rem;
+  padding: 1rem 0 3rem 5rem;
+  text-decoration: underline;
+}
+.denied-link:hover
+{
+  color:#293b64;
 }
