@@ -44,7 +44,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
                             <div class = "info-field tooltip">
-                                <div class ="info-field-error">Error: Please add equipment name in the field</div>
+                                <div class ="info-field-error">Please add equipment name in the field</div>
                                 <input id = "input-equip-name" class = "info-field-input" type = "text" value=""> 
                                 <div class="right">
                                     <h3>Equipment Name</h3>
@@ -56,7 +56,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-model">Equipment Model:</label> 
                             <div class = "info-field tooltip">
-                                <div class ="info-field-error">Error: Please add equipment model in the field</div>
+                                <div class ="info-field-error">Please add equipment model in the field</div>
                                 <input id = "input-equip-model" class = "info-field-input" type = "text" value="">
                                 <div class="right">
                                     <h3>Equipment Model</h3>
@@ -68,7 +68,7 @@
                         <div class = "info-row">
                             <label class ="info-label" for = "input-equip-serial">Equipment Serial Number:</label> 
                             <div class = "info-field tooltip">
-                                    <div class ="info-field-error">Error: Please add equipment serial number in the field</div>
+                                    <div class ="info-field-error">Please add equipment serial number in the field</div>
                                 <input id = "input-equip-serial" class = "info-field-input" type = "text "value=""> 
                                 <div class="right">
                                     <h3>Equipment Serial No.</h3>
@@ -89,7 +89,7 @@
                         <div class="info-row">
                             <label class ="info-label" for = "input-equip-type">Equipment Type:</label> 
                             <div class = "info-field tooltip">
-                                <div class ="info-field-error">Error: Please select an equipment type in the dropdown</div>
+                                <div class ="info-field-error">Please select an equipment type in the dropdown</div>
                                 <div class="info-field-group">
                                     <select class = "info-select" id = "input-equip-type" style = "width:82%">
                                         <option selected>Select an Equipment Type..</option>
@@ -114,7 +114,7 @@
                         <div class="info-row">
                             <label class ="info-label" for = "input-equip-type">Equipment Colour:</label> 
                             <div class = "info-field tooltip">
-                                <div class ="info-field-error">Error: Please select an equipment colour in the dropdown</div>
+                                <div class ="info-field-error">Please select an equipment colour in the dropdown</div>
                                 <div class="info-field-group">
                                     <select class = "info-select" id = "input-equip-type" style = "width:82%">
                                         <option selected>Select a Colour..</option>
@@ -139,7 +139,7 @@
                         <div class="info-row">
                             <label class="info-label" for="input-manufacturer">Manufacturer:</label>
                             <div class = "info-field tooltip">
-                                <div class="info-field-error">Error: Please select a manufacturer in the dropdown</div>
+                                <div class="info-field-error">Please select a manufacturer in the dropdown</div>
                                 <div class="info-field-group">
                                     <select class="info-select" id="input-manufacturer" style="width: 82%">
                                         <option selected>Select a Manufacturer..</option>
@@ -172,17 +172,23 @@
                             <tr class = "main-info-tablerow" >
                                 <th class = "main-info-tablehead" style ="width:17%">    <button class ="btn-table">New(+)</button></th>
 
-                                <th class = "main-info-tablehead" style="width:40%">Customer Name</th>
+                                <th class = "main-info-tablehead" style="width:30%">Customer Name</th>
                                 <th class = "main-info-tablehead" style="width:30%">Customer Email</th>
                                 <th class = "main-info-tablehead" style="width:30%">Customer Phone</th>
                             </tr>
+                            <tr class = "main-info-tablerow">
+                                <td class = "main-info-tabledata" style="width:17%"><a href="" class = "table-link">Delete (X)</a></td>
+                              
+                                <td class = "main-info-tabledata" style="width:30%">Jane Doe</td>
+                                <td class = "main-info-tabledata"style="width:30%">jdoe@gmail.com</td>
+                                <td class = "main-info-tabledata"style="width:30%">(923)-052-5355</td>
+                            </tr>
                          </table>
-                      
                     </div>
                 </div>
                 <div class="main-info-buttons">
-                    <a href="./details.html" class="btn-info btn-edit">Add Equipment</a>
-                    <a href="./index.html" class="btn-info btn-edit">Cancel</a>
+                    <a href="../Customer/edit.html" class="btn-info btn-edit">Add Equipment</a>
+                    <a href="../Customer/edit.html" class="btn-info btn-edit">Cancel</a>
                 </div>
             </div>
             <footer class = "foot-main">

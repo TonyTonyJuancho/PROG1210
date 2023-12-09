@@ -64,7 +64,7 @@
                             </label>
                             <div class="info-field tooltip">
                                 <div class="info-field-error" hidden>Report Run Date is required.</div>
-                                <input id="input-run-date" class="info-field-input" type="date" value="toLocaleDateString" disabled>
+                                <input id="input-run-date" class="info-field-input" type="date" value="" disabled>
                                 <div class="right">
                                     <h3>Report Run Date</h3>
                                     <p>Ex: 2023-11-15</p>
@@ -80,7 +80,7 @@
                                     <select class="info-select" id="input-report-run-by" style="width:100%">
                                         <option value="">Select a Employee</option>
                                         <option>Emma</option>
-                                        <option selected>Admin Employee</option>
+                                        <option selected>Emily</option>
                                     </select>
                                     <div class="right">
                                         <h3>Report Run by</h3>
@@ -95,23 +95,10 @@
                             </label>
                             <div class="info-field tooltip">
                                 <div class="info-field-error" hidden hidden>Login Date is required.</div>
-                                <input id="input-login-date" class="info-field-input" type="date" value="2023-11-01">
+                                <input id="input-login-date" class="info-field-input" type="date" value="2023-12-01">
                                 <div class="right">
                                     <h3>Login Date</h3>
                                     <p>Ex: 2023-11-01</p>
-                                    <i></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label" for="input-login-time">Login Time:
-                            </label>
-                            <div class="info-field tooltip">
-                                <div class="info-field-error" hidden>Login Time is required.</div>
-                                <input id="input-login-time" class="info-field-input" type="time" value="09:00">
-                                <div class="right">
-                                    <h3>Login Time</h3>
-                                    <p>Ex: 09:00 AM</p>
                                     <i></i>
                                 </div>
                             </div>
@@ -121,28 +108,14 @@
                             </label>
                             <div class="info-field tooltip">
                                 <div class="info-field-error" hidden>Logout Date is required.</div>
-                                <input id="input-logout-date" class="info-field-input" type="date" value="2023-11-01">
+                                <input id="input-logout-date" class="info-field-input" type="date" value="2023-11-30">
                                 <div class="right">
                                     <h3>Logout Date</h3>
                                     <p>Ex: 2023-11-01</p>
                                     <i></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="info-row">
-                            <label class="info-label" for="input-logout-time">Logout Time:
-                            </label>
-                            <div class="info-field tooltip">
-                                <div class="info-field-error" hidden>Logout Time is required.</div>
-                                <input id="input-logout-time" class="info-field-input" type="time" value="16:00">
-                                <div class="right">
-                                    <h3>Login Time</h3>
-                                    <p>Ex: 04:00 PM</p>
-                                    <i></i>
-                                </div>
-                            </div>
-                        </div>
-                        
+                        </div>                        
                         <div class="info-row">
                             <label class="info-label" for="input-emp-report">Employee:</label>
                             <div class="info-field tooltip">
@@ -168,12 +141,12 @@
                     </div>
                 </div>
                 <div class="main-info-buttons">
-                    <a href="./securityReportPreview.html" class="btn-info btn-edit">Preview Report</a>
-                    <a href="./securityReport.html" class="btn-info btn-edit">Clear</a>
+                    <a href="./securityReportPreview.html" class="btn-info btn-edit" target="_blank">Preview Report</a>
+                    <a href="./index.html" class="btn-info btn-edit">Back</a>
                 </div>
             </div>
     </form>
-    <footer class="foot-main">
+    <footer class="foot-main" style="position:absolute;">
         <p class="foot-text">Application Developed By<br>
             &copy;2023 TechLink Software</p>
         <!--<a href="" class ="foot-text">Sitemap</a>-->
@@ -187,11 +160,13 @@
     </main>
     <script>
         const currentDate = new Date().toLocaleDateString('en-CA');
-        const options = { hour: '2-digit', minute: '2-digit', hour12: true };
-        const currentTime = new Date().toLocaleTimeString('en-US', options);
-
-        // Set the current date as the value of the input field
         document.getElementById('input-run-date').value = currentDate;
+
+        const reportEndDate = new Date();
+        reportEndDate.setDate(reportEndDate.getDate()-1);
+        const formattedDate = reportEndDate.toLocaleDateString('en-CA');
+        document.getElementById('input-logout-date').value = formattedDate;
+
     </script>
 </body>
 

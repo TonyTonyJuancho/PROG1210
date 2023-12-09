@@ -64,7 +64,7 @@
                             </label>
                             <div class="info-field tooltip">
                                 <div class="info-field-error" hidden>Report Run Date is required.</div>
-                                <input id="input-run-date" class="info-field-input" type="date" value="11/12/2023" disabled>
+                                <input id="input-run-date" class="info-field-input" type="date" value="" disabled>
                                 <div class="right">
                                     <h3>Report Run Date</h3>
                                     <p>Ex: 2023-11-15</p>
@@ -80,7 +80,7 @@
                                     <select class="info-select" id="input-report-run-by" style="width:100%">
                                         <option value="">Select a Employee</option>
                                         <option>Emma</option>
-                                        <option selected>Admin Employee</option>
+                                        <option selected>Emily</option>
                                     </select>
                                     <div class="right">
                                         <h3>Report Run by</h3>
@@ -95,7 +95,7 @@
                             </label>
                             <div class="info-field tooltip">
                                 <div class="info-field-error" hidden>Start Date is required.</div>
-                                <input id="input-start-date" class="info-field-input" type="date" value="2023-11-20">
+                                <input id="input-start-date" class="info-field-input" type="date" value="2023-11-01">
                                 <div class="right">
                                     <h3>Start Date</h3>
                                     <p>Ex: 2023-11-01</p>
@@ -108,7 +108,7 @@
                             </label>
                             <div class="info-field tooltip">
                                 <div class="info-field-error" hidden>End Date is required.</div>
-                                <input id="input-end-date" class="info-field-input" type="date" value="2023-11-25">
+                                <input id="input-end-date" class="info-field-input" type="date" value="2023-11-30">
                                 <div class="right">
                                     <h3>End Date</h3>
                                     <p>Ex: 2023-11-13</p>
@@ -117,36 +117,42 @@
                             </div>
                         </div>
                         <div class="info-row">
-                            <label class="info-label" for="input-total-repairs">Number of Repairs:</label>
-                            <div class="info-field tooltip">
-                                <div class="info-field-error" hidden style="visibility: hidden;"></div>
-                                <input id="input-total-repairs" class="info-field-input" type="number" value="70">
-                                <div class="right">
-                                    <h3>Number of Repairs</h3>
-                                    <p>This field is automatically calculated by system based on repairs completed.</p>
-                                    <p>Please check the number of repairs to make sure it is accurate.</p>
-                                    <i></i>
-                                </div>
+                            <label class="info-label" style="margin-bottom: 50px;">Include Repairs:</label>
+                            <div class="info-field tooltip" style="border-bottom: none;" >
+                                <div class="info-field-error" hidden>Need to choose one of the option.</div>
+                                <input type="radio" id="all-repairs" name="repair-option" value="all" style="transform:scale(2)" checked="checked">
+                                <label for="all-repairs" style="padding-bottom: 20px;">All Repairs</label>
+                                <input type="radio" id="all-repairs" name="repair-option" value="warranty" style="transform:scale(2)">
+                                <label for="all-repairs">Warranty Repairs</label>
                             </div>
                         </div>
                         <div class="info-row">
-                            <label class="info-label" for="input-warranty-repairs">Warranty Repairs:</label>
+                            <label class="info-label" for="input-inv-manu">Manufacture:</label>
                             <div class="info-field tooltip">
-                                <div class="info-field-error" hidden style="visibility: hidden;"></div>
-                                <input id="input-warranty-repairs" class="info-field-input" type="number" value="10">
-                                <div class="right">
-                                    <h3>Warranty Repairs</h3>
-                                    <p>This field is automatically calculated by system based on repairs completed.</p>
-                                    <p>Please check the number of repairs to make sure it is accurate.</p>
-                                    <i></i>
+                                <div class="info-field-error" style="visibility:hidden">Manufacture is required.</div>
+                                <div class="info-field-group">
+                                    <select class="info-select" id="input-report-run-by" style="width:100%">
+                                        <option value="">Select a Manufacture</option>
+                                        <option selected>All Manufacturer</option>
+                                        <option>Yamaha</option>
+                                        <option>Honda</option>
+                                        <option>Kawasaki</option>
+                                        <option>John Deere</option>
+                                        <option>Craftsman</option>
+                                    </select>
+                                    <div class="right">
+                                        <h3>Manufacture</h3>
+                                        <p>Select from dropdown to get report for specific Manufacture.</p>
+                                        <i></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="main-info-buttons">
-                    <a href="./warrantyReportPreview.html" class="btn-info btn-edit">Preview Report</a>
-                    <a href="./warrantyReport.html" class="btn-info btn-edit">Clear</a>
+                    <a href="./warrantyReportPreview.html" class="btn-info btn-edit" target="_blank">Preview Report</a>
+                    <a href="./index.html" class="btn-info btn-edit">Back</a>
                 </div>
             </div>
     </form>
