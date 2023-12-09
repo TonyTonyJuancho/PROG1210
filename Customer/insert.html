@@ -56,7 +56,7 @@
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-fname">First Name:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Please input first name in the field</div>
+                                <div id="error-message" class ="info-field-error">Required Field</div>
                                 <input id="input-cust-fname" class="info-field-input" type="text" value=""> 
                                 <div class="right">
                                     <h3>Customer First Name</h3>
@@ -68,7 +68,7 @@
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-midname">Middle Name:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Please input middle name in the field</div>
+                                <div class ="info-field-error"></div>
                                 <input id="input-cust-midname" value ="" class="info-field-input" type="text" value=""> 
                                 <div class="right">
                                     <h3>Customer Middle Name</h3>
@@ -80,7 +80,7 @@
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-lname">Last Name:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Please input last name in the field</div>
+                                <div id="error-message1" class ="info-field-error">Required Field</div>
                                 <input id="input-cust-lname" class="info-field-input" type="text" value=""> 
                                 <div class="right">
                                     <h3>Customer Last Name</h3>
@@ -92,7 +92,7 @@
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-phone">Phone Number:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Please input a phone in the field</div>
+                                <div id="error-message2" class="info-field-error">Required Field</div>
                                 <input id="input-cust-phone" class="info-field-input" type="tel" value=""> 
                                 <div class="right">
                                     <h3>Customer Phone Number</h3>
@@ -104,7 +104,7 @@
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-email">Email:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Please input a email in the field</div>
+                                <div id="error-message3" class ="info-field-error">Required Field</div>
                                 <input id="input-cust-email" class="info-field-input" type="tel" value=""> 
                                 <div class="right">
                                     <h3>Customer Email Address</h3>
@@ -116,7 +116,7 @@
                         <div class="info-row">
                             <label class ="info-label" for="input-cust-street">Address:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Please input an address in the field</div>
+                                <div id="error-message4" class ="info-field-error">Required Field</div>
                                 <input id="input-cust-street" class="info-field-input" type="text" value=""> 
                                 <div class="right">
                                     <h3>Customer Address (Street)</h3>
@@ -128,9 +128,9 @@
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-city">City:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error">Please select a city in the dropdown</div>
+                                <div id="error-message5" class ="info-field-error">Required Field</div>
                                 <div class="info-field-group">
-                                    <select class="info-select" id="input-cust-province" style = "width:82%">
+                                    <select class="info-select" id="input-cust-city" style = "width:82%">
                                         <option selected value="">Select a City..</option>
                                         <option value="AB">Welland</option>
                                         <option value="BC">Pelham</option>
@@ -155,37 +155,37 @@
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-province">Province:</label> 
                             <div class="info-field tooltip"> 
-                                <div class ="info-field-error">Please select a province in the dropdown</div>
+                                <div id="error-message6" class ="info-field-error">Required Field</div>
                                 <div class="info-field-group">
-                                <select class="info-select" id="input-cust-province" style = "width:82%"> 
-                                    <option selected value-="">Select a Province..</option>
-                                    <option value="AB">Alberta</option>
-                                    <option value="BC">British Columbia</option>
-                                    <option value="MB">Manitoba</option>
-                                    <option value="NB">New Brunswick</option>
-                                    <option value="NL">Newfoundland and Labrador</option>
-                                    <option value="NS">Nova Scotia</option>
-                                    <option value="NT">Northwest Territories</option>
-                                    <option value="NU">Nunavut</option>
-                                    <option value="ON">Ontario</option>
-                                    <option value="PE">Prince Edward Island</option>
-                                    <option value="QC">Quebec</option>
-                                    <option value="SK">Saskatchewan</option>
-                                    <option value="YT">Yukon</option>
-                                </select>
-                                <div class="right">
-                                    <h3>Customer Province</h3>
-                                    <p>Please select a province in the given dropdown or add a province if not present</p>
-                                    <i></i>
-                                </div> 
-                                <button style ="width:15%;" class ="btn-edit-dropdowns">+</button>
+                                    <select class="info-select" id="input-cust-province" style = "width:82%"> 
+                                        <option selected value-="">Select a Province..</option>
+                                        <option value="AB">Alberta</option>
+                                        <option value="BC">British Columbia</option>
+                                        <option value="MB">Manitoba</option>
+                                        <option value="NB">New Brunswick</option>
+                                        <option value="NL">Newfoundland and Labrador</option>
+                                        <option value="NS">Nova Scotia</option>
+                                        <option value="NT">Northwest Territories</option>
+                                        <option value="NU">Nunavut</option>
+                                        <option value="ON">Ontario</option>
+                                        <option value="PE">Prince Edward Island</option>
+                                        <option value="QC">Quebec</option>
+                                        <option value="SK">Saskatchewan</option>
+                                        <option value="YT">Yukon</option>
+                                    </select>
+                                    <div class="right">
+                                        <h3>Customer Province</h3>
+                                        <p>Please select a province in the given dropdown or add a province if not present</p>
+                                        <i></i>
+                                    </div> 
+                                    <button style ="width:15%;" class ="btn-edit-dropdowns">+</button>
                                 </div>
                             </div>
                         </div>
                         <div class="info-row">
                             <label class ="info-label"  for="input-cust-pcode">Postal Code:</label> 
                             <div class="info-field tooltip">
-                                <div class ="info-field-error" style="visibility: hidden;">Please input a postal code in the field</div>
+                                <div id="error-message7" class ="info-field-error">Required Field</div>
                                 <input id="input-cust-pcode" class="info-field-input" type="text" value=""> 
                                 <div class="right">
                                     <h3>Customer Postal Code</h3>
@@ -229,5 +229,92 @@
                 </div>
             </footer>
         </main>
+        <script>
+            const errorMessage = document.getElementById('error-message');
+            const fName = document.getElementById('input-cust-fname');
+        
+                // Add an event listener to the textarea for the 'input' event
+                fName.addEventListener('input', function () {
+                    // Check if the textarea has text
+                    if (fName.value.trim() !== '') {
+                        // If it has text, hide the error message
+                        errorMessage.style.display = 'none';
+                    } else {
+                        // If it's empty, show the error message
+                        errorMessage.style.display = 'block';
+                    }
+                });
+
+            const errorMessage1 = document.getElementById('error-message1');
+            const lName = document.getElementById('input-cust-lname');
+            lName.addEventListener('input', function () {
+                if (lName.value.trim() !== '') {
+                    errorMessage1.style.display = 'none';
+                } else {
+                    errorMessage1.style.display = 'block';
+                }
+            });
+
+            const errorMessage2 = document.getElementById('error-message2');
+            const phone = document.getElementById('input-cust-phone');
+            phone.addEventListener('input', function () {
+                if (phone.value.trim() !== '') {
+                    errorMessage2.style.display = 'none';
+                } else {
+                    errorMessage2.style.display = 'block';
+                }
+            });
+
+            const errorMessage3 = document.getElementById('error-message3');
+            const email = document.getElementById('input-cust-email');
+            email.addEventListener('input', function () {
+                if (email.value.trim() !== '') {
+                    errorMessage3.style.display = 'none';
+                } else {
+                    errorMessage3.style.display = 'block';
+                }
+            });
+
+            const errorMessage4 = document.getElementById('error-message4');
+            const address = document.getElementById('input-cust-street');
+            address.addEventListener('input', function () {
+                if (address.value.trim() !== '') {
+                    errorMessage4.style.display = 'none';
+                } else {
+                    errorMessage4.style.display = 'block';
+                }
+            });
+
+            const errorMessage7 = document.getElementById('error-message7');
+            const postal = document.getElementById('input-cust-pcode');
+            postal.addEventListener('input', function () {
+                if (postal.value.trim() !== '') {
+                    errorMessage7.style.display = 'none';
+                } else {
+                    errorMessage7.style.display = 'block';
+                }
+            });
+
+            const errorMessage5 = document.getElementById('error-message5');
+            const city = document.getElementById('input-cust-city');
+            city.addEventListener('change', function () {
+                if (city.selectedIndex !== 0) {
+                    errorMessage5.style.display = 'none';
+                } else {
+                    errorMessage5.style.display = 'block';
+                }
+            });
+
+            const errorMessage6 = document.getElementById('error-message6');
+            const province = document.getElementById('input-cust-province');
+            province.addEventListener('change', function () {
+                if (province.selectedIndex !== 0) {
+                    errorMessage6.style.display = 'none';
+                } else {
+                    errorMessage6.style.display = 'block';
+                }
+            });
+
+        </script>
     </body>
 </html>
