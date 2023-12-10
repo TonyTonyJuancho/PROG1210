@@ -974,7 +974,9 @@ nav a {
 }/*# sourceMappingURL=styles.css.map */
 
 
-/* CSS FOR HAMBURGER MENU */
+/*ALL LAST WEEK CSS
+
+CSS FOR HAMBURGER MENU */
 
 .nav-links {
   position: fixed;
@@ -986,7 +988,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 60px;
   transition: right 0.3s ease-in-out;
 }
 
@@ -1007,24 +1009,82 @@ nav a {
 }
 
 .fa-bars {
-  color: #2c3e50;
+  color: #fff;
   font-size: 28px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 30px;
+  top: 30px;
   cursor: pointer;
-  z-index:2;
+  z-index: 2;
+}
+
+.fa-bars:hover circle{
+  opacity: 1;
 }
 
 .fa-close {
   color: #ecf0f1;
   font-size: 28px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   cursor: pointer;
   z-index: 2;
   display: none;
+}
+
+.head-nav-section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS FOR INFO OF LOGIN */
+
+.head-profile-img {
+  margin-left:100px;
+  margin-top: 10px;
+}
+
+.head-profile-text {
+  margin-left: 10px;
+  margin-top: 13px;
+  }
+
+/* CSS FOR LOG OUT BTN */
+
+.logout-btn {
+  height: 100%;
+  box-sizing: border-box;
+  width: inherit;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-text-decoration: underline transparent;
+  text-decoration: underline transparent;
+  transition: color 300ms ease, background-color 300 ms ease, -webkit-text-decoration 300ms ease;
+  transition: text-decoration 300ms ease, color 300ms ease, background-color 300 ms ease;
+  transition: text-decoration 300ms ease, color 300ms ease, background-color 300 ms ease, -webkit-text-decoration 300ms ease;
+  color: #faf9f9;
+}
+
+.logout-btn:hover, .logout-btn:focus {
+  background-color: #425d8d;
+  color: #faf9f9;
+  text-decoration-color: #e7c506;
+}
+
+.logout-btn:active {
+  background-color: #363e58;
+}
+
+.logout-btn.disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: #363e58;
 }
 
 
