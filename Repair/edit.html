@@ -78,7 +78,7 @@
                             <label class ="info-label" for = "input-equip-name">Equipment Name:</label> 
                             <div class="info-field tooltip">
                                 <div class ="info-field-error"></div>
-                                <input id = "input-equip-name" class = "info-field-input" type = "text" value="Lawnmower LM-2122">
+                                <input id = "input-equip-name" class = "info-field-input" type = "text" value="Lawnmower LM-2122" disabled>
                                 <div class="right">
                                     <h3>Equipment Name:</h3>
                                     <p>Ex: Rotary Lawnmower</p>
@@ -102,7 +102,7 @@
                             <label class ="info-label" for = "input-start-time">Start Time:</label> 
                             <div class="info-field tooltip">
                                 <div class ="info-field-error"></div>
-                                <input id = "input-start-time" class = "info-field-input" type = "" value="">
+                                <input id = "input-start-time" class = "info-field-input" type = "" value="" disabled>
                                 <div class="right">
                                     <h3>Start Time:</h3>
                                     <p>Ex: 09:00</p>
@@ -175,12 +175,12 @@
                         <div class="info-row">
                             <label class="info-label" for="input-repair-type">Repair Type:</label>
                             <div class="info-field tooltip">
-                                <div id="error-message2" class="info-field-error">Required Field
+                                <div id="error-message2" class="info-field-error">
                                 </div>
                                 <div class="info-field-group">
                                     <select class="info-select" id="input-repair-type" style="width:80%">
                                         <option>Select a Repair Type:</option>
-                                        <option>Diagnosis</option>
+                                        <option selected>Diagnosis</option>
                                         <option>Blade Sharpening</option>
                                         <option>Spark Plug Replacement</option>
                                         <option>Carburetor Cleaning</option>
@@ -200,12 +200,12 @@
                             <label class="info-label" for="input-repair-status">Status:</label>
     
                             <div class="info-field tooltip">
-                                <div id="error-message4" class="info-field-error">Required Field</div>
+                                <div id="error-message4" class="info-field-error"></div>
                                 <div class="info-field-group">
                                     <select class="info-select" id="input-repair-status" style="width:100%">
                                         <option>Select a Status of the repair:</option>
                                         <option>Not Started</option>
-                                        <option>In Progress</option>
+                                        <option selected>In Progress</option>
                                         <option>Waiting for parts</option>
                                         <option>Finished</option>
                                     </select>
