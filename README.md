@@ -1,4 +1,7 @@
 # PROG1180 - Project Planning & Design
+This assignment was all about creating a website for a lawnmower company to help them eliminate the paper trail from all the aspect on how they were running the business. 
+P.S.- A working database was not required for this course and everything had to be done using HTML, CSS and JavaScript.
+
 ## TechLink
 
 TechLink Software is a small but diverse team comprising of five students from different backgrounds studying at Niagara College, all sharing a passion for creativity and innovation and parlaying that passion into creating impactful products and services
