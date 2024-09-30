@@ -1,4 +1,22 @@
 # PROG1180 - Project Planning & Design
+This assignment was all about creating a website for a lawnmower company to help them eliminate the paper trail from all the aspect on how they were running the business. 
+P.S.- A working database was not required for this course and everything had to be done using HTML, CSS and JavaScript.
+
+**Access to the website:**
+**Admin:**
+username: admin@email.com
+Password: password1
+
+**Technician:**
+username: tech@email.com
+Password: password1
+
+**Sales:**
+username: sales@email.com
+Password: password1
+
+Access to the website will depend on the roles of the user where admin has access to all the pages.
+
 ## TechLink
 
 TechLink Software is a small but diverse team comprising of five students from different backgrounds studying at Niagara College, all sharing a passion for creativity and innovation and parlaying that passion into creating impactful products and services
@@ -14,7 +32,7 @@ As a student led company, we at TechLink aim to create simple but impactful soft
 
 
 
-#### What We Do (AI Generated)
+#### What We Do
 - **Product Development**: We conceptualize, design, and build innovative products that address real-world problems.
 - **Technology Solutions**: Leveraging cutting-edge technologies, we develop software and applications that streamline processes and enhance user experiences.
 - **Marketing and Branding**: Our marketing team is dedicated to crafting compelling narratives and strategies to help your business thrive.
@@ -38,12 +56,4 @@ Are you a student with a passion for innovation and a desire to make a differenc
 #### Contact Us
 Ready to collaborate or want to learn more about us? Reach out to us at:
 
-- Email: contact@studentcompany.com
-- Phone: (123) 456-7890
-- Website: www.studentcompany.com
-
-Follow us on social media for the latest updates and behind-the-scenes glimpses of our projects:
-
-- Facebook: facebook.com/StudentCompany
-- Twitter: twitter.com/StudentCompany
-- Instagram: instagram.com/studentcompany
+- Email: spaudyal@ncstudents.niagaracollege.ca
